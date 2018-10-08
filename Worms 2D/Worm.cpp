@@ -40,13 +40,13 @@ void Worm::update()
 	this->posX = this->sprite.getPosition().x;
 	this->posY = this->sprite.getPosition().y;
 
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sprite.getPosition().y > 0)
 	{
 		moveUp();
 		this->sprite.move(velocity);
 		std::cout << "UP\n";
 	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sprite.getPosition().y + sprite.getLocalBounds().height < windowHeight)
 	{
 		moveDown();
 		this->sprite.move(velocity);
@@ -57,13 +57,13 @@ void Worm::update()
 		stopMove();
 	}
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && sprite.getPosition().x > 0)
 	{
 		moveLeft();
 		this->sprite.move(velocity);
 		std::cout << "LEFT\n";
 	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && sprite.getPosition().x + sprite.getLocalBounds().width/2 < windowWidth)
 	{
 		moveRight();
 		this->sprite.move(velocity);
@@ -73,24 +73,24 @@ void Worm::update()
 	{
 		stopMove();
 	}
-	if (this->left() < 5)
-	{
-		stopMove();
-		std::cout << "LEFT BORDER\n";
-	}
-	else if (this->right() > this->windowWidth)
-	{
-		stopMove();
-	}
+	//if (this->left() < 0)
+	//{
+	//	stopMove();
+	//	std::cout << "LEFT BORDER\n";
+	//}
+	//else if (this->right() > this->windowWidth)
+	//{
+	//	stopMove();
+	//}
 
-	if (this->top() < 0)
-	{
-		stopMove();
-	}
-	else if (this->bottom() > this->windowHeight)
-	{
-		stopMove();
-	}
+	//if (this->top() < 0)
+	//{
+	//	stopMove();
+	//}
+	//else if (this->bottom() > this->windowHeight)
+	//{
+	//	stopMove();
+	//}
 }
 
 
@@ -103,19 +103,19 @@ void Worm::draw(sf::RenderTarget & target, sf::RenderStates states) const
 
 float Worm::left() const
 {
-	return this->posX - this->wormRadius;
+	return this->sprite.getLocalBounds().left;
 }
 float Worm::right() const
 {
-	return this->posX + this->wormRadius;
+	return left() + this->sprite.getLocalBounds().width;
 }
 float Worm::top() const
 {
-	return this->posY - this->wormRadius;
+	return this->sprite.getLocalBounds().top;
 }
 float Worm::bottom() const
 {
-	return this->posY + this->wormRadius;
+	return top()+this->sprite.getLocalBounds().height;
 }
 
 float Worm::getWormX() const
