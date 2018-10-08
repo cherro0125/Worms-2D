@@ -40,13 +40,13 @@ void Worm::update()
 	this->posX = this->sprite.getPosition().x;
 	this->posY = this->sprite.getPosition().y;
 
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && sprite.getPosition().y > 0)
+	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && top() > 0)
 	{
 		moveUp();
 		this->sprite.move(velocity);
 		std::cout << "UP\n";
 	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && sprite.getPosition().y + sprite.getLocalBounds().height < windowHeight)
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && bottom() < windowHeight)
 	{
 		moveDown();
 		this->sprite.move(velocity);
@@ -57,7 +57,7 @@ void Worm::update()
 		stopMove();
 	}
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && sprite.getPosition().x > 0)
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && left() > 0)
 	{
 		moveLeft();
 		//this->sprite.move(velocity);
@@ -65,7 +65,7 @@ void Worm::update()
 		sprite.setScale({ -1, 1 });
 		std::cout << "LEFT\n";
 	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && sprite.getPosition().x + sprite.getLocalBounds().width/2 < windowWidth)
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && right() < windowWidth)
 	{
 		moveRight();
 		
@@ -107,19 +107,19 @@ void Worm::draw(sf::RenderTarget & target, sf::RenderStates states) const
 
 float Worm::left() const
 {
-	return this->sprite.getLocalBounds().left;
+	return sprite.getPosition().x - sprite.getLocalBounds().width / 2;
 }
 float Worm::right() const
 {
-	return left() + this->sprite.getLocalBounds().width;
+	return sprite.getPosition().x + sprite.getLocalBounds().width / 2;
 }
 float Worm::top() const
 {
-	return this->sprite.getLocalBounds().top;
+	return sprite.getPosition().y;
 }
 float Worm::bottom() const
 {
-	return top()+this->sprite.getLocalBounds().height;
+	return sprite.getPosition().y + sprite.getLocalBounds().height;
 }
 
 float Worm::getWormX() const
