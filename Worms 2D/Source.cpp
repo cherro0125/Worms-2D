@@ -7,7 +7,7 @@ int main()
 
 	while(window.isOpen())
 	{
-		//test
+		//test22
 		sf::Event ev;
 		while(window.pollEvent(ev))
 		{
