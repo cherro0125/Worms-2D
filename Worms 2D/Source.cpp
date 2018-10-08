@@ -1,22 +1,22 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
+#include "GameEvent.h"
+#include "GameWindow.h"
+
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(1280, 1024), "Worms 2D");
+	
+	GameWindow window(800, 600, "Worms 2D");
 
-	while(window.isOpen())
+	while (window.GetInstance()->isOpen())
 	{
-		//test
-		sf::Event ev;
-		while(window.pollEvent(ev))
-		{
-			if(ev.type == sf::Event::Closed)
-			{
-				window.close();
-			}
-		}
+		GameEvent ev(window);
+		ev.handleEvents();
+		window.MainLoop();
+
+
 	}
+
+
 
 	return 0;
 }
