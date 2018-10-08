@@ -38,6 +38,8 @@ void GameWindow::MainLoop()
 void GameWindow::UpdateWorm()
 {
 	this->worm.update();
+	
+
 }
 
 Worm GameWindow::GetWorm()
