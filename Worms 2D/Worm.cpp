@@ -60,13 +60,17 @@ void Worm::update()
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && sprite.getPosition().x > 0)
 	{
 		moveLeft();
-		this->sprite.move(velocity);
+		//this->sprite.move(velocity);
+
+		sprite.setScale({ -1, 1 });
 		std::cout << "LEFT\n";
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && sprite.getPosition().x + sprite.getLocalBounds().width/2 < windowWidth)
 	{
 		moveRight();
-		this->sprite.move(velocity);
+		
+		//this->sprite.move(velocity);
+		sprite.setScale({ 1, 1 });
 		std::cout << "RIGHT\n";
 	}
 	else
