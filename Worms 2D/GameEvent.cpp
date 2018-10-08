@@ -1,11 +1,11 @@
 ﻿#include "GameEvent.h"
+#include <iostream>
 
 
-
-
-GameEvent::GameEvent(GameWindow window)
+GameEvent::GameEvent(GameWindow *window)
 {
-	this->window = window.GetInstance();
+	this->window = window->GetInstance();
+	this->gWindow = window;
 }
 
 GameEvent::~GameEvent()
@@ -23,5 +23,10 @@ void GameEvent::handleEvents()
 	{
 		if (this->event.type == sf::Event::Closed)
 			this->window->close();
+
+		
+	
+
+	
 	}
 }
