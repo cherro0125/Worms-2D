@@ -4,7 +4,7 @@ GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name
 {
 	if(this->window == nullptr)
 	{
-		this->window = new sf::RenderWindow(sf::VideoMode(800, 600), name);
+		this->window = new sf::RenderWindow(sf::VideoMode(width, height), name);
 		this->window->setFramerateLimit(60);
 		this->fpsCounter = new FPSCounter();
 		this->gs = new GameSound();

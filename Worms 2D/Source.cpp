@@ -6,7 +6,7 @@
 int main()
 {
 	
-	GameWindow *window = GameWindow::GetGameWindowInstance(800, 600, "Worms 2D");
+	GameWindow *window = GameWindow::GetGameWindowInstance(1240, 1024, "Worms 2D");
 
 	while (window->GetInstance()->isOpen())
 	{
