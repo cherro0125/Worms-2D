@@ -29,7 +29,8 @@ private:
 	sf::Texture texture;
 	sf::Font font;
 	std::string fontPath = "resources/fonts/sansation.ttf";
-	std::string textureImagePath = "resources/images/worm.png";
+	//std::string textureImagePath = "resources/images/worm.png";
+	std::string textureImagePath = "resources/images/janusz.png";
 	sf::Text debugTxt;
 	const float wormRadius{ 10.0f };
 	const float wormVelocity{ 0.0f };
