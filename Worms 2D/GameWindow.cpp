@@ -6,7 +6,6 @@ GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name
 	this->window->setFramerateLimit(60);
 	this->fpsCounter = new FPSCounter(this->window);
 
-
 }
 
 sf::RenderWindow* GameWindow::GetInstance() const
@@ -51,4 +50,16 @@ Worm GameWindow::GetWorm()
 void GameWindow::SetBackgroundColor(sf::Color color)
 {
 	this->bgColor = color;
+}
+
+//Static variables and methods
+
+GameWindow* GameWindow::gw = nullptr;
+
+
+GameWindow* GameWindow::GetGameWindowInstance(unsigned int width, unsigned int height, std::string name)
+{
+	if (gw == nullptr) 
+		gw = new GameWindow(width, height, name);
+	return gw;
 }

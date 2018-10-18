@@ -5,13 +5,14 @@
 int main()
 {
 	
-	GameWindow window(800, 600, "Worms 2D");
+	GameWindow *window = GameWindow::GetGameWindowInstance(800, 600, "Worms 2D");
 
-	while (window.GetInstance()->isOpen())
+
+	while (window->GetInstance()->isOpen())
 	{
-		GameEvent ev(&window);
+		GameEvent ev(window);
 		ev.handleEvents();
-		window.MainLoop();
+		window->MainLoop();
 
 
 	}
