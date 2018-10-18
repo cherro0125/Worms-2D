@@ -128,6 +128,7 @@ void Worm::update()
 
 
 
+
 void Worm::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
 	target.draw(this->sprite, states);
