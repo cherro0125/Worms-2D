@@ -60,8 +60,8 @@ void Worm::update()
 	//	stopMove();
 	//}
 
-	//if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && left() > 0)
-	if (GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyPressed &&  GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Left && left() > 0)
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && left() > 0)
+	//if (GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyPressed &&  GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Left && left() > 0)
 	{
 		moveLeft();
 		//this->sprite.move(velocity);
@@ -69,8 +69,8 @@ void Worm::update()
 		sprite.setScale({ -1, 1 });
 		std::cout << "LEFT\n";
 	}
-	//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && right() < windowWidth)
-	else if (GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyPressed &&  GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Right && right() < windowWidth)
+	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && right() < windowWidth)
+	//else if (GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyPressed &&  GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Right && right() < windowWidth)
 	{
 		moveRight();
 		
@@ -83,20 +83,22 @@ void Worm::update()
 		stopMove();
 	}
 
-	if (GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyPressed &&  GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Space)
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
 		GameWindow::GetGameWindowInstance()->GetGameSound()->StartSample();
 		spacePressed = true;
 		this->velocity.y = -10;
 		sprite.move(velocity);
 	}
+
 	if(GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyReleased && GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Space)
 	{
 		spacePressed = false;
 	}
+
 	if(bottom() < windowHeight)
 	{
-		this->velocity.y = 10;
+		this->velocity.y = 25;
 
 	}
 	else
