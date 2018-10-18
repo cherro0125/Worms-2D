@@ -17,6 +17,7 @@ public:
 	void UpdateWorm();
 	Worm GetWorm();
 	void SetBackgroundColor(sf::Color color);
+	GameSound* GetGameSound() const;
 
 
 private:

@@ -1,6 +1,7 @@
 ﻿#include "Worm.h"
 #include <string>
 #include <iostream>
+#include "GameWindow.h"
 
 
 Worm::Worm(float width, float height) : windowWidth(width), windowHeight(height)
@@ -40,6 +41,7 @@ void Worm::update()
 	this->posX = this->sprite.getPosition().x;
 	this->posY = this->sprite.getPosition().y;
 
+
 	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && top() > 0)
 	{
 		moveUp();
@@ -77,6 +79,12 @@ void Worm::update()
 	{
 		stopMove();
 	}
+
+	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	{
+		GameWindow::GetGameWindowInstance()->GetGameSound()->StartSample();
+	}
+
 	//if (this->left() < 0)
 	//{
 	//	stopMove();

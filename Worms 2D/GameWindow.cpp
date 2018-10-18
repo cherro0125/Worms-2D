@@ -57,6 +57,11 @@ void GameWindow::SetBackgroundColor(sf::Color color)
 	this->bgColor = color;
 }
 
+GameSound* GameWindow::GetGameSound() const
+{
+	return this->gs;
+}
+
 //Static variables and methods
 
 GameWindow* GameWindow::gw = nullptr;
