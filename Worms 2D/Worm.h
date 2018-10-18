@@ -25,6 +25,7 @@ protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 private:
 	//sf::CircleShape sprite;
+	bool spacePressed = false;
 	sf::Sprite sprite;
 	sf::Texture texture;
 	sf::Font font;

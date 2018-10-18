@@ -9,10 +9,12 @@ public:
 	virtual ~GameEvent();
 	sf::Event GetInstance();
 	void handleEvents();
+	static GameEvent* GetEventInstance();
 
 
 
 private:
+	static GameEvent *ev;
 	GameWindow *gWindow;
 	sf::Event event{};
 	sf::RenderWindow* window;

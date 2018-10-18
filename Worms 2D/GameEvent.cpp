@@ -31,3 +31,12 @@ void GameEvent::handleEvents()
 	
 	}
 }
+
+
+GameEvent *GameEvent::ev = nullptr;
+
+GameEvent* GameEvent::GetEventInstance()
+{
+	if (ev == nullptr) ev = new GameEvent();
+	return ev;
+}
