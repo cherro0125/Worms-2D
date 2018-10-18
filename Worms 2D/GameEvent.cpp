@@ -2,10 +2,11 @@
 #include <iostream>
 
 
-GameEvent::GameEvent(GameWindow *window)
+GameEvent::GameEvent()
 {
-	this->window = window->GetInstance();
-	this->gWindow = window;
+	this->gWindow = GameWindow::GetGameWindowInstance();
+	this->window = gWindow->GetInstance();
+	
 }
 
 GameEvent::~GameEvent()

@@ -10,7 +10,7 @@ int main()
 
 	while (window->GetInstance()->isOpen())
 	{
-		GameEvent ev(window);
+		GameEvent ev;
 		ev.handleEvents();
 		window->MainLoop();
 

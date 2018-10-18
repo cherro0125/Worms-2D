@@ -3,7 +3,7 @@
 class FPSCounter
 {
 public:
-	FPSCounter(sf::RenderWindow* window, unsigned int fontSize = 12);
+	FPSCounter(unsigned int fontSize = 12);
 	void start();
 	void drawFPS();
 	void setColor(sf::Color color);

@@ -22,7 +22,7 @@ private:
 	std::string windowName;
 	unsigned int widht;
 	unsigned int height;
-	sf::RenderWindow* window;
+	static sf::RenderWindow* window;
 	Worm worm{ (float)widht, (float)height };
 	sf::Color bgColor;
 	FPSCounter *fpsCounter;

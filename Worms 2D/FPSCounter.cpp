@@ -1,10 +1,11 @@
 ﻿#include "FPSCounter.h"
 #include <iostream>
+#include "GameWindow.h"
 
 
-FPSCounter::FPSCounter(sf::RenderWindow* window, unsigned int fontSize) : fontSize(fontSize), fps_f(0.0f), fps_i(0)
+FPSCounter::FPSCounter(unsigned int fontSize) : fontSize(fontSize), fps_f(0.0f), fps_i(0)
 {
-	this->window = window;
+	this->window = GameWindow::GetGameWindowInstance()->GetInstance();
 	if (!this->font.loadFromFile(fontPath))
 		return;
 	txt.setFont(font);

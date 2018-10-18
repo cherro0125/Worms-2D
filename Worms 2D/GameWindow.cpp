@@ -2,9 +2,12 @@
 
 GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name) : widht(width), height(height), windowName(name)
 {
-	this->window = new sf::RenderWindow(sf::VideoMode(800, 600), name);
-	this->window->setFramerateLimit(60);
-	this->fpsCounter = new FPSCounter(this->window);
+	if(this->window == nullptr)
+	{
+		this->window = new sf::RenderWindow(sf::VideoMode(800, 600), name);
+		this->window->setFramerateLimit(60);
+		this->fpsCounter = new FPSCounter();
+	}
 
 }
 
@@ -55,6 +58,7 @@ void GameWindow::SetBackgroundColor(sf::Color color)
 //Static variables and methods
 
 GameWindow* GameWindow::gw = nullptr;
+sf::RenderWindow* GameWindow::window = nullptr;
 
 
 GameWindow* GameWindow::GetGameWindowInstance(unsigned int width, unsigned int height, std::string name)

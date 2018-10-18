@@ -5,7 +5,7 @@ class GameEvent
 {
 public:
 
-	GameEvent(GameWindow *window);
+	GameEvent();
 	virtual ~GameEvent();
 	sf::Event GetInstance();
 	void handleEvents();
@@ -13,9 +13,10 @@ public:
 
 
 private:
+	GameWindow *gWindow;
 	sf::Event event{};
 	sf::RenderWindow* window;
-	GameWindow *gWindow;
+	
 
 
 };
