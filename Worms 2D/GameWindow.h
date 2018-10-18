@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 #include "FPSCounter.h"
 #include "Worm.h"
+#include "GameSound.h"
+
 class GameWindow
 {
 public:
@@ -26,5 +28,6 @@ private:
 	Worm worm{ (float)widht, (float)height };
 	sf::Color bgColor;
 	FPSCounter *fpsCounter;
+	static GameSound* gs;
 };
 

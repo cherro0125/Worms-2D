@@ -7,6 +7,8 @@ GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name
 		this->window = new sf::RenderWindow(sf::VideoMode(800, 600), name);
 		this->window->setFramerateLimit(60);
 		this->fpsCounter = new FPSCounter();
+		this->gs = new GameSound();
+		this->gs->PlayMainMusic();
 	}
 
 }
@@ -59,6 +61,7 @@ void GameWindow::SetBackgroundColor(sf::Color color)
 
 GameWindow* GameWindow::gw = nullptr;
 sf::RenderWindow* GameWindow::window = nullptr;
+GameSound* GameWindow::gs = nullptr;
 
 
 GameWindow* GameWindow::GetGameWindowInstance(unsigned int width, unsigned int height, std::string name)
