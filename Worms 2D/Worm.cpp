@@ -18,8 +18,7 @@ Worm::Worm(float width, float height) : windowWidth(width), windowHeight(height)
 
 	this->sprite.setTexture(texture);
 	this->sprite.setOrigin(this->wormRadius, this->wormRadius);
-	this->isMoving = false;
-
+	this->isMoving = true;
 
 	if (!this->font.loadFromFile(fontPath))
 		return;
@@ -98,12 +97,14 @@ void Worm::update()
 
 	if(bottom() < windowHeight)
 	{
-		this->velocity.y = 25;
+
+		this->velocity.y += 1;
 
 	}
 	else
 	{
-		this->velocity.y = wormVelocity;
+
+		this->velocity.y = 0;
 	}
 
 	//if (this->left() < 0)
@@ -164,35 +165,45 @@ float Worm::getWormY() const
 
 void Worm::stopMove()
 {
-	this->isMoving = false;
+	//this->isMoving = false;
+	if (this->velocity.x != 0.0f)
+	{
+		this->velocity.x = 0;
+	}
+	
 }
 
 void Worm::moveUp()
 {
 	this->isMoving = true;
-	this->velocity.y = -baseVelocity;
-	this->velocity.x = 0;
+	this->velocity.y += -baseVelocity;
+	//this->velocity.x = 0;
 }
 
 void Worm::moveDown()
 {
+	
 	this->isMoving = true;
-	this->velocity.y = baseVelocity;
-	this->velocity.x = 0;
+	this->velocity.y += baseVelocity;
+	//this->velocity.x = 0;
 }
 
 void Worm::moveLeft()
 {
+	if (this->velocity.x > 0.0f)
+		this->velocity.x = 0;
 	this->isMoving = true;
-	this->velocity.y = 0;
-	this->velocity.x = -baseVelocity;
+	//this->velocity.y = 0;
+	this->velocity.x += -baseVelocity;
 }
 
 void Worm::moveRight()
 {
+	if (this->velocity.x < 0.0f)
+		this->velocity.x = 0;
 	this->isMoving = true;
-	this->velocity.y = 0;
-	this->velocity.x = baseVelocity;
+	//this->velocity.y = 0;
+	this->velocity.x += baseVelocity;
 }
 
 sf::Text Worm::getDebugTxt()
