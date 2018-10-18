@@ -15,9 +15,13 @@ Worm::Worm(float width, float height) : windowWidth(width), windowHeight(height)
 	
 	if (!texture.loadFromFile(textureImagePath))
 		return;
+	if (!texture2.loadFromFile(textureImagePath2))
+		return;
+
 
 	this->sprite.setTexture(texture);
 	this->sprite.setOrigin(this->wormRadius, this->wormRadius);
+	this->sprite.setScale(wormScale, wormScale);
 	this->isMoving = true;
 
 	if (!this->font.loadFromFile(fontPath))
@@ -65,7 +69,7 @@ void Worm::update()
 		moveLeft();
 		//this->sprite.move(velocity);
 
-		sprite.setScale({ -1, 1 });
+		sprite.setScale({ -wormScale, wormScale });
 		std::cout << "LEFT\n";
 	}
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && right() < windowWidth)
@@ -74,7 +78,7 @@ void Worm::update()
 		moveRight();
 		
 		//this->sprite.move(velocity);
-		sprite.setScale({ 1, 1 });
+		sprite.setScale({ wormScale, wormScale });
 		std::cout << "RIGHT\n";
 	}
 	else
@@ -82,8 +86,9 @@ void Worm::update()
 		stopMove();
 	}
 
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && top() > 0 )
 	{
+		sprite.setTexture(texture2);
 		GameWindow::GetGameWindowInstance()->GetGameSound()->StartSample();
 		spacePressed = true;
 		this->velocity.y = -10;
@@ -93,6 +98,7 @@ void Worm::update()
 	if(GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyReleased && GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Space)
 	{
 		spacePressed = false;
+		sprite.setTexture(texture);
 	}
 
 	if(bottom() < windowHeight)
@@ -170,6 +176,7 @@ void Worm::stopMove()
 	{
 		this->velocity.x = 0;
 	}
+	sprite.setTexture(texture);
 	
 }
 
@@ -190,15 +197,18 @@ void Worm::moveDown()
 
 void Worm::moveLeft()
 {
+	sprite.setTexture(texture2);
 	if (this->velocity.x > 0.0f)
 		this->velocity.x = 0;
 	this->isMoving = true;
 	//this->velocity.y = 0;
 	this->velocity.x += -baseVelocity;
+	
 }
 
 void Worm::moveRight()
 {
+	sprite.setTexture(texture2);
 	if (this->velocity.x < 0.0f)
 		this->velocity.x = 0;
 	this->isMoving = true;
