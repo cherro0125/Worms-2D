@@ -26,7 +26,7 @@ void GameWindow::ChangeFrameLimit(unsigned int limit) const
 void GameWindow::MainLoop()
 {
 	this->fpsCounter->start();
-	this->window->clear(sf::Color::Black);
+	this->window->clear(sf::Color(71,71,71));
 	this->window->draw(worm);
 	this->UpdateWorm();
 	this->fpsCounter->drawFPS();
