@@ -23,10 +23,10 @@ public:
 private:
 	static GameWindow *gw;
 	std::string windowName;
-	unsigned int widht;
+	unsigned int width;
 	unsigned int height;
 	static sf::RenderWindow* window;
-	Worm worm{ (float)widht, (float)height };
+	Worm worm{ (float)width, (float)height };
 	sf::Color bgColor;
 	FPSCounter *fpsCounter;
 	static GameSound* gs;

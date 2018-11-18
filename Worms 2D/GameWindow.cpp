@@ -1,6 +1,6 @@
 ﻿#include "GameWindow.h"
 
-GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name) : widht(width), height(height), windowName(name)
+GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name) : width(width), height(height), windowName(name)
 {
 	if(this->window == nullptr)
 	{
