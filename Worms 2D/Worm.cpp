@@ -88,11 +88,14 @@ void Worm::update()
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && top() > 0 )
 	{
-		sprite.setTexture(texture2);
-		GameWindow::GetGameWindowInstance()->GetGameSound()->StartSample();
-		spacePressed = true;
-		this->velocity.y = -10;
-		sprite.move(velocity);
+		if(!spacePressed)
+		{ 
+			sprite.setTexture(texture2);
+			GameWindow::GetGameWindowInstance()->GetGameSound()->StartSample();
+			spacePressed = true;
+			this->velocity.y = -20;
+			sprite.move(velocity);
+		}
 	}
 
 	if(GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyReleased && GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Space)
@@ -103,8 +106,9 @@ void Worm::update()
 
 	if(bottom() < windowHeight)
 	{
-
 		this->velocity.y += 1;
+		if (this->velocity.y > 20)
+			this->velocity.y = 20;
 
 	}
 	else
@@ -203,6 +207,8 @@ void Worm::moveLeft()
 	this->isMoving = true;
 	//this->velocity.y = 0;
 	this->velocity.x += -baseVelocity;
+	if (this->velocity.x < -10)
+		this->velocity.x = -10;
 	
 }
 
@@ -214,6 +220,8 @@ void Worm::moveRight()
 	this->isMoving = true;
 	//this->velocity.y = 0;
 	this->velocity.x += baseVelocity;
+	if (this->velocity.x > 10)
+		this->velocity.x = 10;
 }
 
 sf::Text Worm::getDebugTxt()
