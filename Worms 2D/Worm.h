@@ -37,7 +37,7 @@ private:
 	sf::Text debugTxt;
 	const float wormRadius{ 10.0f };
 	const float wormVelocity{ 0.0f };
-	const float baseVelocity{ 5.0f };
+	const float baseVelocity{ 1.0f };
 	sf::Vector2f velocity{ wormVelocity,wormVelocity };
 	float wormScale = 0.45f;
 	float posX;
