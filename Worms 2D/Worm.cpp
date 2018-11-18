@@ -113,7 +113,7 @@ void Worm::update()
 	}
 	else
 	{
-
+		sprite.setPosition(sprite.getPosition().x, windowHeight - sprite.getLocalBounds().height*wormScale);
 		this->velocity.y = 0;
 	}
 
@@ -160,7 +160,7 @@ float Worm::top() const
 }
 float Worm::bottom() const
 {
-	return sprite.getPosition().y + sprite.getLocalBounds().height;
+	return sprite.getPosition().y + sprite.getLocalBounds().height*wormScale;
 }
 
 float Worm::getWormX() const
