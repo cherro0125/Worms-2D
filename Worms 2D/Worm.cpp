@@ -5,10 +5,12 @@
 #include "GameEvent.h"
 
 
-Worm::Worm(float width, float height) : windowWidth(width), windowHeight(height)
+Worm::Worm()
 {
-	this->posX = width / 2;
-	this->posY = height / 2;
+	this->windowWidth = 800;
+	this->windowHeight = 600;
+	this->posX = 100 + rand() % 500;
+	this->posY = 100 + rand() % 500;
 	this->sprite.setPosition(this->posX, this->posY);
 	//this->sprite.setRadius(wormRadius);
 	//this->sprite.setFillColor(sf::Color::White);
@@ -46,63 +48,6 @@ void Worm::update()
 	this->posY = this->sprite.getPosition().y;
 
 
-	//if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && top() > 0)
-	//{
-	//	moveUp();
-	//	this->sprite.move(velocity);
-	//	std::cout << "UP\n";
-	//}
-	//else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && bottom() < windowHeight)
-	//{
-	//	moveDown();
-	//	this->sprite.move(velocity);
-	//	std::cout << "DOWN\n";
-	//}
-	//else
-	//{
-	//	stopMove();
-	//}
-
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && left() > 0)
-	//if (GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyPressed &&  GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Left && left() > 0)
-	{
-		moveLeft();
-		//this->sprite.move(velocity);
-
-		sprite.setScale({ -wormScale, wormScale });
-		std::cout << "LEFT\n";
-	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && right() < windowWidth)
-	//else if (GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyPressed &&  GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Right && right() < windowWidth)
-	{
-		moveRight();
-		
-		//this->sprite.move(velocity);
-		sprite.setScale({ wormScale, wormScale });
-		std::cout << "RIGHT\n";
-	}
-	else
-	{
-		stopMove();
-	}
-
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && top() > 0 )
-	{
-		if(!spacePressed)
-		{ 
-			sprite.setTexture(texture2);
-			GameWindow::GetGameWindowInstance()->GetGameSound()->StartSample();
-			spacePressed = true;
-			this->velocity.y = -20;
-			sprite.move(velocity);
-		}
-	}
-
-	if(GameEvent::GetEventInstance()->GetInstance().type == sf::Event::EventType::KeyReleased && GameEvent::GetEventInstance()->GetInstance().key.code == sf::Keyboard::Space)
-	{
-		spacePressed = false;
-		sprite.setTexture(texture);
-	}
 
 	if(bottom() < windowHeight)
 	{
@@ -115,26 +60,9 @@ void Worm::update()
 	{
 		sprite.setPosition(sprite.getPosition().x, windowHeight - sprite.getLocalBounds().height*wormScale);
 		this->velocity.y = 0;
+		isJumping = false;
 	}
 
-	//if (this->left() < 0)
-	//{
-	//	stopMove();
-	//	std::cout << "LEFT BORDER\n";
-	//}
-	//else if (this->right() > this->windowWidth)
-	//{
-	//	stopMove();
-	//}
-
-	//if (this->top() < 0)
-	//{
-	//	stopMove();
-	//}
-	//else if (this->bottom() > this->windowHeight)
-	//{
-	//	stopMove();
-	//}
 }
 
 
@@ -209,7 +137,9 @@ void Worm::moveLeft()
 	this->velocity.x += -baseVelocity;
 	if (this->velocity.x < -10)
 		this->velocity.x = -10;
-	
+
+	sprite.setScale({ -wormScale, wormScale });
+	std::cout << "LEFT\n";
 }
 
 void Worm::moveRight()
@@ -222,6 +152,20 @@ void Worm::moveRight()
 	this->velocity.x += baseVelocity;
 	if (this->velocity.x > 10)
 		this->velocity.x = 10;
+
+	sprite.setScale({ wormScale, wormScale });
+	std::cout << "RIGHT\n";
+}
+
+void Worm::jump()
+{
+	if (!isJumping)
+	{
+		isJumping = true;
+		GameWindow::GetGameWindowInstance()->GetGameSound()->StartSample();
+		this->velocity.y = -20;
+		sprite.move(velocity);
+	}
 }
 
 sf::Text Worm::getDebugTxt()

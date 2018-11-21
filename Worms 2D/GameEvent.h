@@ -18,6 +18,10 @@ private:
 	GameWindow *gWindow;
 	sf::Event event{};
 	sf::RenderWindow* window;
+	Worm **current_worm;
+	Worm *worms;
+	int worm_count;
+	int *current_worm_id;
 	
 
 

@@ -3,8 +3,7 @@
 class Worm : public sf::Drawable
 {
 public:
-	Worm(float width, float height);
-	Worm() = delete;
+	Worm();
 	virtual ~Worm();
 	void update();
 	float left() const;
@@ -18,6 +17,7 @@ public:
 	void moveDown();
 	void moveLeft();
 	void moveRight();
+	void jump();
 
 	sf::Text getDebugTxt();
 
@@ -25,7 +25,7 @@ protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 private:
 	//sf::CircleShape sprite;
-	bool spacePressed = false;
+	bool isJumping = false;
 	sf::Sprite sprite;
 	sf::Texture texture;
 	sf::Texture texture2;

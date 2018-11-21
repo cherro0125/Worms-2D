@@ -9,8 +9,18 @@ GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name
 		this->fpsCounter = new FPSCounter();
 		this->gs = new GameSound();
 		this->gs->PlayMainMusic();
+		
+		this->worm_count = 5;
+		this->worms = new Worm[worm_count];
+		this->current_worm_id = 0;
+		this->current_worm = &(worms[this->current_worm_id]);
 	}
 
+}
+
+GameWindow::~GameWindow()
+{
+	delete[] worms;
 }
 
 sf::RenderWindow* GameWindow::GetInstance() const
@@ -27,10 +37,13 @@ void GameWindow::MainLoop()
 {
 	this->fpsCounter->start();
 	this->window->clear(sf::Color(71,71,71));
-	this->window->draw(worm);
-	this->UpdateWorm();
+	for (int i = 0; i < worm_count; ++i)
+	{
+		this->window->draw(worms[i]);
+		this->UpdateWorms(i);
+	}
 	this->fpsCounter->drawFPS();
-	this->window->draw(this->GetWorm().getDebugTxt());
+	this->window->draw((**(this->GetCurrentWorm())).getDebugTxt());
 	this->window->display();
 
 
@@ -39,9 +52,10 @@ void GameWindow::MainLoop()
 }
 
 
-void GameWindow::UpdateWorm()
+void GameWindow::UpdateWorms(int i)
 {
-	this->worm.update();
+
+	this->worms[i].update();
 	
 
 
@@ -49,11 +63,25 @@ void GameWindow::UpdateWorm()
 
 }
 
-Worm GameWindow::GetWorm()
+Worm **GameWindow::GetCurrentWorm()
 {
-	return this->worm;
+	return &(this->current_worm);
 }
 
+Worm *GameWindow::GetWormsArray()
+{
+	return this->worms;
+}
+
+int GameWindow::GetWormCount()
+{
+	return this->worm_count;
+}
+
+int *GameWindow::GetCurrentWormID()
+{
+	return &(this->current_worm_id);
+}
 
 void GameWindow::SetBackgroundColor(sf::Color color)
 {
