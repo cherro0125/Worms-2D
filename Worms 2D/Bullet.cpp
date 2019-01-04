@@ -25,7 +25,7 @@ void Bullet::setRotation(float rotation)
 	this->rotation = rotation;
 }
 
-sf::Sprite Bullet::getSprite()
+sf::Sprite Bullet::getSprite() const
 {
 	return this->sprite;
 }
@@ -39,6 +39,31 @@ void Bullet::setVelocity(float x, float y)
 {
 	this->velocity.x = x;
 	this->velocity.y = y;
+}
+
+sf::Vector2f Bullet::getVelocity() const
+{
+	return this->velocity;
+}
+
+float Bullet::getPosX() const
+{
+	return this->posX;
+}
+
+float Bullet::getPosY() const
+{
+	return this->posY;
+}
+
+void Bullet::setPosX(float x)
+{
+	this->posX = x;
+}
+
+void Bullet::setPosY(float y)
+{
+	this->posY = y;
 }
 
 void Bullet::update()

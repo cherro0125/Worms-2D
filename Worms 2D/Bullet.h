@@ -12,7 +12,14 @@ public:
 	virtual ~Bullet() = default;
 	void setScale(float scale);
 	void setRotation(float rotation);
-	sf::Sprite getSprite();
+	sf::Sprite getSprite() const;
+	void setVelocity(sf::Vector2f);
+	void setVelocity(float x, float y = 0);
+	sf::Vector2f getVelocity() const;
+	float getPosX() const;
+	float getPosY() const;
+	void setPosX(float x);
+	void setPosY(float y);
 	void update();
 
 protected:
