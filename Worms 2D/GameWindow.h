@@ -4,6 +4,7 @@
 #include "FPSCounter.h"
 #include "Worm.h"
 #include "GameSound.h"
+#include "Terrain.h"
 
 class GameWindow
 {
@@ -22,7 +23,7 @@ public:
 	int *GetCurrentWormID();
 	void SetBackgroundColor(sf::Color color);
 	GameSound* GetGameSound() const;
-
+	Terrain terrain;
 
 private:
 	static GameWindow *gw;
@@ -37,5 +38,7 @@ private:
 	sf::Color bgColor;
 	FPSCounter *fpsCounter;
 	static GameSound* gs;
+	
+	
 };
 

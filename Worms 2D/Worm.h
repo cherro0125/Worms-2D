@@ -1,5 +1,9 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
+
+//enum collision{UP,DOWN,LEFT,RIGHT};
+enum collision{UP,UP_LEFT,UP_RIGHT,DOWN, DOWN_LEFT, DOWN_RIGHT, LEFT, RIGHT};
+
 class Worm : public sf::Drawable
 {
 public:
@@ -18,7 +22,11 @@ public:
 	void moveLeft();
 	void moveRight();
 	void jump();
-
+	bool checkCollision(sf::Vector2f point);
+	int getOffsetY(sf::Vector2f point);
+	sf::Vector2f collisionPoints[8];
+	
+	void setColMap(sf::Image *image);
 	sf::Text getDebugTxt();
 
 protected:
@@ -39,7 +47,8 @@ private:
 	const float wormVelocity{ 0.0f };
 	const float baseVelocity{ 1.0f };
 	sf::Vector2f velocity{ wormVelocity,wormVelocity };
-	float wormScale = 0.45f;
+	sf::Image *colMap;
+	float wormScale = 0.2f;
 	float posX;
 	float posY;
 	float windowHeight;

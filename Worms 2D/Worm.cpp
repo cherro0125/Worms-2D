@@ -10,7 +10,7 @@ Worm::Worm()
 	this->windowWidth = 800;
 	this->windowHeight = 600;
 	this->posX = 100 + rand() % 500;
-	this->posY = 100 + rand() % 500;
+	this->posY = 0 + rand() % 20;
 	this->sprite.setPosition(this->posX, this->posY);
 	//this->sprite.setRadius(wormRadius);
 	//this->sprite.setFillColor(sf::Color::White);
@@ -22,8 +22,20 @@ Worm::Worm()
 
 
 	this->sprite.setTexture(texture);
-	this->sprite.setOrigin(this->wormRadius, this->wormRadius);
 	this->sprite.setScale(wormScale, wormScale);
+	this->sprite.setOrigin(((this->sprite.getLocalBounds().width)*wormScale), 0);
+	
+
+	this->collisionPoints[UP] = { getWormX(), getWormY() };
+	this->collisionPoints[UP_LEFT] = { left(), getWormY() + ((sprite.getLocalBounds().height*wormScale)*1/5) };
+	this->collisionPoints[UP_RIGHT] = { right(), getWormY() +((sprite.getLocalBounds().height*wormScale) * 1 / 5) };
+	this->collisionPoints[DOWN] = { getWormX(), bottom() };
+	this->collisionPoints[DOWN_LEFT] = { left(), bottom() };
+	this->collisionPoints[DOWN_RIGHT] = { right(), bottom() };
+	this->collisionPoints[LEFT] = { left(),sprite.getPosition().y + (sprite.getLocalBounds().height*wormScale / 2) };
+	this->collisionPoints[RIGHT] = { right(),sprite.getPosition().y + (sprite.getLocalBounds().height*wormScale / 2) };
+
+
 	this->isMoving = true;
 
 	if (!this->font.loadFromFile(fontPath))
@@ -42,27 +54,79 @@ Worm::~Worm()
 
 void Worm::update()
 {
+	if (this->velocity.y < 0 && (checkCollision(collisionPoints[UP])/*|| checkCollision(collisionPoints[UP_LEFT])|| checkCollision(collisionPoints[UP_RIGHT])*/))
+	{
+		this->velocity.y = 0;
+	}
+	if (this->velocity.x < 0 && (checkCollision(collisionPoints[LEFT]) || checkCollision(collisionPoints[UP_LEFT])))
+	{
+		this->velocity.x = 0;
+	}
+	if (this->velocity.x > 0 && (checkCollision(collisionPoints[RIGHT]) || checkCollision(collisionPoints[UP_RIGHT])))
+	{
+		this->velocity.x = 0;
+	}
 	if(isMoving)
 		this->sprite.move(velocity);
 	this->posX = this->sprite.getPosition().x;
 	this->posY = this->sprite.getPosition().y;
 
+	this->collisionPoints[UP] = { getWormX(), getWormY() };
+	this->collisionPoints[UP_LEFT] = { left(), getWormY() + ((sprite.getLocalBounds().height*wormScale)  / 5) };
+	this->collisionPoints[UP_RIGHT] = { right(), getWormY() + ((sprite.getLocalBounds().height*wormScale)  / 5) };
+	this->collisionPoints[DOWN] = { getWormX(), bottom() };
+	this->collisionPoints[DOWN_LEFT] = { left(), bottom() - ((sprite.getLocalBounds().height*wormScale) / 5) };
+	this->collisionPoints[DOWN_RIGHT] = { right(), bottom() - ((sprite.getLocalBounds().height*wormScale) / 5) };
+	this->collisionPoints[LEFT] = { left(),sprite.getPosition().y + (sprite.getLocalBounds().height*wormScale / 2) };
+	this->collisionPoints[RIGHT] = { right(),sprite.getPosition().y + (sprite.getLocalBounds().height*wormScale / 2) };
 
-
-	if(bottom() < windowHeight)
+	if((bottom() < windowHeight)&&!checkCollision(collisionPoints[DOWN]))
 	{
 		this->velocity.y += 1;
-		if (this->velocity.y > 20)
-			this->velocity.y = 20;
+		if (this->velocity.y > 10)
+			this->velocity.y = 10;
 
 	}
 	else
 	{
-		sprite.setPosition(sprite.getPosition().x, windowHeight - sprite.getLocalBounds().height*wormScale);
+
+		//sprite.setPosition(sprite.getPosition().x, windowHeight - sprite.getLocalBounds().height*wormScale);
+		sprite.setPosition(sprite.getPosition().x, sprite.getPosition().y+ getOffsetY(collisionPoints[DOWN]));
 		this->velocity.y = 0;
 		isJumping = false;
 	}
+	
 
+}
+void Worm::setColMap(sf::Image *image)
+{
+	colMap = image;
+}
+int Worm::getOffsetY(sf::Vector2f point)
+{
+	int difference = 0;
+	if (point.x > 0 && point.x < 800 && point.y>0 && point.y < 600)
+	{
+		while (colMap->getPixel(point.x, point.y).a > 0)
+		{
+			point.y -= 1;
+			difference -= 1;
+
+		}
+	}
+	return difference;
+}
+
+
+bool Worm::checkCollision(sf::Vector2f point)
+{
+	if (point.x > 0 && point.x < 800 && point.y>0 && point.y < 600)
+	{
+		if (colMap->getPixel(point.x, point.y).a > 0)
+			return true;
+	}
+
+	return false;
 }
 
 
@@ -76,11 +140,11 @@ void Worm::draw(sf::RenderTarget & target, sf::RenderStates states) const
 
 float Worm::left() const
 {
-	return sprite.getPosition().x - sprite.getLocalBounds().width / 2;
+	return sprite.getPosition().x - (sprite.getLocalBounds().width* wormScale) / 2.f ;
 }
 float Worm::right() const
 {
-	return sprite.getPosition().x + sprite.getLocalBounds().width / 2;
+	return sprite.getPosition().x + (sprite.getLocalBounds().width* wormScale) / 2.f ;
 }
 float Worm::top() const
 {
@@ -129,42 +193,49 @@ void Worm::moveDown()
 
 void Worm::moveLeft()
 {
-	sprite.setTexture(texture2);
-	if (this->velocity.x > 0.0f)
-		this->velocity.x = 0;
-	this->isMoving = true;
-	//this->velocity.y = 0;
-	this->velocity.x += -baseVelocity;
-	if (this->velocity.x < -10)
-		this->velocity.x = -10;
+	if(!checkCollision(collisionPoints[LEFT])&& !checkCollision(collisionPoints[UP_LEFT]) )
+	{ 
+		sprite.setTexture(texture2);
+		if (this->velocity.x > 0.0f)
+			this->velocity.x = 0;
+		this->isMoving = true;
+		//this->velocity.y = 0;
+		this->velocity.x += -baseVelocity;
+		if (this->velocity.x < -3)
+			this->velocity.x = -3;
 
-	sprite.setScale({ -wormScale, wormScale });
-	std::cout << "LEFT\n";
+		sprite.setScale({ -wormScale, wormScale });
+		std::cout << "LEFT\n";
+	}
 }
 
 void Worm::moveRight()
 {
-	sprite.setTexture(texture2);
-	if (this->velocity.x < 0.0f)
-		this->velocity.x = 0;
-	this->isMoving = true;
-	//this->velocity.y = 0;
-	this->velocity.x += baseVelocity;
-	if (this->velocity.x > 10)
-		this->velocity.x = 10;
+	if (!checkCollision(collisionPoints[RIGHT]) && !checkCollision(collisionPoints[UP_RIGHT]) )
+	{
+		sprite.setTexture(texture2);
+		if (this->velocity.x < 0.0f)
+			this->velocity.x = 0;
+		this->isMoving = true;
+		//this->velocity.y = 0;
+		this->velocity.x += baseVelocity;
+		if (this->velocity.x > 3)
+			this->velocity.x = 3;
 
-	sprite.setScale({ wormScale, wormScale });
-	std::cout << "RIGHT\n";
+		sprite.setScale({ wormScale, wormScale });
+		std::cout << "RIGHT\n";
+	}
+
 }
 
 void Worm::jump()
 {
-	if (!isJumping)
+	if (!isJumping && (!checkCollision(collisionPoints[UP])) /*&& !checkCollision(collisionPoints[UP_LEFT]) && !checkCollision(collisionPoints[UP_RIGHT]))*/)
 	{
 		isJumping = true;
 		GameWindow::GetGameWindowInstance()->GetGameSound()->StartSample();
-		this->velocity.y = -20;
-		sprite.move(velocity);
+		this->velocity.y = -10;
+		//sprite.move(velocity);
 	}
 }
 

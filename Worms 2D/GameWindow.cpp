@@ -10,10 +10,16 @@ GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name
 		this->gs = new GameSound();
 		this->gs->PlayMainMusic();
 		
-		this->worm_count = 5;
+		this->worm_count = 3;
 		this->worms = new Worm[worm_count];
 		this->current_worm_id = 0;
 		this->current_worm = &(worms[this->current_worm_id]);
+		for (int i = 0; i < worm_count; ++i)
+		{
+			worms[i].setColMap(&(terrain.map));
+		}
+		
+		
 	}
 
 }
@@ -35,17 +41,38 @@ void GameWindow::ChangeFrameLimit(unsigned int limit) const
 
 void GameWindow::MainLoop()
 {
+	sf::RectangleShape cpoints[8];
+	for (int i = 0; i < 8; ++i)
+	{
+		cpoints[i].setSize(sf::Vector2f(2.f, 2.f));
+	}
+	cpoints[0].setPosition(current_worm->collisionPoints[UP]);
+	cpoints[1].setPosition(current_worm->collisionPoints[UP_LEFT]);
+	cpoints[2].setPosition(current_worm->collisionPoints[UP_RIGHT]);
+	cpoints[3].setPosition(current_worm->collisionPoints[DOWN]);
+	cpoints[4].setPosition(current_worm->collisionPoints[DOWN_LEFT]);
+	cpoints[5].setPosition(current_worm->collisionPoints[DOWN_RIGHT]);
+	cpoints[6].setPosition(current_worm->collisionPoints[LEFT]);
+	cpoints[7].setPosition(current_worm->collisionPoints[RIGHT]);
+
+
 	this->fpsCounter->start();
+	
 	this->window->clear(sf::Color(71,71,71));
+	this->window->draw(terrain);
 	for (int i = 0; i < worm_count; ++i)
 	{
 		this->window->draw(worms[i]);
 		this->UpdateWorms(i);
+		
+	}
+	for (int i = 0; i < 8; ++i)
+	{
+		this->window->draw(cpoints[i]);
 	}
 	this->fpsCounter->drawFPS();
 	this->window->draw((**(this->GetCurrentWorm())).getDebugTxt());
 	this->window->display();
-
 
 
 

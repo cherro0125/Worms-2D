@@ -46,7 +46,14 @@ void GameEvent::handleEvents()
 				(*current_worm)->jump();
 			}
 		}
-		
+		if (this->event.type == sf::Event::MouseButtonPressed)
+		{
+			sf::CircleShape circ(20);
+			circ.setOrigin(20, 20);
+			circ.setFillColor(sf::Color(0, 0, 0,0));
+			circ.setPosition(event.mouseButton.x, event.mouseButton.y);
+			gWindow->terrain.erase(circ);
+		}
 
 		
 	
