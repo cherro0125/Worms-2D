@@ -58,6 +58,7 @@ void Worm::update()
 	{
 		this->velocity.y = 0;
 	}
+	
 	if (this->velocity.x < 0 && (checkCollision(collisionPoints[LEFT]) || checkCollision(collisionPoints[UP_LEFT])))
 	{
 		this->velocity.x = 0;
@@ -66,6 +67,7 @@ void Worm::update()
 	{
 		this->velocity.x = 0;
 	}
+	
 	if(isMoving)
 		this->sprite.move(velocity);
 	this->posX = this->sprite.getPosition().x;
@@ -85,6 +87,16 @@ void Worm::update()
 		this->velocity.y += 1;
 		if (this->velocity.y > 10)
 			this->velocity.y = 10;
+		if (this->velocity.y > 0 && getWormX() > 0 && getWormX() < 800 && collisionPoints[DOWN].y > 0 && collisionPoints[DOWN].y < 590)
+		{
+			for (int i = 0; i < this->velocity.y; ++i)
+			{
+				if (colMap->getPixel(getWormX(), collisionPoints[DOWN].y + i).a > 0)
+				{
+					velocity.y = 0;
+				}
+			}
+		}
 
 	}
 	else
