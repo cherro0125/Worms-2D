@@ -45,6 +45,11 @@ void GameEvent::handleEvents()
 			{
 				(*current_worm)->jump();
 			}
+			//Test
+			if(this->event.key.code == sf::Keyboard::O)
+			{
+				(*current_worm)->damage(1);
+			}
 		}
 		if (this->event.type == sf::Event::MouseButtonPressed)
 		{
@@ -54,6 +59,7 @@ void GameEvent::handleEvents()
 			circ.setPosition(event.mouseButton.x, event.mouseButton.y);
 			gWindow->terrain.erase(circ);
 		}
+
 
 		
 	

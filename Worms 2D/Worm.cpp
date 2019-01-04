@@ -9,9 +9,14 @@ Worm::Worm()
 {
 	this->windowWidth = 800;
 	this->windowHeight = 600;
+	this->hp = 100.0f;
 	this->posX = 100 + rand() % 500;
 	this->posY = 0 + rand() % 20;
 	this->sprite.setPosition(this->posX, this->posY);
+	this->hpShape.setSize(sf::Vector2f(50, 5));
+	this->hpShape.setOrigin(25.0f, 2.5f);
+	this->hpShape.setFillColor(sf::Color::Red);
+	this->hpShape.setPosition(this->sprite.getPosition().x, this->sprite.getPosition().y - 10);
 	//this->sprite.setRadius(wormRadius);
 	//this->sprite.setFillColor(sf::Color::White);
 	
@@ -107,6 +112,10 @@ void Worm::update()
 		this->velocity.y = 0;
 		isJumping = false;
 	}
+
+	this->hpShape.setPosition(this->sprite.getPosition().x, this->sprite.getPosition().y - 10);
+	this->hpShape.setSize(sf::Vector2f(this->hp - 0.5f, this->hpShape.getSize().y));
+	
 	
 
 }
@@ -146,7 +155,12 @@ bool Worm::checkCollision(sf::Vector2f point)
 
 void Worm::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
-	target.draw(this->sprite, states);
+	if(this->hp > 0.0f)
+	{
+		target.draw(this->sprite, states);
+		target.draw(this->hpShape, states);
+	}
+
 
 }
 
@@ -249,6 +263,16 @@ void Worm::jump()
 		this->velocity.y = -10;
 		//sprite.move(velocity);
 	}
+}
+
+void Worm::damage(float dmg)
+{
+	this->hp -= dmg;
+}
+
+bool Worm::isAlive()
+{
+	return (this->hp > 0.0f);
 }
 
 sf::Text Worm::getDebugTxt()

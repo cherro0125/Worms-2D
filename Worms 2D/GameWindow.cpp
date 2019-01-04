@@ -68,7 +68,8 @@ void GameWindow::MainLoop()
 	}
 	for (int i = 0; i < 8; ++i)
 	{
-		this->window->draw(cpoints[i]);
+		if((*current_worm).isAlive())
+			this->window->draw(cpoints[i]);
 	}
 	this->fpsCounter->drawFPS();
 	this->window->draw((**(this->GetCurrentWorm())).getDebugTxt());
@@ -84,7 +85,6 @@ void GameWindow::UpdateWorms(int i)
 
 	this->worms[i].update();
 	
-
 
 	
 

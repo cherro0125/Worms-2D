@@ -22,6 +22,8 @@ public:
 	void moveLeft();
 	void moveRight();
 	void jump();
+	void damage(float dmg);
+	bool isAlive();
 	bool checkCollision(sf::Vector2f point);
 	int getOffsetY(sf::Vector2f point);
 	sf::Vector2f collisionPoints[8];
@@ -33,6 +35,8 @@ protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 private:
 	//sf::CircleShape sprite;
+	float hp; 
+	sf::RectangleShape hpShape;
 	bool isJumping = false;
 	sf::Sprite sprite;
 	sf::Texture texture;
