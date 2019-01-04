@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="FPSCounter.cpp" />
     <ClCompile Include="GameEvent.cpp" />
     <ClCompile Include="GameSound.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="Worm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bullet.h" />
     <ClInclude Include="FPSCounter.h" />
     <ClInclude Include="GameEvent.h" />
     <ClInclude Include="GameSound.h" />

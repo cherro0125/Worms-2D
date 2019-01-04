@@ -1,4 +1,5 @@
 ﻿#include "GameWindow.h"
+#include "Bullet.h"
 
 GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name) : width(width), height(height), windowName(name)
 {
@@ -71,6 +72,9 @@ void GameWindow::MainLoop()
 		if((*current_worm).isAlive())
 			this->window->draw(cpoints[i]);
 	}
+	
+	this->window->draw(bullet);
+	bullet.update();
 	this->fpsCounter->drawFPS();
 	this->window->draw((**(this->GetCurrentWorm())).getDebugTxt());
 	this->window->display();

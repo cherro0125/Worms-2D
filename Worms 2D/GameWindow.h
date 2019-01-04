@@ -5,6 +5,7 @@
 #include "Worm.h"
 #include "GameSound.h"
 #include "Terrain.h"
+#include "Bullet.h"
 
 class GameWindow
 {
@@ -38,6 +39,8 @@ private:
 	sf::Color bgColor;
 	FPSCounter *fpsCounter;
 	static GameSound* gs;
+	//test
+	Bullet bullet{ 50, 50 };
 	
 	
 };
