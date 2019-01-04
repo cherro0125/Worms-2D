@@ -29,6 +29,21 @@ void GameEvent::handleEvents()
 	{
 		if (this->event.type == sf::Event::Closed)
 			this->window->close();
+		if(sf::Joystick::isConnected(0))
+		{
+			if(sf::Joystick::isButtonPressed(0,0))
+			{
+				(*current_worm)->jump();
+			}
+
+			if(sf::Joystick::isButtonPressed(0,4))
+			{
+				*current_worm_id = (*current_worm_id + 1) % worm_count;
+				(*current_worm)->stopMove();
+				*current_worm = &(worms[*current_worm_id]);
+			}
+			
+		}
 		if (this->event.type == sf::Event::KeyPressed)
 		{
 			if (this->event.key.code == sf::Keyboard::Escape)
@@ -59,26 +74,17 @@ void GameEvent::handleEvents()
 			circ.setPosition(event.mouseButton.x, event.mouseButton.y);
 			gWindow->terrain.erase(circ);
 		}
-
+		moveHandle();
 
 		
 	
 
 	
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && (*current_worm)->left() > 0)
-	{
-		(*current_worm)->moveLeft();
-	}
-	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && (*current_worm)->right() < this->window->getSize().x)
-	{
-		
-		(*current_worm)->moveRight();
-	}
-	else
-	{
-		(*current_worm)->stopMove();
-	}
+
+
+	
+	
 }
 
 
@@ -88,4 +94,26 @@ GameEvent* GameEvent::GetEventInstance()
 {
 	if (ev == nullptr) ev = new GameEvent();
 	return ev;
+}
+
+void GameEvent::moveHandle()
+{
+	if (sf::Joystick::isConnected(0))
+	{
+		std::cout << sf::Joystick::getAxisPosition(0, sf::Joystick::X) << std::endl;
+	}
+
+	if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) < -15.0f) && (*current_worm)->left() > 0)
+	{
+		(*current_worm)->moveLeft();
+	}
+	else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) > 15.0f) && (*current_worm)->right() < this->window->getSize().x)
+	{
+
+		(*current_worm)->moveRight();
+	}
+	else
+	{
+		(*current_worm)->stopMove();
+	}
 }

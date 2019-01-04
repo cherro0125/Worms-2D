@@ -59,6 +59,7 @@ Worm::~Worm()
 
 void Worm::update()
 {
+
 	if (this->velocity.y < 0 && (checkCollision(collisionPoints[UP])/*|| checkCollision(collisionPoints[UP_LEFT])|| checkCollision(collisionPoints[UP_RIGHT])*/))
 	{
 		this->velocity.y = 0;
@@ -277,7 +278,12 @@ bool Worm::isAlive()
 
 sf::Text Worm::getDebugTxt()
 {
-	debugTxt.setString("Worm X:" + std::to_string(getWormX()) + " Y:" + std::to_string(getWormY()));
+	std::string debugInfo = "Worm X:" + std::to_string(getWormX()) + " Y:" + std::to_string(getWormY());
+	if(sf::Joystick::isConnected(0))
+	{
+		debugInfo += "\n Connected controller: Xbox One controller ";
+	}
+	debugTxt.setString(debugInfo);
 	return debugTxt;
 }
 

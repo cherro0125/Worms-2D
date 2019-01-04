@@ -10,6 +10,7 @@ public:
 	sf::Event GetInstance();
 	void handleEvents();
 	static GameEvent* GetEventInstance();
+	void moveHandle();
 
 
 
