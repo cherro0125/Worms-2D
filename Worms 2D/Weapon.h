@@ -40,7 +40,7 @@ protected:
 	std::string texturePath;
 	Bullet *bullet = nullptr;
 	float rotation = 0.0f;
-	float scale = 0.5f;
+	float scale = 0.2f;
 	float posX;
 	float posY;
 	sf::Vector2f scaleVector = { scale,scale };

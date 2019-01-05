@@ -56,6 +56,7 @@ void GameWindow::MainLoop()
 	cpoints[6].setPosition(current_worm->collisionPoints[LEFT]);
 	cpoints[7].setPosition(current_worm->collisionPoints[RIGHT]);
 
+	sf::RectangleShape bulletorigin(sf::Vector2f(2.f, 2.f));
 
 	this->fpsCounter->start();
 	
@@ -65,9 +66,12 @@ void GameWindow::MainLoop()
 	{
 		if((*current_worm).hasWeapon() && (*current_worm).getWeapon()->getIsShooting())
 		{
+			bulletorigin.setPosition((*current_worm).getWeapon()->getBullet()->getPosX(), (*current_worm).getWeapon()->getBullet()->getPosY());
+			if(current_worm_id!=i)
 			for(int j = 0; j<8;j++)
 			{
-				if ((*current_worm).getWeapon()->getBullet()->getPosX() == worms[i].collisionPoints[j].x && (*current_worm).getWeapon()->getBullet()->getPosY() == worms[i].collisionPoints[j].y)
+				
+				if(pow(worms[i].collisionPoints[j].x - (*current_worm).getWeapon()->getBullet()->getPosX(),2) + pow((*current_worm).getWeapon()->getBullet()->getPosY() - worms[i].collisionPoints[j].y,2) <= pow((35* (*current_worm).getWeapon()->getBullet()->getScale()) + 1,2))	
 				{
 					worms[i].damage(20);
 					std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
@@ -85,6 +89,7 @@ void GameWindow::MainLoop()
 			this->window->draw(cpoints[i]);
 	}
 	//test
+	this->window->draw(bulletorigin);
 	this->window->draw(bullet);
 	bullet.update();
 
