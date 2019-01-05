@@ -83,6 +83,7 @@ void Weapon::update()
 void Weapon::shoot(Shoot_Direction direction)
 {
 	bullet = new Bullet(posX, posY);
+	bullet->setVelocity(3);
 	if(direction == SHOOT_RIGHT)
 	{
 		bullet->setScaleVector({ bullet->getScale(),bullet->getScale() });

@@ -30,7 +30,7 @@ public:
 	sf::Vector2f getScaleVector() const;
 	Bullet* getBullet();
 	void update();
-	void shoot(Shoot_Direction direction);
+	virtual void shoot(Shoot_Direction direction);
 	bool getIsShooting() const;
 	void setIsShooting(bool isShooting);
 	virtual void playShootSound();
