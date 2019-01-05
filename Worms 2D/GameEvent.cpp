@@ -28,6 +28,8 @@ void GameEvent::handleEvents()
 
 	while (this->window->pollEvent(this->event))
 	{
+		worms = gWindow->GetWormsArray();
+		worm_count = gWindow->GetWormCount();
 		if (this->event.type == sf::Event::Closed)
 			this->window->close();
 		if(sf::Joystick::isConnected(0))
@@ -39,6 +41,7 @@ void GameEvent::handleEvents()
 
 			if(sf::Joystick::isButtonPressed(0,4))
 			{
+				worm_count = gWindow->GetWormCount();
 				*current_worm_id = (*current_worm_id + 1) % worm_count;
 				(*current_worm)->stopMove();
 				*current_worm = worms->at(*current_worm_id);
@@ -53,6 +56,7 @@ void GameEvent::handleEvents()
 			}
 			if (this->event.key.code == sf::Keyboard::Tab)
 			{
+				
 				*current_worm_id = (*current_worm_id + 1) % worm_count;
 				(*current_worm)->stopMove();
 				*current_worm = (worms->at(*current_worm_id));
