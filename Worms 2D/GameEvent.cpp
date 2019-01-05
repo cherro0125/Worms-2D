@@ -1,5 +1,6 @@
 ﻿#include "GameEvent.h"
 #include <iostream>
+#include "Revolver.h"
 
 
 GameEvent::GameEvent()
@@ -85,7 +86,19 @@ void GameEvent::handleEvents()
 
 			if(this->event.key.code == sf::Keyboard::W)
 			{
-				//(*current_worm)->setWeapon()
+				Weapon *newWeapon = new Revolver((*current_worm)->getWormX(), (*current_worm)->getSprite().getPosition().y + (*current_worm)->getSprite().getLocalBounds().height*(*current_worm)->getScale() / 2);
+				if ((*current_worm)->isLookingOnLeft())
+				{
+
+					newWeapon->setScaleVector({ -newWeapon->getScale(),newWeapon->getScale() });
+				}
+				else
+				{
+					newWeapon->setScaleVector({ newWeapon->getScale(),newWeapon->getScale() });
+				}
+				newWeapon->update();
+				(*current_worm)->setWeapon(newWeapon);
+				(*current_worm)->update();
 			}
 
 			if(this->event.key.code == sf::Keyboard::E)

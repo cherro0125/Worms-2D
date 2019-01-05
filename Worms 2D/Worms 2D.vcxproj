@@ -141,6 +141,7 @@
     <ClCompile Include="GameEvent.cpp" />
     <ClCompile Include="GameSound.cpp" />
     <ClCompile Include="GameWindow.cpp" />
+    <ClCompile Include="Revolver.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="Weapon.cpp" />
@@ -153,6 +154,7 @@
     <ClInclude Include="GameEvent.h" />
     <ClInclude Include="GameSound.h" />
     <ClInclude Include="GameWindow.h" />
+    <ClInclude Include="Revolver.h" />
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="Worm.h" />
