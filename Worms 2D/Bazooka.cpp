@@ -7,6 +7,7 @@ Bazooka::Bazooka(float x, float y): Weapon(x,y)
 	if (!texture.loadFromFile(texturePath))
 		return;
 	this->sprite.setTexture(texture);
+	this->sprite.setOrigin((this->sprite.getLocalBounds().width*scale / 2), (this->sprite.getLocalBounds().height*scale / 2));
 	this->scaleVector = { scale,scale };
 	this->sprite.setScale(scaleVector);
 	this->damage = bazookaDamage;

@@ -37,5 +37,5 @@ private:
 	float rotation = 0.0f;
 	float posX;
 	float posY;
-	sf::Vector2f velocity{ 1.0f,0.0f };
+	sf::Vector2f velocity{ 100.0f,0.0f };
 };

@@ -4,11 +4,7 @@
 #include <SFML/Graphics/Texture.hpp>
 #include "Bullet.h"
 
-enum Shoot_Direction
-{
-	SHOOT_LEFT,
-	SHOOT_RIGHT
-};
+
 
 
 class Weapon : public sf::Drawable
@@ -20,6 +16,7 @@ public:
 	void setScale(float scale);
 	void setRotation(float rotation);
 	float getScale() const;
+	float getRotation() const;
 	sf::Sprite getSprite() const;
 	float getPosX() const;
 	float getPosY() const;
@@ -30,7 +27,7 @@ public:
 	sf::Vector2f getScaleVector() const;
 	Bullet* getBullet();
 	void update();
-	virtual void shoot(Shoot_Direction direction);
+	virtual void shoot(float angle);
 	bool getIsShooting() const;
 	void setIsShooting(bool isShooting);
 	virtual void playShootSound();

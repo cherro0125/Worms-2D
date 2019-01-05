@@ -6,7 +6,7 @@ Weapon::Weapon(float x, float y)
 	this->posX = x;
 	this->posY = y;
 	this->sprite.setPosition(posX, posY);
-	this->sprite.setOrigin((this->sprite.getLocalBounds().width*scale), 0);
+	this->sprite.setOrigin((this->sprite.getLocalBounds().width*scale / 2), (this->sprite.getLocalBounds().height*scale / 2));
 	this->sprite.setRotation(rotation);
 	this->sprite.setScale(scaleVector);
 	
@@ -25,6 +25,11 @@ void Weapon::setRotation(float rotation)
 float Weapon::getScale() const
 {
 	return this->scale;
+}
+
+float Weapon::getRotation() const
+{
+	return this->rotation;
 }
 
 sf::Sprite Weapon::getSprite() const
@@ -76,26 +81,22 @@ void Weapon::update()
 {
 	this->sprite.setPosition(sf::Vector2f(posX,posY));
 	this->sprite.setScale(scaleVector);
+	this->sprite.setRotation(rotation);
 	if(isShooting)
 		this->bullet->update();
 }
 
-void Weapon::shoot(Shoot_Direction direction)
+void Weapon::shoot(float angle)
 {
 	bullet = new Bullet(posX, posY);
-	bullet->setVelocity(3);
-	if(direction == SHOOT_RIGHT)
-	{
-		bullet->setScaleVector({ bullet->getScale(),bullet->getScale() });
-		bullet->setVelocity(bullet->getVelocity().x);
-		bullet->update();
-	}
-	else if(direction == SHOOT_LEFT)
-	{
-		bullet->setScaleVector({ -bullet->getScale(),bullet->getScale() });
-		bullet->setVelocity(-bullet->getVelocity().x);
-		bullet->update();
-	}
+	
+	bullet->setScaleVector({ bullet->getScale(),bullet->getScale() });
+	std::cout << angle << std::endl;
+	bullet->setVelocity(sf::Vector2f(3 * cosf(angle*355/113/180), 3 * sinf(angle * 355 / 113 / 180)));
+	bullet->setRotation(angle);
+	bullet->update();
+	
+	
 	isShooting = true;
 	playShootSound();
 }

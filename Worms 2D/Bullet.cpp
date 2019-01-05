@@ -10,7 +10,7 @@ Bullet::Bullet(float x, float y)
 	if (!texture.loadFromFile(texturePath))
 		return;
 	this->sprite.setTexture(texture);
-	this->sprite.setOrigin((this->sprite.getLocalBounds().width*scale), 0);
+	this->sprite.setOrigin((this->sprite.getLocalBounds().width*scale/2), (this->sprite.getLocalBounds().height*scale / 2));
 	this->sprite.setScale(scale, scale);
 	this->sprite.setRotation(rotation);
 }
@@ -30,7 +30,7 @@ sf::Sprite Bullet::getSprite() const
 	return this->sprite;
 }
 
-void Bullet::setVelocity(sf::Vector2f)
+void Bullet::setVelocity(sf::Vector2f velocity)
 {
 	this->velocity = velocity;
 }
@@ -70,6 +70,7 @@ void Bullet::update()
 {
 	this->sprite.setScale(scaleVector);
 	this->sprite.move(velocity);
+	this->sprite.setRotation(rotation);
 	this->posX = this->sprite.getPosition().x;
 	this->posY = this->sprite.getPosition().y;
 }

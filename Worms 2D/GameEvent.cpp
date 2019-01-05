@@ -143,11 +143,67 @@ void GameEvent::handleEvents()
 				if((*current_worm)->hasWeapon())
 				{
 					if ((*current_worm)->isLookingOnLeft())
-						(*current_worm)->getWeapon()->shoot(SHOOT_LEFT);
+					{
+						(*current_worm)->getWeapon()->shoot((*current_worm)->getWeapon()->getRotation()-180);
+					}
 					else
-						(*current_worm)->getWeapon()->shoot(SHOOT_RIGHT);
+					{
+						(*current_worm)->getWeapon()->shoot((*current_worm)->getWeapon()->getRotation());
+					}
 				}
 			
+			}
+			if (this->event.key.code == sf::Keyboard::Up)
+			{
+				if ((*current_worm)->hasWeapon())
+				{
+					if ((*current_worm)->isLookingOnLeft())
+					{
+						(*current_worm)->getWeapon()->setRotation((*current_worm)->getWeapon()->getRotation() + 2);
+						if ((*current_worm)->getWeapon()->getRotation() > 90)
+						{
+							(*current_worm)->getWeapon()->setRotation(80);
+							(*current_worm)->lookRight();
+						}
+					}
+					else
+					{
+						(*current_worm)->getWeapon()->setRotation((*current_worm)->getWeapon()->getRotation() - 2);
+						if ((*current_worm)->getWeapon()->getRotation() < -90)
+						{
+							(*current_worm)->getWeapon()->setRotation(-80);
+							(*current_worm)->lookLeft();
+						}
+					}
+						
+					std::cout << (*current_worm)->getWeapon()->getRotation() << std::endl;
+				}
+			}
+			if (this->event.key.code == sf::Keyboard::Down)
+			{
+				if ((*current_worm)->hasWeapon())
+				{
+					if ((*current_worm)->isLookingOnLeft())
+					{
+						(*current_worm)->getWeapon()->setRotation((*current_worm)->getWeapon()->getRotation() - 2);
+						if ((*current_worm)->getWeapon()->getRotation() < -90)
+						{
+							(*current_worm)->getWeapon()->setRotation(-80);
+							(*current_worm)->lookRight();
+						}
+					}
+					else
+					{
+						(*current_worm)->getWeapon()->setRotation((*current_worm)->getWeapon()->getRotation() + 2);
+						if ((*current_worm)->getWeapon()->getRotation() > 90)
+						{
+							(*current_worm)->getWeapon()->setRotation(80);
+							(*current_worm)->lookLeft();
+						}
+					}
+
+					std::cout << (*current_worm)->getWeapon()->getRotation() << std::endl;
+				}
 			}
 		}
 		if (this->event.type == sf::Event::MouseButtonPressed)

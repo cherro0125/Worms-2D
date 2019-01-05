@@ -262,6 +262,33 @@ void Worm::moveDown()
 	//this->velocity.x = 0;
 }
 
+void Worm::lookLeft()
+{
+	sprite.setScale({ -wormScale, wormScale });
+	if (weapon != nullptr)
+	{
+		weapon->setScaleVector({ -weapon->getScale(),weapon->getScale() });
+		if (!this->isLookingOnLeft())
+			weapon->setRotation(-weapon->getRotation());
+	}
+	std::cout << "LEFT\n";
+	lookingLeft = true;
+}
+
+void Worm::lookRight()
+{
+	sprite.setScale({ wormScale, wormScale });
+	if (weapon != nullptr)
+	{
+		weapon->setScaleVector({ weapon->getScale(),weapon->getScale() });
+		if (this->isLookingOnLeft())
+			weapon->setRotation(-weapon->getRotation());
+	}
+
+	std::cout << "RIGHT\n";
+	lookingLeft = false;
+}
+
 void Worm::moveLeft()
 {
 	if(!checkCollision(collisionPoints[LEFT])&& !checkCollision(collisionPoints[UP_LEFT]) )
@@ -275,11 +302,8 @@ void Worm::moveLeft()
 		if (this->velocity.x < -3)
 			this->velocity.x = -3;
 
-		sprite.setScale({ -wormScale, wormScale });
-		if(weapon!=nullptr)
-			weapon->setScaleVector({ -weapon->getScale(),weapon->getScale() });
-		std::cout << "LEFT\n";
-		lookLeft = true;
+		this->lookLeft();
+		
 	}
 }
 
@@ -296,11 +320,7 @@ void Worm::moveRight()
 		if (this->velocity.x > 3)
 			this->velocity.x = 3;
 
-		sprite.setScale({ wormScale, wormScale });
-		if(weapon!=nullptr)
-			weapon->setScaleVector({ weapon->getScale(),weapon->getScale() });
-		std::cout << "RIGHT\n";
-		lookLeft = false;
+		this->lookRight();
 	}
 
 }
@@ -343,7 +363,7 @@ sf::Text Worm::getDebugTxt()
 
 bool Worm::isLookingOnLeft() const
 {
-	return this->lookLeft;
+	return this->lookingLeft;
 }
 
 bool Worm::hasWeapon() const

@@ -38,6 +38,8 @@ public:
 	bool isLookingOnLeft() const;
 	bool hasWeapon() const;
 	void setTeam(team t);
+	void lookLeft();
+	void lookRight();
 
 protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
@@ -68,6 +70,8 @@ private:
 	float windowHeight;
 	float windowWidth;
 	bool isMoving;
-	bool lookLeft = false;
+	bool lookingLeft = false;
 	Weapon *weapon = nullptr;
+
+	
 };
