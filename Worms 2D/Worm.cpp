@@ -135,7 +135,7 @@ void Worm::update()
 
 	this->hpShape.setPosition(this->sprite.getPosition().x, this->sprite.getPosition().y - 10);
 	this->hpShape.setSize(sf::Vector2f(this->hp - 0.5f, this->hpShape.getSize().y));
-	if (this->posX <= 100 || this->posX>=900 || this->posY >= 610)
+	if (this->posX <= -100 || this->posX>=900 || this->posY >= 610)
 	{
 		std::cout << hp << std::endl;
 		this->damage(200);
