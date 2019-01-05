@@ -24,7 +24,10 @@ public:
 	void UpdateWormsB(int i);
 	Worm **GetCurrentWorm();
 	std::vector<Worm*>* GetWormsArray() const;
-	int GetWormCount();
+	std::vector<Worm*>* GetWormsArrayB() const;
+	int GetWormCount() const;
+	int GetWormCountB() const;
+	int *GetCurrentTeam();
 	int *GetCurrentWormID();
 	void SetBackgroundColor(sf::Color color);
 	GameSound* GetGameSound() const;

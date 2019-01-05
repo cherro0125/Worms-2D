@@ -209,9 +209,24 @@ std::vector<Worm*>* GameWindow::GetWormsArray() const
 	return this->worms;
 }
 
-int GameWindow::GetWormCount()
+std::vector<Worm*>* GameWindow::GetWormsArrayB() const
+{
+	return this->worms_b;
+}
+
+int GameWindow::GetWormCount() const
 {
 	return this->worm_count;
+}
+
+int GameWindow::GetWormCountB() const
+{
+	return this->worm_count_b;
+}
+
+int *GameWindow::GetCurrentTeam() 
+{
+	return &(this->current_team);
 }
 
 int *GameWindow::GetCurrentWormID()

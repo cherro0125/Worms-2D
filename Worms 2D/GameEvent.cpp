@@ -9,8 +9,11 @@ GameEvent::GameEvent()
 	this->window = gWindow->GetInstance();
 	current_worm = this->gWindow->GetCurrentWorm();
 	worms = this->gWindow->GetWormsArray();
+	worms_b = this->gWindow->GetWormsArrayB();
 	worm_count = this->gWindow->GetWormCount();
 	current_worm_id = this->gWindow->GetCurrentWormID();
+	worm_count_b = this->gWindow->GetWormCountB();
+	current_team = this->gWindow->GetCurrentTeam();
 }
 
 GameEvent::~GameEvent()
@@ -29,7 +32,10 @@ void GameEvent::handleEvents()
 	while (this->window->pollEvent(this->event))
 	{
 		worms = gWindow->GetWormsArray();
+		worms_b = gWindow->GetWormsArrayB();
 		worm_count = gWindow->GetWormCount();
+		worm_count_b = gWindow->GetWormCountB();
+		current_team = gWindow->GetCurrentTeam();
 		if (this->event.type == sf::Event::Closed)
 			this->window->close();
 		if(sf::Joystick::isConnected(0))
@@ -59,7 +65,22 @@ void GameEvent::handleEvents()
 				
 				*current_worm_id = (*current_worm_id + 1) % worm_count;
 				(*current_worm)->stopMove();
+				if (*current_team == team::RED)
+					*current_worm = (worms->at(*current_worm_id));
+				else
+					*current_worm = (worms_b->at(*current_worm_id));
+			}
+			if(this->event.key.code == sf::Keyboard::A)
+			{
+				*current_team = team::RED;
+				(*current_worm)->stopMove();
 				*current_worm = (worms->at(*current_worm_id));
+			}
+			if(this->event.key.code == sf::Keyboard::S)
+			{
+				*current_team = team::BLUE;
+				(*current_worm)->stopMove();
+				*current_worm = (worms_b->at(*current_worm_id));
 			}
 			if (this->event.key.code == sf::Keyboard::Space)
 			{
