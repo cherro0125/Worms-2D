@@ -231,11 +231,11 @@ void GameEvent::handleEvents()
 			std::cout << sf::Joystick::getAxisPosition(0, sf::Joystick::X) << std::endl;
 		}
 
-		if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) < -15.0f) && (*current_worm)->left() > 0)
+		if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) < -15.0f) )
 		{
 			(*current_worm)->moveLeft();
 		}
-		else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) > 15.0f) && (*current_worm)->right() < this->window->getSize().x)
+		else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) > 15.0f))
 		{
 
 			(*current_worm)->moveRight();
