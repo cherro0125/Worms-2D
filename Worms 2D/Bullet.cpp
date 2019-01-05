@@ -68,9 +68,25 @@ void Bullet::setPosY(float y)
 
 void Bullet::update()
 {
+	this->sprite.setScale(scaleVector);
 	this->sprite.move(velocity);
 	this->posX = this->sprite.getPosition().x;
 	this->posY = this->sprite.getPosition().y;
+}
+
+float Bullet::getScale() const
+{
+	return this->scale;
+}
+
+void Bullet::setScaleVector(sf::Vector2f scale)
+{
+	this->scaleVector = scale;
+}
+
+sf::Vector2f Bullet::getScaleVector() const
+{
+	return this->scaleVector;
 }
 
 

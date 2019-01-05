@@ -9,6 +9,7 @@ Weapon::Weapon(float x, float y)
 	this->sprite.setOrigin((this->sprite.getLocalBounds().width*scale), 0);
 	this->sprite.setRotation(rotation);
 	this->sprite.setScale(scaleVector);
+	
 }
 
 void Weapon::setScale(float scale)
@@ -75,6 +76,33 @@ void Weapon::update()
 {
 	this->sprite.setPosition(sf::Vector2f(posX,posY));
 	this->sprite.setScale(scaleVector);
+	if(isShooting)
+		this->bullet->update();
+}
+
+void Weapon::shoot(Shoot_Direction direction)
+{
+	bullet = new Bullet(posX, posY);
+	if(direction == SHOOT_RIGHT)
+	{
+		bullet->setScaleVector({ bullet->getScale(),bullet->getScale() });
+		bullet->setVelocity(bullet->getVelocity().x);
+		bullet->update();
+	}
+	else if(direction == SHOOT_LEFT)
+	{
+		bullet->setScaleVector({ -bullet->getScale(),bullet->getScale() });
+		bullet->setVelocity(-bullet->getVelocity().x);
+		bullet->update();
+	}
+	isShooting = true;
+}
+
+
+
+bool Weapon::getIsShooting() const
+{
+	return this->isShooting;
 }
 
 void Weapon::draw(sf::RenderTarget& target, sf::RenderStates states) const

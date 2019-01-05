@@ -201,7 +201,10 @@ void Worm::draw(sf::RenderTarget & target, sf::RenderStates states) const
 		target.draw(this->hpShape, states);
 		if (weapon != nullptr)
 			target.draw(*weapon);
+	
 	}
+	if (weapon != nullptr && weapon->getIsShooting())
+		target.draw(*weapon->getBullet());
 
 
 }

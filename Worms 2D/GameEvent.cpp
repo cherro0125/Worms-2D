@@ -105,6 +105,14 @@ void GameEvent::handleEvents()
 			{
 				(*current_worm)->setWeapon(nullptr);
 			}
+
+			if(this->event.key.code == sf::Keyboard::LControl)
+			{
+				if ((*current_worm)->isLookingOnLeft())
+					(*current_worm)->getWeapon()->shoot(SHOOT_LEFT);
+				else
+					(*current_worm)->getWeapon()->shoot(SHOOT_RIGHT);
+			}
 		}
 		if (this->event.type == sf::Event::MouseButtonPressed)
 		{

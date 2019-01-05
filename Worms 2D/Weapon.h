@@ -4,6 +4,13 @@
 #include <SFML/Graphics/Texture.hpp>
 #include "Bullet.h"
 
+enum Shoot_Direction
+{
+	SHOOT_LEFT,
+	SHOOT_RIGHT
+};
+
+
 class Weapon : public sf::Drawable
 {
 public:
@@ -23,6 +30,8 @@ public:
 	sf::Vector2f getScaleVector() const;
 	Bullet* getBullet() const;
 	void update();
+	void shoot(Shoot_Direction direction);
+	bool getIsShooting() const;
 
 protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
@@ -35,5 +44,6 @@ protected:
 	float posX;
 	float posY;
 	sf::Vector2f scaleVector = { scale,scale };
+	bool isShooting = false;
 
 };
