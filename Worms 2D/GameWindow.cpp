@@ -73,6 +73,8 @@ void GameWindow::MainLoop()
 	this->fpsCounter->start();
 
 	this->window->clear(sf::Color(71, 71, 71));
+	water.update();
+	this->window->draw(water);
 	this->window->draw(terrain);
 	for (int i = 0; i < worm_count; ++i)
 	{

@@ -9,7 +9,7 @@
 #include "Bullet.h"
 #include "Weapon.h"
 #include "Bazooka.h"
-
+#include "Water.h"
 class GameWindow
 {
 public:
@@ -50,7 +50,7 @@ private:
 	FPSCounter *fpsCounter;
 	static GameSound* gs;
 	Weapon *weapon = new Bazooka(200,20);
-	
+	Water water;
 	
 };
 

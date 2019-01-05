@@ -144,6 +144,7 @@
     <ClCompile Include="Revolver.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="Water.cpp" />
     <ClCompile Include="Weapon.cpp" />
     <ClCompile Include="Worm.cpp" />
   </ItemGroup>
@@ -156,6 +157,7 @@
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="Revolver.h" />
     <ClInclude Include="Terrain.h" />
+    <ClInclude Include="Water.h" />
     <ClInclude Include="Weapon.h" />
     <ClInclude Include="Worm.h" />
   </ItemGroup>
