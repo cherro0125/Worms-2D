@@ -1,4 +1,4 @@
-﻿#include "Bazooka.h"
+#include "Bazooka.h"
 
 Bazooka::Bazooka(float x, float y): Weapon(x,y)
 {
@@ -9,6 +9,7 @@ Bazooka::Bazooka(float x, float y): Weapon(x,y)
 	this->sprite.setTexture(texture);
 	this->scaleVector = { scale,scale };
 	this->sprite.setScale(scaleVector);
+	this->damage = bazookaDamage;
 }
 
 void Bazooka::playShootSound()

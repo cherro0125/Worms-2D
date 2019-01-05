@@ -10,4 +10,5 @@ public:
 	void playShootSound() override;
 private:
 	std::string revolverTexturePath = "resources/images/gun.png";
+	float revorverDamage = 5.0f;
 };

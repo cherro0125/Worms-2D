@@ -67,7 +67,7 @@ sf::Vector2f Weapon::getScaleVector() const
 	return this->scaleVector;
 }
 
-Bullet* Weapon::getBullet() const
+Bullet* Weapon::getBullet() 
 {
 	return this->bullet;
 }
@@ -113,6 +113,16 @@ void Weapon::setIsShooting(bool isShooting)
 
 void Weapon::playShootSound()
 {
+}
+
+void Weapon::setDamage(float damage)
+{
+	this->damage = damage;
+}
+
+float Weapon::getDamage() const
+{
+	return this->damage;
 }
 
 void Weapon::draw(sf::RenderTarget& target, sf::RenderStates states) const

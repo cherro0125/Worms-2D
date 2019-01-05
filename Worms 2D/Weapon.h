@@ -28,12 +28,14 @@ public:
 	void setBullet(Bullet *bullet);
 	void setScaleVector(sf::Vector2f scale);
 	sf::Vector2f getScaleVector() const;
-	Bullet* getBullet() const;
+	Bullet* getBullet();
 	void update();
 	void shoot(Shoot_Direction direction);
 	bool getIsShooting() const;
 	void setIsShooting(bool isShooting);
 	virtual void playShootSound();
+	void setDamage(float damage);
+	float getDamage() const;
 
 protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
@@ -47,5 +49,6 @@ protected:
 	float posY;
 	sf::Vector2f scaleVector = { scale,scale };
 	bool isShooting = false;
+	float damage = 0.0f;
 
 };

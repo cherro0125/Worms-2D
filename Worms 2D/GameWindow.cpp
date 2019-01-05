@@ -87,7 +87,7 @@ void GameWindow::MainLoop()
 				
 				if(pow(worms->at(i)->collisionPoints[j].x - (*current_worm).getWeapon()->getBullet()->getPosX(),2) + pow((*current_worm).getWeapon()->getBullet()->getPosY() - worms->at(i)->collisionPoints[j].y,2) <= pow((35* (*current_worm).getWeapon()->getBullet()->getScale()) + 1,2))	
 				{
-					worms->at(i)->damage(20);
+					worms->at(i)->damage(current_worm->getWeapon()->getDamage());
 					current_worm->getWeapon()->setIsShooting(false);
 					current_worm->getWeapon()->setBullet(nullptr);
 					std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
@@ -168,8 +168,6 @@ void GameWindow::MainLoop()
 	}
 	//test
 	this->window->draw(bulletorigin);
-	this->window->draw(bullet);
-	bullet.update();
 
 	
 

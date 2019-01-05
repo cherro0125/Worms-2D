@@ -10,6 +10,7 @@ public:
 	void playShootSound() override;
 private:
 	std::string bazookaTexturePath = "resources/images/bazooka.png";
+	float bazookaDamage = 20;
 
 	
 };

@@ -49,8 +49,6 @@ private:
 	sf::Color bgColor;
 	FPSCounter *fpsCounter;
 	static GameSound* gs;
-	//test
-	Bullet bullet{ 20, 50 };
 	Weapon *weapon = new Bazooka(200,20);
 	
 	
