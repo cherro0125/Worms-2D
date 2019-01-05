@@ -35,6 +35,7 @@ public:
 	void setColMap(sf::Image *image);
 	sf::Text getDebugTxt();
 	bool isLookingOnLeft() const;
+	bool hasWeapon() const;
 
 protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;

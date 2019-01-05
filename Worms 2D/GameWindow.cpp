@@ -63,6 +63,18 @@ void GameWindow::MainLoop()
 	this->window->draw(terrain);
 	for (int i = 0; i < worm_count; ++i)
 	{
+		if((*current_worm).hasWeapon() && (*current_worm).getWeapon()->getIsShooting())
+		{
+			for(int j = 0; j<8;j++)
+			{
+				if ((*current_worm).getWeapon()->getBullet()->getPosX() == worms[i].collisionPoints[j].x && (*current_worm).getWeapon()->getBullet()->getPosY() == worms[i].collisionPoints[j].y)
+				{
+					worms[i].damage(20);
+					std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
+				}
+				
+			}
+		}
 		this->window->draw(worms[i]);
 		this->UpdateWorms(i);
 		
@@ -76,6 +88,7 @@ void GameWindow::MainLoop()
 	this->window->draw(bullet);
 	bullet.update();
 
+	
 
 	
 	this->fpsCounter->drawFPS();

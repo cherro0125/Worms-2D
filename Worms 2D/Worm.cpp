@@ -328,7 +328,11 @@ bool Worm::isAlive()
 
 sf::Text Worm::getDebugTxt()
 {
-	std::string debugInfo = "Worm X:" + std::to_string(getWormX()) + " Y:" + std::to_string(getWormY());
+	std::string debugInfo = "Worm X:" + std::to_string(getWormX()) + " Y:" + std::to_string(getWormY()) + "\n Has_weapon: " + std::to_string(hasWeapon());
+	if(hasWeapon() && getWeapon()->getBullet() != nullptr)
+	{
+		debugInfo += "\n Bullet X:" + std::to_string(getWeapon()->getBullet()->getPosX()) + " Y:" + std::to_string(getWeapon()->getBullet()->getPosY()) + " isShooting" + std::to_string(getWeapon()->getIsShooting());
+	}
 	if(sf::Joystick::isConnected(0))
 	{
 		debugInfo += "\n Connected controller: Xbox One controller ";
@@ -340,6 +344,11 @@ sf::Text Worm::getDebugTxt()
 bool Worm::isLookingOnLeft() const
 {
 	return this->lookLeft;
+}
+
+bool Worm::hasWeapon() const
+{
+	return weapon != nullptr;
 }
 
 
