@@ -1,0 +1,83 @@
+﻿#include "Weapon.h"
+#include <iostream>
+
+Weapon::Weapon(float x, float y)
+{
+	this->posX = x;
+	this->posY = y;
+	this->sprite.setPosition(posX, posY);
+	this->sprite.setOrigin((this->sprite.getLocalBounds().width*scale), 0);
+	this->sprite.setRotation(rotation);
+	this->sprite.setScale(scaleVector);
+}
+
+void Weapon::setScale(float scale)
+{
+	this->scale = scale;
+}
+
+void Weapon::setRotation(float rotation)
+{
+	this->rotation = rotation;
+}
+
+float Weapon::getScale() const
+{
+	return this->scale;
+}
+
+sf::Sprite Weapon::getSprite() const
+{
+	return this->sprite;
+}
+
+float Weapon::getPosX() const
+{
+	return this->posX;
+}
+
+float Weapon::getPosY() const
+{
+	return this->posY;
+}
+
+void Weapon::setPosX(float x)
+{
+	this->posX = x;
+}
+
+void Weapon::setPosY(float y)
+{
+	this->posY = y;
+}
+
+void Weapon::setBullet(Bullet* bullet)
+{
+	this->bullet = bullet;
+}
+
+void Weapon::setScaleVector(sf::Vector2f scale)
+{
+	this->scaleVector = scale;
+}
+
+sf::Vector2f Weapon::getScaleVector() const
+{
+	return this->scaleVector;
+}
+
+Bullet* Weapon::getBullet() const
+{
+	return this->bullet;
+}
+
+void Weapon::update()
+{
+	this->sprite.setPosition(sf::Vector2f(posX,posY));
+	this->sprite.setScale(scaleVector);
+}
+
+void Weapon::draw(sf::RenderTarget& target, sf::RenderStates states) const
+{
+	target.draw(this->sprite, states);
+}

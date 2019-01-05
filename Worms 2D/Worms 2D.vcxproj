@@ -135,6 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bazooka.cpp" />
     <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="FPSCounter.cpp" />
     <ClCompile Include="GameEvent.cpp" />
@@ -142,15 +143,18 @@
     <ClCompile Include="GameWindow.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="Weapon.cpp" />
     <ClCompile Include="Worm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bazooka.h" />
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="FPSCounter.h" />
     <ClInclude Include="GameEvent.h" />
     <ClInclude Include="GameSound.h" />
     <ClInclude Include="GameWindow.h" />
     <ClInclude Include="Terrain.h" />
+    <ClInclude Include="Weapon.h" />
     <ClInclude Include="Worm.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

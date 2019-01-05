@@ -72,9 +72,12 @@ void GameWindow::MainLoop()
 		if((*current_worm).isAlive())
 			this->window->draw(cpoints[i]);
 	}
-	
+	//test
 	this->window->draw(bullet);
 	bullet.update();
+
+
+	
 	this->fpsCounter->drawFPS();
 	this->window->draw((**(this->GetCurrentWorm())).getDebugTxt());
 	this->window->display();

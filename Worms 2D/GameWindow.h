@@ -6,6 +6,8 @@
 #include "GameSound.h"
 #include "Terrain.h"
 #include "Bullet.h"
+#include "Weapon.h"
+#include "Bazooka.h"
 
 class GameWindow
 {
@@ -40,7 +42,8 @@ private:
 	FPSCounter *fpsCounter;
 	static GameSound* gs;
 	//test
-	Bullet bullet{ 50, 50 };
+	Bullet bullet{ 20, 50 };
+	Weapon *weapon = new Bazooka(200,20);
 	
 	
 };

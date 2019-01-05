@@ -24,12 +24,21 @@ Worm::Worm()
 		return;
 	if (!texture2.loadFromFile(textureImagePath2))
 		return;
+	if (!texture3.loadFromFile(textureImagePath3))
+		return;
 
 
 	this->sprite.setTexture(texture);
 	this->sprite.setScale(wormScale, wormScale);
 	this->sprite.setOrigin(((this->sprite.getLocalBounds().width)*wormScale), 0);
-	
+	this->weapon = new Bazooka(0, 0);
+	if(weapon!=nullptr)
+	{
+		weapon->setPosX(getWormX());
+		weapon->setPosY(getSprite().getPosition().y + getSprite().getLocalBounds().height*getScale() / 2);
+		weapon->update();
+	}
+
 
 	this->collisionPoints[UP] = { getWormX(), getWormY() };
 	this->collisionPoints[UP_LEFT] = { left(), getWormY() + ((sprite.getLocalBounds().height*wormScale)*1/5) };
@@ -59,7 +68,10 @@ Worm::~Worm()
 
 void Worm::update()
 {
-
+	if(weapon!= nullptr)
+	{
+		sprite.setTexture(texture3);
+	}
 	if (this->velocity.y < 0 && (checkCollision(collisionPoints[UP])/*|| checkCollision(collisionPoints[UP_LEFT])|| checkCollision(collisionPoints[UP_RIGHT])*/))
 	{
 		this->velocity.y = 0;
@@ -78,6 +90,13 @@ void Worm::update()
 		this->sprite.move(velocity);
 	this->posX = this->sprite.getPosition().x;
 	this->posY = this->sprite.getPosition().y;
+
+	if (weapon != nullptr)
+	{
+		weapon->setPosX(getWormX());
+		weapon->setPosY(getSprite().getPosition().y + getSprite().getLocalBounds().height*getScale() / 2);
+		weapon->update();
+	}
 
 	this->collisionPoints[UP] = { getWormX(), getWormY() };
 	this->collisionPoints[UP_LEFT] = { left(), getWormY() + ((sprite.getLocalBounds().height*wormScale)  / 5) };
@@ -139,6 +158,26 @@ int Worm::getOffsetY(sf::Vector2f point)
 	return difference;
 }
 
+float Worm::getScale() const
+{
+	return this->wormScale;
+}
+
+sf::Sprite Worm::getSprite() const
+{
+	return this->sprite;
+}
+
+void Worm::setWeapon(Weapon* weapon)
+{
+	this->weapon = weapon;
+}
+
+Weapon* Worm::getWeapon() const
+{
+	return this->weapon;
+}
+
 
 bool Worm::checkCollision(sf::Vector2f point)
 {
@@ -160,6 +199,8 @@ void Worm::draw(sf::RenderTarget & target, sf::RenderStates states) const
 	{
 		target.draw(this->sprite, states);
 		target.draw(this->hpShape, states);
+		if (weapon != nullptr)
+			target.draw(*weapon);
 	}
 
 
@@ -232,7 +273,10 @@ void Worm::moveLeft()
 			this->velocity.x = -3;
 
 		sprite.setScale({ -wormScale, wormScale });
+		if(weapon!=nullptr)
+			weapon->setScaleVector({ -weapon->getScale(),weapon->getScale() });
 		std::cout << "LEFT\n";
+		lookLeft = true;
 	}
 }
 
@@ -250,7 +294,10 @@ void Worm::moveRight()
 			this->velocity.x = 3;
 
 		sprite.setScale({ wormScale, wormScale });
+		if(weapon!=nullptr)
+			weapon->setScaleVector({ weapon->getScale(),weapon->getScale() });
 		std::cout << "RIGHT\n";
+		lookLeft = false;
 	}
 
 }
@@ -285,6 +332,11 @@ sf::Text Worm::getDebugTxt()
 	}
 	debugTxt.setString(debugInfo);
 	return debugTxt;
+}
+
+bool Worm::isLookingOnLeft() const
+{
+	return this->lookLeft;
 }
 
 

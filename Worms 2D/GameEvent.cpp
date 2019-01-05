@@ -65,6 +65,33 @@ void GameEvent::handleEvents()
 			{
 				(*current_worm)->damage(1);
 			}
+
+			if(this->event.key.code == sf::Keyboard::Q)
+			{
+				Weapon *newWeapon = new Bazooka((*current_worm)->getWormX(), (*current_worm)->getSprite().getPosition().y + (*current_worm)->getSprite().getLocalBounds().height*(*current_worm)->getScale() / 2);
+				if((*current_worm)->isLookingOnLeft())
+				{
+	
+					newWeapon->setScaleVector({ -newWeapon->getScale(),newWeapon->getScale() });
+				}
+				else
+				{
+					newWeapon->setScaleVector({ newWeapon->getScale(),newWeapon->getScale() });
+				}
+				newWeapon->update();
+				(*current_worm)->setWeapon(newWeapon);
+				(*current_worm)->update();
+			}
+
+			if(this->event.key.code == sf::Keyboard::W)
+			{
+				//(*current_worm)->setWeapon()
+			}
+
+			if(this->event.key.code == sf::Keyboard::E)
+			{
+				(*current_worm)->setWeapon(nullptr);
+			}
 		}
 		if (this->event.type == sf::Event::MouseButtonPressed)
 		{
@@ -74,7 +101,24 @@ void GameEvent::handleEvents()
 			circ.setPosition(event.mouseButton.x, event.mouseButton.y);
 			gWindow->terrain.erase(circ);
 		}
-		moveHandle();
+		if (sf::Joystick::isConnected(0))
+		{
+			std::cout << sf::Joystick::getAxisPosition(0, sf::Joystick::X) << std::endl;
+		}
+
+		if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) < -15.0f) && (*current_worm)->left() > 0)
+		{
+			(*current_worm)->moveLeft();
+		}
+		else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) > 15.0f) && (*current_worm)->right() < this->window->getSize().x)
+		{
+
+			(*current_worm)->moveRight();
+		}
+		else
+		{
+			(*current_worm)->stopMove();
+		}
 
 		
 	
@@ -96,24 +140,3 @@ GameEvent* GameEvent::GetEventInstance()
 	return ev;
 }
 
-void GameEvent::moveHandle()
-{
-	if (sf::Joystick::isConnected(0))
-	{
-		std::cout << sf::Joystick::getAxisPosition(0, sf::Joystick::X) << std::endl;
-	}
-
-	if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) < -15.0f) && (*current_worm)->left() > 0)
-	{
-		(*current_worm)->moveLeft();
-	}
-	else if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Joystick::getAxisPosition(0, sf::Joystick::X) > 15.0f) && (*current_worm)->right() < this->window->getSize().x)
-	{
-
-		(*current_worm)->moveRight();
-	}
-	else
-	{
-		(*current_worm)->stopMove();
-	}
-}
