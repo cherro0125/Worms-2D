@@ -96,6 +96,7 @@ void Weapon::shoot(Shoot_Direction direction)
 		bullet->update();
 	}
 	isShooting = true;
+	playShootSound();
 }
 
 
@@ -108,6 +109,10 @@ bool Weapon::getIsShooting() const
 void Weapon::setIsShooting(bool isShooting)
 {
 	this->isShooting = isShooting;
+}
+
+void Weapon::playShootSound()
+{
 }
 
 void Weapon::draw(sf::RenderTarget& target, sf::RenderStates states) const

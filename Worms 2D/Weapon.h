@@ -33,6 +33,7 @@ public:
 	void shoot(Shoot_Direction direction);
 	bool getIsShooting() const;
 	void setIsShooting(bool isShooting);
+	virtual void playShootSound();
 
 protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;

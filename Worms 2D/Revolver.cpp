@@ -1,4 +1,6 @@
 ﻿#include "Revolver.h"
+#include "GameSound.h"
+#include "GameWindow.h"
 
 Revolver::Revolver(float x, float y) :Weapon(x,y)
 {
@@ -8,4 +10,10 @@ Revolver::Revolver(float x, float y) :Weapon(x,y)
 	this->sprite.setTexture(texture);
 	this->scaleVector = { scale,scale };
 	this->sprite.setScale(scaleVector);
+}
+
+void Revolver::playShootSound()
+{
+	GameSound *gs = GameWindow::GetGameWindowInstance()->GetGameSound();
+	gs->StartRevolverSound();
 }

@@ -11,4 +11,8 @@ Bazooka::Bazooka(float x, float y): Weapon(x,y)
 	this->sprite.setScale(scaleVector);
 }
 
+void Bazooka::playShootSound()
+{
+}
+
 

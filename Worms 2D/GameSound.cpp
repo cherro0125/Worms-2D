@@ -7,8 +7,13 @@ GameSound::GameSound()
 	music.setVolume(5);
 	if(!testSampleBuffer.loadFromFile(testSamplePath))
 		std::cout << "Error with initialization test sample!" << std::endl;
+
 	testSampleSound.setBuffer(testSampleBuffer);
 	testSampleSound.setVolume(100);
+	if (!revolverSoundBuffer.loadFromFile(revolverSoundPath))
+		std::cout << "Error with initialization revolver sound" << std::endl;
+	revolverSound.setBuffer(revolverSoundBuffer);
+	revolverSound.setVolume(100);
 
 	
 }
@@ -31,4 +36,14 @@ void GameSound::PauseSample()
 void GameSound::StopSample()
 {
 	testSampleSound.stop();
+}
+
+void GameSound::StartRevolverSound()
+{
+	revolverSound.play();
+}
+
+void GameSound::StopRevolverSound()
+{
+	revolverSound.stop();
 }
