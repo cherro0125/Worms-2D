@@ -41,7 +41,7 @@ void GameEvent::handleEvents()
 			{
 				*current_worm_id = (*current_worm_id + 1) % worm_count;
 				(*current_worm)->stopMove();
-				*current_worm = &(worms[*current_worm_id]);
+				*current_worm = worms->at(*current_worm_id);
 			}
 			
 		}
@@ -55,7 +55,7 @@ void GameEvent::handleEvents()
 			{
 				*current_worm_id = (*current_worm_id + 1) % worm_count;
 				(*current_worm)->stopMove();
-				*current_worm = &(worms[*current_worm_id]);
+				*current_worm = (worms->at(*current_worm_id));
 			}
 			if (this->event.key.code == sf::Keyboard::Space)
 			{

@@ -12,12 +12,16 @@ GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name
 		this->gs->PlayMainMusic();
 		
 		this->worm_count = 3;
-		this->worms = new Worm[worm_count];
+		this->worms = new std::vector<Worm*>;
+		for(int j = 0; j< worm_count;j++)
+		{
+			this->worms->push_back(new Worm());
+		}
 		this->current_worm_id = 0;
-		this->current_worm = &(worms[this->current_worm_id]);
+		this->current_worm = (worms->at(this->current_worm_id));
 		for (int i = 0; i < worm_count; ++i)
 		{
-			worms[i].setColMap(&(terrain.map));
+			worms->at(i)->setColMap(&(terrain.map));
 		}
 		
 		
@@ -71,15 +75,30 @@ void GameWindow::MainLoop()
 			for(int j = 0; j<8;j++)
 			{
 				
-				if(pow(worms[i].collisionPoints[j].x - (*current_worm).getWeapon()->getBullet()->getPosX(),2) + pow((*current_worm).getWeapon()->getBullet()->getPosY() - worms[i].collisionPoints[j].y,2) <= pow((35* (*current_worm).getWeapon()->getBullet()->getScale()) + 1,2))	
+				if(pow(worms->at(i)->collisionPoints[j].x - (*current_worm).getWeapon()->getBullet()->getPosX(),2) + pow((*current_worm).getWeapon()->getBullet()->getPosY() - worms->at(i)->collisionPoints[j].y,2) <= pow((35* (*current_worm).getWeapon()->getBullet()->getScale()) + 1,2))	
 				{
-					worms[i].damage(20);
+					worms->at(i)->damage(20);
+					current_worm->getWeapon()->setIsShooting(false);
+					current_worm->getWeapon()->setBullet(nullptr);
 					std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
+					if (!worms->at(i)->isAlive())
+					{
+						std::vector<Worm*>::iterator it = std::find(worms->begin(), worms->end(), worms->at(i));
+						worms->erase(it);
+						
+					}
+						
+					break;
 				}
 				
 			}
 		}
-		this->window->draw(worms[i]);
+		if(worms->size() != worm_count)
+		{
+			worm_count--;
+			break;
+		}
+		this->window->draw(*worms->at(i));
 		this->UpdateWorms(i);
 		
 	}
@@ -108,7 +127,7 @@ void GameWindow::MainLoop()
 void GameWindow::UpdateWorms(int i)
 {
 
-	this->worms[i].update();
+	this->worms->at(i)->update();
 	
 
 	
@@ -120,7 +139,7 @@ Worm **GameWindow::GetCurrentWorm()
 	return &(this->current_worm);
 }
 
-Worm *GameWindow::GetWormsArray()
+std::vector<Worm*>* GameWindow::GetWormsArray() const
 {
 	return this->worms;
 }

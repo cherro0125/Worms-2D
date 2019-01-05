@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
 #include "GameWindow.h"
+#include<vector>
 class GameEvent
 {
 public:
@@ -20,7 +21,7 @@ private:
 	sf::Event event{};
 	sf::RenderWindow* window;
 	Worm **current_worm;
-	Worm *worms;
+	std::vector<Worm*> *worms = new std::vector<Worm*>;
 	int worm_count;
 	int *current_worm_id;
 	

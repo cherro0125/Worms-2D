@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include <string>
 #include <SFML/Graphics.hpp>
+#include<vector>
 #include "FPSCounter.h"
 #include "Worm.h"
 #include "GameSound.h"
@@ -21,7 +22,7 @@ public:
 	void MainLoop();
 	void UpdateWorms(int i);
 	Worm **GetCurrentWorm();
-	Worm *GetWormsArray();
+	std::vector<Worm*>* GetWormsArray() const;
 	int GetWormCount();
 	int *GetCurrentWormID();
 	void SetBackgroundColor(sf::Color color);
@@ -37,7 +38,7 @@ private:
 	int worm_count;
 	int current_worm_id;
 	Worm *current_worm;
-	Worm *worms;
+	std::vector<Worm*>*worms = new std::vector<Worm*>;
 	sf::Color bgColor;
 	FPSCounter *fpsCounter;
 	static GameSound* gs;

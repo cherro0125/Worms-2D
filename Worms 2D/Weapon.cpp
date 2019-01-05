@@ -105,6 +105,11 @@ bool Weapon::getIsShooting() const
 	return this->isShooting;
 }
 
+void Weapon::setIsShooting(bool isShooting)
+{
+	this->isShooting = isShooting;
+}
+
 void Weapon::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
 	target.draw(this->sprite, states);
