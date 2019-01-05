@@ -93,11 +93,7 @@ void GameWindow::MainLoop()
 						current_worm->getWeapon()->setIsShooting(false);
 						current_worm->getWeapon()->setBullet(nullptr);
 						std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
-						if (!worms->at(i)->isAlive())
-						{
-							std::vector<Worm*>::iterator it = std::find(worms->begin(), worms->end(), worms->at(i));
-							worms->erase(it);
-						}
+						
 
 						break;
 					}
@@ -109,10 +105,16 @@ void GameWindow::MainLoop()
 			gs->PlayDeath();
 			break;
 		}
-
+		
 		this->window->draw(*worms->at(i));
-
 		this->UpdateWorms(i);
+		if (!worms->at(i)->isAlive())
+		{
+			std::vector<Worm*>::iterator it = std::find(worms->begin(), worms->end(), worms->at(i));
+			worms->erase(it);
+			i -= 1;
+		}
+		
 	}
 
 	for (int i = 0; i < worm_count_b; ++i)
@@ -134,12 +136,7 @@ void GameWindow::MainLoop()
 						current_worm->getWeapon()->setIsShooting(false);
 						current_worm->getWeapon()->setBullet(nullptr);
 						std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
-						if (!worms_b->at(i)->isAlive())
-						{
-							std::vector<Worm*>::iterator it = std::find(worms_b->begin(), worms_b->end(),
-							                                            worms_b->at(i));
-							worms_b->erase(it);
-						}
+						
 
 						break;
 					}
@@ -155,6 +152,13 @@ void GameWindow::MainLoop()
 		this->window->draw(*worms_b->at(i));
 
 		this->UpdateWormsB(i);
+		if (!worms_b->at(i)->isAlive())
+		{
+			std::vector<Worm*>::iterator it = std::find(worms_b->begin(), worms_b->end(),
+				worms_b->at(i));
+			worms_b->erase(it);
+			i--;
+		}
 	}
 
 

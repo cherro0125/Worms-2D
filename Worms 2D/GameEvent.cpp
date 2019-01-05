@@ -65,29 +65,41 @@ void GameEvent::handleEvents()
 				(*current_worm)->stopMove();
 				if (*current_team == team::RED)
 				{
-					*current_worm_id = (*current_worm_id + 1) % worm_count;
-					*current_worm = (worms->at(*current_worm_id));
+					if (worm_count)
+					{
+						*current_worm_id = (*current_worm_id + 1) % worm_count;
+						*current_worm = (worms->at(*current_worm_id));
+					}
 				}
 				else
 				{
-					*current_worm_id = (*current_worm_id + 1) % worm_count_b;
-					*current_worm = (worms_b->at(*current_worm_id));
+					if (worm_count_b)
+					{
+						*current_worm_id = (*current_worm_id + 1) % worm_count_b;
+						*current_worm = (worms_b->at(*current_worm_id));
+					}
 				}
 					
 			}
 			if(this->event.key.code == sf::Keyboard::A)
 			{
-				*current_team = team::RED;
-				(*current_worm)->stopMove();
-				*current_worm_id = (*current_worm_id + 1) % worm_count;
-				*current_worm = (worms->at(*current_worm_id));
+				if (worm_count)
+				{
+					*current_team = team::RED;
+					(*current_worm)->stopMove();
+					*current_worm_id = (*current_worm_id + 1) % worm_count;
+					*current_worm = (worms->at(*current_worm_id));
+				}
 			}
 			if(this->event.key.code == sf::Keyboard::S)
 			{
-				*current_team = team::BLUE;
-				(*current_worm)->stopMove();
-				*current_worm_id = (*current_worm_id + 1) % worm_count_b;
-				*current_worm = (worms_b->at(*current_worm_id));
+				if (worm_count_b)
+				{
+					*current_team = team::BLUE;
+					(*current_worm)->stopMove();
+					*current_worm_id = (*current_worm_id + 1) % worm_count_b;
+					*current_worm = (worms_b->at(*current_worm_id));
+				}
 			}
 			if (this->event.key.code == sf::Keyboard::Space)
 			{

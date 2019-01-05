@@ -107,7 +107,7 @@ void Worm::update()
 	this->collisionPoints[LEFT] = { left(),sprite.getPosition().y + (sprite.getLocalBounds().height*wormScale / 2) };
 	this->collisionPoints[RIGHT] = { right(),sprite.getPosition().y + (sprite.getLocalBounds().height*wormScale / 2) };
 
-	if((bottom() < windowHeight)&&!checkCollision(collisionPoints[DOWN]))
+	if(!checkCollision(collisionPoints[DOWN]))
 	{
 		this->velocity.y += 1;
 		if (this->velocity.y > 10)
@@ -135,7 +135,11 @@ void Worm::update()
 
 	this->hpShape.setPosition(this->sprite.getPosition().x, this->sprite.getPosition().y - 10);
 	this->hpShape.setSize(sf::Vector2f(this->hp - 0.5f, this->hpShape.getSize().y));
-	
+	if (this->posX <= 10 || this->posX>=800 || this->posY >= 600)
+	{
+		std::cout << hp << std::endl;
+		this->damage(200);
+	}
 	
 
 }
