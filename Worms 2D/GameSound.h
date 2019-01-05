@@ -12,16 +12,21 @@ public:
 	void StopSample();
 	void StartRevolverSound();
 	void StopRevolverSound();
+	void PlayDeath();
+	void StopDeath();
 	
 private:
 	sf::Music music;
 	std::string musicPath = "resources/sounds/music_loop.ogg";
 	std::string testSamplePath = "resources/sounds/test_sample.ogg";
 	std::string revolverSoundPath = "resources/sounds/revolver_sound.ogg";
+	std::string deathSoundPath = "resources/sounds/death.ogg";
 	sf::SoundBuffer testSampleBuffer;
 	sf::Sound testSampleSound;
 	sf::SoundBuffer revolverSoundBuffer;
 	sf::Sound revolverSound;
+	sf::SoundBuffer deathSoundBuffer;
+	sf::Sound deathSound;
 	
 
 

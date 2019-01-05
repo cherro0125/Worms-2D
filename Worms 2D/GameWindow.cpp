@@ -96,6 +96,7 @@ void GameWindow::MainLoop()
 		if(worms->size() != worm_count)
 		{
 			worm_count--;
+			gs->PlayDeath();
 			break;
 		}
 		this->window->draw(*worms->at(i));

@@ -15,6 +15,11 @@ GameSound::GameSound()
 	revolverSound.setBuffer(revolverSoundBuffer);
 	revolverSound.setVolume(100);
 
+	if(!deathSoundBuffer.loadFromFile(deathSoundPath))
+		std::cout << "Error with initialization death sound" << std::endl;
+	deathSound.setBuffer(deathSoundBuffer);
+	deathSound.setVolume(100);
+
 	
 }
 
@@ -46,4 +51,14 @@ void GameSound::StartRevolverSound()
 void GameSound::StopRevolverSound()
 {
 	revolverSound.stop();
+}
+
+void GameSound::PlayDeath()
+{
+	deathSound.play();
+}
+
+void GameSound::StopDeath()
+{
+	deathSound.stop();
 }
