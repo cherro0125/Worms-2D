@@ -21,6 +21,7 @@ public:
 	void ChangeFrameLimit(unsigned int limit = 60) const;
 	void MainLoop();
 	void UpdateWorms(int i);
+	void UpdateWormsB(int i);
 	Worm **GetCurrentWorm();
 	std::vector<Worm*>* GetWormsArray() const;
 	int GetWormCount();
@@ -36,9 +37,12 @@ private:
 	unsigned int height;
 	static sf::RenderWindow* window;
 	int worm_count;
+	int worm_count_b;
 	int current_worm_id;
+	int current_team;
 	Worm *current_worm;
 	std::vector<Worm*>*worms = new std::vector<Worm*>;
+	std::vector<Worm*>*worms_b = new std::vector<Worm*>;
 	sf::Color bgColor;
 	FPSCounter *fpsCounter;
 	static GameSound* gs;

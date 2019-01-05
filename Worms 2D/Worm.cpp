@@ -351,6 +351,20 @@ bool Worm::hasWeapon() const
 	return weapon != nullptr;
 }
 
+void Worm::setTeam(team t)
+{
+	if(t == team::RED)
+	{
+		this->hpShape.setFillColor(sf::Color::Red);
+	}
+	else if(t == team::BLUE)
+	{
+		this->hpShape.setFillColor(sf::Color::Blue);
+	}
+}
+
+
+
 
 
 

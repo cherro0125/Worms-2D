@@ -4,6 +4,7 @@
 
 //enum collision{UP,DOWN,LEFT,RIGHT};
 enum collision{UP,UP_LEFT,UP_RIGHT,DOWN, DOWN_LEFT, DOWN_RIGHT, LEFT, RIGHT};
+enum team{RED,BLUE};
 
 class Worm : public sf::Drawable
 {
@@ -36,6 +37,7 @@ public:
 	sf::Text getDebugTxt();
 	bool isLookingOnLeft() const;
 	bool hasWeapon() const;
+	void setTeam(team t);
 
 protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
