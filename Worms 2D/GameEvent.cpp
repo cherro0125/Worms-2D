@@ -147,7 +147,7 @@ void GameEvent::handleEvents()
 
 			if(this->event.key.code == sf::Keyboard::E)
 			{
-				(*current_worm)->setWeapon(nullptr);
+				(*current_worm)->deleteWeapon();
 			}
 
 			if(this->event.key.code == sf::Keyboard::LControl)

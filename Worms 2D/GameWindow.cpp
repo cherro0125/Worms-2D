@@ -40,6 +40,7 @@ GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name
 GameWindow::~GameWindow()
 {
 	delete[] worms;
+	delete[] worms_b;
 }
 
 sf::RenderWindow* GameWindow::GetInstance() const
@@ -167,6 +168,21 @@ void GameWindow::MainLoop()
 		if ((*current_worm).isAlive())
 			this->window->draw(cpoints[i]);
 	}
+
+	if (current_worm->hasWeapon() && current_worm->getWeapon()->getIsShooting())
+	{
+		if (current_worm->checkCollision({ current_worm->getWeapon()->getBullet()->getPosX() ,current_worm->getWeapon()->getBullet()->getPosY() }))
+		{
+			sf::CircleShape circ(20);
+			circ.setOrigin(20, 20);
+			circ.setFillColor(sf::Color(0, 0, 0, 0));
+			circ.setPosition(current_worm->getWeapon()->getBullet()->getPosX(), current_worm->getWeapon()->getBullet()->getPosY());
+			gw->terrain.erase(circ);
+			current_worm->getWeapon()->setIsShooting(false);
+			current_worm->getWeapon()->setBullet(nullptr);
+		}
+	}
+
 	//test
 	this->window->draw(bulletorigin);
 

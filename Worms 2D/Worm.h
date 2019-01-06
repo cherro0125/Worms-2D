@@ -33,6 +33,7 @@ public:
 	sf::Vector2f collisionPoints[8];
 	void setWeapon(Weapon* weapon);
 	Weapon* getWeapon() const;
+	void deleteWeapon();
 	void setColMap(sf::Image *image);
 	sf::Text getDebugTxt();
 	bool isLookingOnLeft() const;

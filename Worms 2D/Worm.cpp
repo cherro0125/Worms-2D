@@ -140,6 +140,8 @@ void Worm::update()
 		std::cout << hp << std::endl;
 		this->damage(200);
 	}
+
+
 	
 
 }
@@ -174,12 +176,20 @@ sf::Sprite Worm::getSprite() const
 
 void Worm::setWeapon(Weapon* weapon)
 {
+	Weapon *w = this->getWeapon();
+	if (w != nullptr)
+		delete w;
 	this->weapon = weapon;
 }
 
 Weapon* Worm::getWeapon() const
 {
 	return this->weapon;
+}
+
+void Worm::deleteWeapon()
+{
+	this->setWeapon(nullptr);
 }
 
 
