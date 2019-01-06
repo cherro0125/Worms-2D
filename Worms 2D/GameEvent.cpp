@@ -154,6 +154,8 @@ void GameEvent::handleEvents()
 			{
 				if((*current_worm)->hasWeapon())
 				{
+					if ((*current_worm)->getWeapon()->getIsShooting())
+						continue;
 					if ((*current_worm)->isLookingOnLeft())
 					{
 						(*current_worm)->getWeapon()->shoot((*current_worm)->getWeapon()->getRotation()-180);
