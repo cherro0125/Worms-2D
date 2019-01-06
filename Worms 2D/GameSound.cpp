@@ -15,6 +15,11 @@ GameSound::GameSound()
 	revolverSound.setBuffer(revolverSoundBuffer);
 	revolverSound.setVolume(100);
 
+	if(!bazookaSoundBuffer.loadFromFile(bazookaSoundPath))
+		std::cout << "Error with initialization bazooka sound" << std::endl;
+	bazookaSound.setBuffer(bazookaSoundBuffer);
+	bazookaSound.setVolume(100);
+
 	if(!deathSoundBuffer.loadFromFile(deathSoundPath))
 		std::cout << "Error with initialization death sound" << std::endl;
 	deathSound.setBuffer(deathSoundBuffer);
@@ -51,6 +56,16 @@ void GameSound::StartRevolverSound()
 void GameSound::StopRevolverSound()
 {
 	revolverSound.stop();
+}
+
+void GameSound::StartBazookaSound()
+{
+	bazookaSound.play();
+}
+
+void GameSound::StopBazookaSound()
+{
+	bazookaSound.stop();
 }
 
 void GameSound::PlayDeath()

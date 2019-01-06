@@ -1,4 +1,5 @@
 #include "Bazooka.h"
+#include "GameWindow.h"
 
 Bazooka::Bazooka(float x, float y): Weapon(x,y)
 {
@@ -15,6 +16,8 @@ Bazooka::Bazooka(float x, float y): Weapon(x,y)
 
 void Bazooka::playShootSound()
 {
+	GameSound *gs = GameWindow::GetGameWindowInstance()->GetGameSound();
+	gs->StartBazookaSound();
 }
 
 
