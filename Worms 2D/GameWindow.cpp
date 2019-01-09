@@ -156,7 +156,7 @@ void GameWindow::MainLoop()
 		if (!worms_b->at(i)->isAlive())
 		{
 			std::vector<Worm*>::iterator it = std::find(worms_b->begin(), worms_b->end(),
-				worms_b->at(i));
+			worms_b->at(i));
 			worms_b->erase(it);
 			i--;
 		}

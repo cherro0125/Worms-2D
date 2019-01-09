@@ -80,7 +80,8 @@ Bullet* Weapon::getBullet()
 void Weapon::update()
 {
 	this->sprite.setPosition(sf::Vector2f(posX,posY));
-	this->sprite.setScale(scaleVector);
+	if(this->sprite.getScale() != scaleVector)
+		this->sprite.setScale(scaleVector);
 	this->sprite.setRotation(rotation);
 	if(isShooting)
 		this->bullet->update();

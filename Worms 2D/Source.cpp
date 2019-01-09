@@ -7,7 +7,6 @@ int main()
 {
 	
 	GameWindow *window = GameWindow::GetGameWindowInstance(800, 600, "Worms 2D");
-
 	while (window->GetInstance()->isOpen())
 	{
 		GameEvent *ev = GameEvent::GetEventInstance() ;
