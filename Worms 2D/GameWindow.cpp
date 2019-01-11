@@ -71,7 +71,7 @@ void GameWindow::endGame()
 	this->game_started = false;
 	delete this->worms;
 	delete this->worms_b;
-	
+	this->terrain.reset();
 }
 
 void GameWindow::MainLoop()
