@@ -137,10 +137,12 @@
   <ItemGroup>
     <ClCompile Include="Bazooka.cpp" />
     <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="FPSCounter.cpp" />
     <ClCompile Include="GameEvent.cpp" />
     <ClCompile Include="GameSound.cpp" />
     <ClCompile Include="GameWindow.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Revolver.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Terrain.cpp" />
@@ -151,10 +153,12 @@
   <ItemGroup>
     <ClInclude Include="Bazooka.h" />
     <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Button.h" />
     <ClInclude Include="FPSCounter.h" />
     <ClInclude Include="GameEvent.h" />
     <ClInclude Include="GameSound.h" />
     <ClInclude Include="GameWindow.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Revolver.h" />
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="Water.h" />

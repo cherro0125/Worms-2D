@@ -10,6 +10,7 @@
 #include "Weapon.h"
 #include "Bazooka.h"
 #include "Water.h"
+#include "Menu.h"
 class GameWindow
 {
 public:
@@ -32,6 +33,9 @@ public:
 	void SetBackgroundColor(sf::Color color);
 	GameSound* GetGameSound() const;
 	Terrain terrain;
+	Menu menu;
+	int game_state;
+	bool game_started;
 
 private:
 	static GameWindow *gw;
@@ -51,6 +55,9 @@ private:
 	static GameSound* gs;
 	Weapon *weapon = new Bazooka(200,20);
 	Water water;
+	sf::RectangleShape black_overlay;
+	void startGame();
+	void endGame();
 	
 };
 

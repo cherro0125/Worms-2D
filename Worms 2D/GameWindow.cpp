@@ -12,28 +12,14 @@ GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name
 		this->gs = new GameSound();
 		this->gs->PlayMainMusic();
 
-		this->worm_count = 3;
-		this->worm_count_b = worm_count;
-		this->worms = new std::vector<Worm*>;
-		this->worms_b = new std::vector<Worm*>;
-		for (int j = 0; j < worm_count; j++)
-		{
-			Worm* newWormA = new Worm();
-			newWormA->setTeam(team::RED);
-			this->worms->push_back(newWormA);
-			Worm* newWormB = new Worm();
-			newWormB->setTeam(team::BLUE);
-			this->worms_b->push_back(newWormB);
-		}
+		this->game_state = MENU;
+		this->black_overlay.setFillColor(sf::Color(0, 0, 0, 64));
+		this->black_overlay.setPosition(0, 0);
+		this->black_overlay.setSize(sf::Vector2f(800, 600));
+		this->menu.changeMenu(game_state);
+		this->game_started = false;
 
-		this->current_worm_id = 0;
-		this->current_team = team::RED;
-		this->current_worm = (worms->at(this->current_worm_id));
-		for (int i = 0; i < worm_count; ++i)
-		{
-			worms->at(i)->setColMap(&(terrain.map));
-			worms_b->at(i)->setColMap(&(terrain.map));
-		}
+		
 	}
 }
 
@@ -53,142 +39,163 @@ void GameWindow::ChangeFrameLimit(unsigned int limit) const
 	this->window->setFramerateLimit(limit);
 }
 
-void GameWindow::MainLoop()
+void GameWindow::startGame()
 {
-	sf::RectangleShape cpoints[8];
-	for (int i = 0; i < 8; ++i)
+	this->game_started = true;
+	this->worm_count = 3;
+	this->worm_count_b = worm_count;
+	this->worms = new std::vector<Worm*>;
+	this->worms_b = new std::vector<Worm*>;
+	for (int j = 0; j < worm_count; j++)
 	{
-		cpoints[i].setSize(sf::Vector2f(2.f, 2.f));
+		Worm* newWormA = new Worm();
+		newWormA->setTeam(team::RED);
+		this->worms->push_back(newWormA);
+		Worm* newWormB = new Worm();
+		newWormB->setTeam(team::BLUE);
+		this->worms_b->push_back(newWormB);
 	}
-	cpoints[0].setPosition(current_worm->collisionPoints[UP]);
-	cpoints[1].setPosition(current_worm->collisionPoints[UP_LEFT]);
-	cpoints[2].setPosition(current_worm->collisionPoints[UP_RIGHT]);
-	cpoints[3].setPosition(current_worm->collisionPoints[DOWN]);
-	cpoints[4].setPosition(current_worm->collisionPoints[DOWN_LEFT]);
-	cpoints[5].setPosition(current_worm->collisionPoints[DOWN_RIGHT]);
-	cpoints[6].setPosition(current_worm->collisionPoints[LEFT]);
-	cpoints[7].setPosition(current_worm->collisionPoints[RIGHT]);
 
-	sf::RectangleShape bulletorigin(sf::Vector2f(2.f, 2.f));
-
-	this->fpsCounter->start();
-
-	this->window->clear(sf::Color(71, 71, 71));
-	water.update();
-	this->window->draw(water);
-	this->window->draw(terrain);
+	this->current_worm_id = 0;
+	this->current_team = team::RED;
+	this->current_worm = (worms->at(this->current_worm_id));
 	for (int i = 0; i < worm_count; ++i)
 	{
-		if ((*current_worm).hasWeapon() && (*current_worm).getWeapon()->getIsShooting())
-		{
-			bulletorigin.setPosition((*current_worm).getWeapon()->getBullet()->getPosX(),
-			                         (*current_worm).getWeapon()->getBullet()->getPosY());
-			if (current_worm != worms->at(i))
-				for (int j = 0; j < 8; j++)
-				{
-					if (pow(worms->at(i)->collisionPoints[j].x - (*current_worm).getWeapon()->getBullet()->getPosX(), 2)
-						+ pow((*current_worm).getWeapon()->getBullet()->getPosY() - worms->at(i)->collisionPoints[j].y,
-						      2) <= pow((35 * (*current_worm).getWeapon()->getBullet()->getScale()) + 1, 2))
-					{
-						worms->at(i)->damage(current_worm->getWeapon()->getDamage());
-						current_worm->getWeapon()->setIsShooting(false);
-						current_worm->getWeapon()->setBullet(nullptr);
-						std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
-						
-
-						break;
-					}
-				}
-		}
-		if (worms->size() != worm_count)
-		{
-			worm_count--;
-			gs->PlayDeath();
-			break;
-		}
-		
-		this->window->draw(*worms->at(i));
-		this->UpdateWorms(i);
-		if (!worms->at(i)->isAlive())
-		{
-			std::vector<Worm*>::iterator it = std::find(worms->begin(), worms->end(), worms->at(i));
-			worms->erase(it);
-			i -= 1;
-		}
-		
+		worms->at(i)->setColMap(&(terrain.map));
+		worms_b->at(i)->setColMap(&(terrain.map));
 	}
+}
 
-	for (int i = 0; i < worm_count_b; ++i)
+void GameWindow::endGame()
+{
+	this->game_started = false;
+	delete this->worms;
+	delete this->worms_b;
+	
+}
+
+void GameWindow::MainLoop()
+{
+	
+	//this->fpsCounter->start();
+	water.update();
+
+	if (this->game_started == false && this->game_state == GAME)
+		this->startGame();
+	else if (this->game_started == true && this->game_state == MENU)
+		this->endGame();
+
+	this->window->clear(sf::Color(30, 40, 70));
+	this->window->draw(water);
+	
+	if (game_started)
 	{
-		if ((*current_worm).hasWeapon() && (*current_worm).getWeapon()->getIsShooting())
+		this->window->draw(terrain);
+		for (int i = 0; i < worm_count; ++i)
 		{
-			bulletorigin.setPosition((*current_worm).getWeapon()->getBullet()->getPosX(),
-			                         (*current_worm).getWeapon()->getBullet()->getPosY());
-			if (current_worm != worms_b->at(i))
-				for (int j = 0; j < 8; j++)
-				{
-					if (pow(worms_b->at(i)->collisionPoints[j].x - (*current_worm).getWeapon()->getBullet()->getPosX(),
-					        2) + pow(
+			if ((*current_worm).hasWeapon() && (*current_worm).getWeapon()->getIsShooting())
+			{
+				if (current_worm != worms->at(i))
+					for (int j = 0; j < 8; j++)
+					{
+						if (pow(worms->at(i)->collisionPoints[j].x - (*current_worm).getWeapon()->getBullet()->getPosX(), 2)
+							+ pow((*current_worm).getWeapon()->getBullet()->getPosY() - worms->at(i)->collisionPoints[j].y,
+								2) <= pow((35 * (*current_worm).getWeapon()->getBullet()->getScale()) + 1, 2))
+						{
+							worms->at(i)->damage(current_worm->getWeapon()->getDamage());
+							current_worm->getWeapon()->setIsShooting(false);
+							current_worm->getWeapon()->setBullet(nullptr);
+							std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
+
+
+							break;
+						}
+					}
+			}
+			if (worms->size() != worm_count)
+			{
+				worm_count--;
+				gs->PlayDeath();
+				break;
+			}
+
+			this->window->draw(*worms->at(i));
+			this->UpdateWorms(i);
+			if (!worms->at(i)->isAlive())
+			{
+				std::vector<Worm*>::iterator it = std::find(worms->begin(), worms->end(), worms->at(i));
+				worms->erase(it);
+				i -= 1;
+			}
+
+		}
+
+		for (int i = 0; i < worm_count_b; ++i)
+		{
+			if ((*current_worm).hasWeapon() && (*current_worm).getWeapon()->getIsShooting())
+			{
+				if (current_worm != worms_b->at(i))
+					for (int j = 0; j < 8; j++)
+					{
+						if (pow(worms_b->at(i)->collisionPoints[j].x - (*current_worm).getWeapon()->getBullet()->getPosX(),
+							2) + pow(
 							(*current_worm).getWeapon()->getBullet()->getPosY() - worms_b->at(i)->collisionPoints[j].y,
-							2)
-						<= pow((35 * (*current_worm).getWeapon()->getBullet()->getScale()) + 1, 2))
-					{
-						worms_b->at(i)->damage(20);
-						current_worm->getWeapon()->setIsShooting(false);
-						current_worm->getWeapon()->setBullet(nullptr);
-						std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
-						
+								2)
+							<= pow((35 * (*current_worm).getWeapon()->getBullet()->getScale()) + 1, 2))
+						{
+							worms_b->at(i)->damage(20);
+							current_worm->getWeapon()->setIsShooting(false);
+							current_worm->getWeapon()->setBullet(nullptr);
+							std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
 
-						break;
+
+							break;
+						}
 					}
-				}
-		}
-		if (worms_b->size() != worm_count_b)
-		{
-			worm_count_b--;
-			gs->PlayDeath();
-			break;
+			}
+			if (worms_b->size() != worm_count_b)
+			{
+				worm_count_b--;
+				gs->PlayDeath();
+				break;
+			}
+
+			this->window->draw(*worms_b->at(i));
+
+			this->UpdateWormsB(i);
+			if (!worms_b->at(i)->isAlive())
+			{
+				std::vector<Worm*>::iterator it = std::find(worms_b->begin(), worms_b->end(),
+					worms_b->at(i));
+				worms_b->erase(it);
+				i--;
+			}
+
 		}
 
-		this->window->draw(*worms_b->at(i));
-
-		this->UpdateWormsB(i);
-		if (!worms_b->at(i)->isAlive())
+		if (current_worm->hasWeapon() && current_worm->getWeapon()->getIsShooting())
 		{
-			std::vector<Worm*>::iterator it = std::find(worms_b->begin(), worms_b->end(),
-			worms_b->at(i));
-			worms_b->erase(it);
-			i--;
+			if (current_worm->checkCollision({ current_worm->getWeapon()->getBullet()->getPosX() ,current_worm->getWeapon()->getBullet()->getPosY() }))
+			{
+				sf::CircleShape circ(20);
+				circ.setOrigin(20, 20);
+				circ.setFillColor(sf::Color(0, 0, 0, 0));
+				circ.setPosition(current_worm->getWeapon()->getBullet()->getPosX(), current_worm->getWeapon()->getBullet()->getPosY());
+				gw->terrain.erase(circ);
+				current_worm->getWeapon()->setIsShooting(false);
+				current_worm->getWeapon()->setBullet(nullptr);
+			}
 		}
 	}
-
-
-	for (int i = 0; i < 8; ++i)
-	{
-		if ((*current_worm).isAlive())
-			this->window->draw(cpoints[i]);
-	}
-
-	if (current_worm->hasWeapon() && current_worm->getWeapon()->getIsShooting())
-	{
-		if (current_worm->checkCollision({ current_worm->getWeapon()->getBullet()->getPosX() ,current_worm->getWeapon()->getBullet()->getPosY() }))
-		{
-			sf::CircleShape circ(20);
-			circ.setOrigin(20, 20);
-			circ.setFillColor(sf::Color(0, 0, 0, 0));
-			circ.setPosition(current_worm->getWeapon()->getBullet()->getPosX(), current_worm->getWeapon()->getBullet()->getPosY());
-			gw->terrain.erase(circ);
-			current_worm->getWeapon()->setIsShooting(false);
-			current_worm->getWeapon()->setBullet(nullptr);
-		}
-	}
-
 	//test
-	this->window->draw(bulletorigin);
+	if (game_state != GAME)
+	{
+		this->window->draw(black_overlay);
+		this->window->draw(menu);
+	}
 
-
-	this->fpsCounter->drawFPS();
-	this->window->draw((**(this->GetCurrentWorm())).getDebugTxt());
+	//this->fpsCounter->drawFPS();
+	//this->window->draw((**(this->GetCurrentWorm())).getDebugTxt());
 	this->window->display();
 }
 
