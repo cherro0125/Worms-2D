@@ -178,8 +178,7 @@ void GameWindow::MainLoop()
 								2)
 							<= pow((35 * (*current_worm).getWeapon()->getBullet()->getScale()) + 1, 2))
 						{
-							worms_b->at(i)->damage(20);
-							worms->at(i)->damage(current_worm->getWeapon()->getDamage());
+							worms_b->at(i)->damage(current_worm->getWeapon()->getDamage());
 							destroyTerrain();
 							current_worm->getWeapon()->setIsShooting(false);
 							current_worm->getWeapon()->setBullet(nullptr);
