@@ -64,6 +64,6 @@ private:
 	sf::Time timer;
 	sf::Clock clock;
 	void SwitchTeam(team t);
-	
+	void destroyTerrain();
 };
 

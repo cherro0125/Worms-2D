@@ -122,6 +122,7 @@ void GameWindow::MainLoop()
 								2) <= pow((35 * (*current_worm).getWeapon()->getBullet()->getScale()) + 1, 2))
 						{
 							worms->at(i)->damage(current_worm->getWeapon()->getDamage());
+							destroyTerrain();
 							current_worm->getWeapon()->setIsShooting(false);
 							current_worm->getWeapon()->setBullet(nullptr);
 							std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
@@ -178,6 +179,8 @@ void GameWindow::MainLoop()
 							<= pow((35 * (*current_worm).getWeapon()->getBullet()->getScale()) + 1, 2))
 						{
 							worms_b->at(i)->damage(20);
+							worms->at(i)->damage(current_worm->getWeapon()->getDamage());
+							destroyTerrain();
 							current_worm->getWeapon()->setIsShooting(false);
 							current_worm->getWeapon()->setBullet(nullptr);
 							std::cout << "Trafiono worma " << i << " w collider " << j << std::endl;
@@ -209,13 +212,14 @@ void GameWindow::MainLoop()
 
 		if (current_worm->hasWeapon() && current_worm->getWeapon()->getIsShooting())
 		{
-			if (current_worm->checkCollision({ current_worm->getWeapon()->getBullet()->getPosX() ,current_worm->getWeapon()->getBullet()->getPosY() }))
+			if (current_worm->getWeapon()->getBullet()->getPosX() < -50 || current_worm->getWeapon()->getBullet()->getPosX() > 850 || current_worm->getWeapon()->getBullet()->getPosY() < -50 || current_worm->getWeapon()->getBullet()->getPosY() > 650)
 			{
-				sf::CircleShape circ(20);
-				circ.setOrigin(20, 20);
-				circ.setFillColor(sf::Color(0, 0, 0, 0));
-				circ.setPosition(current_worm->getWeapon()->getBullet()->getPosX(), current_worm->getWeapon()->getBullet()->getPosY());
-				gw->terrain.erase(circ);
+				current_worm->getWeapon()->setIsShooting(false);
+				current_worm->getWeapon()->setBullet(nullptr);
+			}
+			else if (current_worm->checkCollision({ current_worm->getWeapon()->getBullet()->getPosX() ,current_worm->getWeapon()->getBullet()->getPosY() }))
+			{
+				destroyTerrain();
 				current_worm->getWeapon()->setIsShooting(false);
 				current_worm->getWeapon()->setBullet(nullptr);
 			}
@@ -349,6 +353,15 @@ void GameWindow::SetChooseStates()
 	}
 
 	current_worm->setChoosen();
+}
+
+void GameWindow::destroyTerrain()
+{
+	sf::CircleShape circ(30);
+	circ.setOrigin(30, 30);
+	circ.setFillColor(sf::Color(0, 0, 0, 0));
+	circ.setPosition(current_worm->getWeapon()->getBullet()->getPosX(), current_worm->getWeapon()->getBullet()->getPosY());
+	gw->terrain.erase(circ);
 }
 
 //Static variables and methods
