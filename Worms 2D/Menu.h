@@ -3,7 +3,7 @@
 #include "Button.h"
 #include <vector>
 
-enum game_states{GAME,PAUSE,MENU,HELP,HELP_PAUSE,RED_WIN, BLUE_WIN,EXIT};
+enum game_states{GAME,PAUSE,MENU,HELP,HELP_PAUSE,RED_WIN, BLUE_WIN,EXIT, KEYBOARD,GAMEPAD};
 class Menu : public sf::Drawable
 {
 public:
@@ -24,11 +24,16 @@ private:
 	std::vector <Button*> buttons;
 	sf::Sprite keyboard_sprite;
 	sf::Texture keyboard_texture;
-	bool draw_help;
+	sf::Sprite gamepad_sprite;
+	sf::Texture gamepad_texture;
+	bool draw_keyboard;
+	bool draw_gamepad;
 	void mainMenu();
 	void pauseMenu();
 	void helpMainMenu();
 	void helpMenu();
+	void changeDrawKeyboard();
+	void changeDrawGamepad();
 	void redWinScreen();
 	void blueWinScreen();
 };

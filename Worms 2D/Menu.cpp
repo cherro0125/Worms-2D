@@ -14,8 +14,12 @@ Menu::Menu()
 	this->keyboard_texture.loadFromFile("resources/images/keyboard.png");
 	this->keyboard_sprite.setTexture(keyboard_texture, true);
 	this->keyboard_sprite.setPosition(0, 0);
+	this->gamepad_texture.loadFromFile("resources/images/gamepad.png");
+	this->gamepad_sprite.setTexture(gamepad_texture, true);
+	this->gamepad_sprite.setPosition(0, 0);
 	
-	this->draw_help = false;
+	this->draw_keyboard = false;
+	this->draw_gamepad = false;
 
 	
 }
@@ -23,8 +27,10 @@ Menu::Menu()
 
 void Menu::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
-	if(draw_help)
+	if (draw_keyboard)
 		target.draw(this->keyboard_sprite, states);
+	else if (draw_gamepad)
+		target.draw(this->gamepad_sprite, states);
 	for (unsigned int i = 0; i < this->buttons.size(); ++i)
 	{
 		target.draw(*(this->buttons[i]), states);
@@ -69,26 +75,55 @@ void Menu::clearClickedButton()
 
 void Menu::clear()
 {
-	draw_help = false;
+	draw_keyboard = false;
+	draw_gamepad = false;
 	this->txt.setFillColor(sf::Color(255, 255, 255));
 	buttons.clear();
 }
 
 void Menu::changeMenu(int choice)
 {
-	this->clear();
+	
 	if (choice == PAUSE)
+	{
+		this->clear();
 		this->pauseMenu();
+	}
 	else if (choice == MENU)
+	{
+		this->clear();
 		this->mainMenu();
+	}
 	else if (choice == HELP)
+	{
+		this->clear();
 		this->helpMainMenu();
+	}
 	else if (choice == HELP_PAUSE)
+	{
+		this->clear();
 		this->helpMenu();
+	}
 	else if (choice == RED_WIN)
+	{
+		this->clear();
 		this->redWinScreen();
+	}
 	else if (choice == BLUE_WIN)
+	{
+		this->clear();
 		this->blueWinScreen();
+	}
+	else if (choice == KEYBOARD)
+	{
+		this->changeDrawKeyboard();
+		this->clearClickedButton();
+	}
+	else if (choice == GAMEPAD)
+	{
+		this->changeDrawGamepad();
+		this->clearClickedButton();
+	}
 }
 
 void Menu::mainMenu()
@@ -109,17 +144,21 @@ void Menu::pauseMenu()
 }
 void Menu::helpMainMenu()
 {
-	draw_help = true;
-	this->txt.setString("HELP");
+	draw_keyboard = true;
+	this->txt.setString("");
 	this->txt.setOrigin(this->txt.getLocalBounds().width / 2, this->txt.getLocalBounds().height / 2);
 	this->buttons.push_back(new Button(400, 550, "Back", MENU));
+	this->buttons.push_back(new Button(400 - buttons.back()->getSize().x/2, buttons.back()->getSize().y/2, "Keyboard", KEYBOARD));
+	this->buttons.push_back(new Button(400 + buttons.back()->getSize().x/2, buttons.back()->getSize().y/2, "Gamepad", GAMEPAD));
 }
 void Menu::helpMenu()
 {
-	draw_help = true;
-	this->txt.setString("HELP");
+	draw_keyboard = true;
+	this->txt.setString("");
 	this->txt.setOrigin(this->txt.getLocalBounds().width / 2, this->txt.getLocalBounds().height / 2);
 	this->buttons.push_back(new Button(400, 550, "Back", PAUSE));
+	this->buttons.push_back(new Button(400 - buttons.back()->getSize().x / 2, buttons.back()->getSize().y / 2, "Keyboard", KEYBOARD));
+	this->buttons.push_back(new Button(400 + buttons.back()->getSize().x / 2, buttons.back()->getSize().y / 2, "Gamepad", GAMEPAD));
 }
 void Menu::redWinScreen()
 {
@@ -138,4 +177,14 @@ void Menu::blueWinScreen()
 	this->buttons.push_back(new Button(400, txt.getPosition().y * 3 + txt.getCharacterSize(), "Retry", GAME));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Help", HELP_PAUSE));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Exit to menu", MENU));
+}
+void Menu::changeDrawKeyboard()
+{
+	this->draw_keyboard = true;
+	this->draw_gamepad = false;
+}
+void Menu::changeDrawGamepad()
+{
+	this->draw_keyboard = false;
+	this->draw_gamepad = true;
 }
