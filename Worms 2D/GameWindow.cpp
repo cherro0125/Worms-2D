@@ -74,6 +74,8 @@ void GameWindow::endGame()
 	this->terrain.reset();
 }
 
+
+
 void GameWindow::MainLoop()
 {
 
@@ -106,6 +108,7 @@ void GameWindow::MainLoop()
 	
 	if (game_started)
 	{
+		this->timer = this->clock.getElapsedTime();
 		this->window->draw(terrain);
 		for (int i = 0; i < worm_count; ++i)
 		{
@@ -202,6 +205,24 @@ void GameWindow::MainLoop()
 				current_worm->getWeapon()->setBullet(nullptr);
 			}
 		}
+		std::cout << "TIMER:" << this->timer.asSeconds() << std::endl;
+		if(static_cast<int>(this->timer.asSeconds()) == 8)
+		{
+			if(*GetCurrentTeam() == team::RED)
+			{
+				this->SwitchToBlueTeam();
+			}
+			else
+			{
+				this->SwitchToRedTeam();
+			}
+			this->timer = this->clock.restart();
+		}
+
+		this->SetChooseStates();
+
+		
+			
 	}
 	//test
 	if (game_state != GAME)
@@ -269,6 +290,50 @@ void GameWindow::SetBackgroundColor(sf::Color color)
 GameSound* GameWindow::GetGameSound() const
 {
 	return this->gs;
+}
+
+void GameWindow::SwitchTeam(team t)
+{
+	current_team = t;
+	current_worm->stopMove();
+	current_worm_id = (current_worm_id + 1) % worm_count;
+	if (t == team::RED)
+		current_worm = (worms->at(current_worm_id));
+	else
+		current_worm = (worms_b->at(current_worm_id));
+}
+
+void GameWindow::SwitchToRedTeam()
+{
+	if (worm_count)
+	{
+		SwitchTeam(team::RED);
+	}
+}
+
+void GameWindow::SwitchToBlueTeam()
+{
+	if(worm_count_b)
+	{
+		SwitchTeam(team::BLUE);
+	}
+}
+
+void GameWindow::SetChooseStates()
+{
+	for(int i =0; i < worms->size(); i++)
+	{
+		if (current_worm != worms->at(i))
+			this->worms->at(i)->setNormal();
+	}
+
+	for (int j = 0; j < worms_b->size(); j++)
+	{
+		if (current_worm != worms_b->at(j))
+			this->worms_b->at(j)->setNormal();
+	}
+
+	current_worm->setChoosen();
 }
 
 //Static variables and methods

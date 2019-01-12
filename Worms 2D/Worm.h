@@ -41,6 +41,8 @@ public:
 	void setTeam(team t);
 	void lookLeft();
 	void lookRight();
+	void setChoosen();
+	void setNormal();
 
 protected:
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;

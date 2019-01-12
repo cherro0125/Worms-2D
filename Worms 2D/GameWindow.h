@@ -36,6 +36,9 @@ public:
 	Menu menu;
 	int game_state;
 	bool game_started;
+	void SwitchToRedTeam();
+	void SwitchToBlueTeam();
+	void SetChooseStates();
 
 private:
 	static GameWindow *gw;
@@ -58,6 +61,9 @@ private:
 	sf::RectangleShape black_overlay;
 	void startGame();
 	void endGame();
+	sf::Time timer;
+	sf::Clock clock;
+	void SwitchTeam(team t);
 	
 };
 

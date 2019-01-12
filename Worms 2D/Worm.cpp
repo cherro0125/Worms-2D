@@ -59,6 +59,7 @@ Worm::Worm()
 	debugTxt.setCharacterSize(12);
 	debugTxt.setPosition(font.getLineSpacing(debugTxt.getCharacterSize()), font.getLineSpacing(debugTxt.getCharacterSize() * 2));
 	debugTxt.setString("Worm X:" + std::to_string(getWormX()) + " Y:" + std::to_string(getWormY()));
+
 }
 
 Worm::~Worm()
@@ -301,6 +302,17 @@ void Worm::lookRight()
 
 	std::cout << "RIGHT\n";
 	lookingLeft = false;
+}
+
+void Worm::setChoosen()
+{
+	this->hpShape.setOutlineThickness(1);
+	this->hpShape.setOutlineColor(sf::Color::Yellow);
+}
+
+void Worm::setNormal()
+{
+	this->hpShape.setOutlineThickness(0);
 }
 
 void Worm::moveLeft()
