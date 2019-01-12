@@ -77,7 +77,7 @@ void GameEvent::handleEvents()
 					gWindow->game_state = PAUSE;
 					gWindow->menu.changeMenu(gWindow->game_state);
 				}
-				else if (gWindow->game_state == HELP)
+				else if (gWindow->game_state == HELP|| gWindow->game_state == RED_WIN|| gWindow->game_state == BLUE_WIN)
 				{
 					gWindow->game_state = MENU;
 					gWindow->menu.changeMenu(gWindow->game_state);

@@ -3,7 +3,7 @@
 #include "Button.h"
 #include <vector>
 
-enum game_states{GAME,PAUSE,MENU,HELP,HELP_PAUSE,EXIT};
+enum game_states{GAME,PAUSE,MENU,HELP,HELP_PAUSE,RED_WIN, BLUE_WIN,EXIT};
 class Menu : public sf::Drawable
 {
 public:
@@ -29,4 +29,6 @@ private:
 	void pauseMenu();
 	void helpMainMenu();
 	void helpMenu();
+	void redWinScreen();
+	void blueWinScreen();
 };

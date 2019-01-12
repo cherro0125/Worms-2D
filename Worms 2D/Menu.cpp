@@ -70,6 +70,7 @@ void Menu::clearClickedButton()
 void Menu::clear()
 {
 	draw_help = false;
+	this->txt.setFillColor(sf::Color(255, 255, 255));
 	buttons.clear();
 }
 
@@ -84,11 +85,16 @@ void Menu::changeMenu(int choice)
 		this->helpMainMenu();
 	else if (choice == HELP_PAUSE)
 		this->helpMenu();
+	else if (choice == RED_WIN)
+		this->redWinScreen();
+	else if (choice == BLUE_WIN)
+		this->blueWinScreen();
 }
 
 void Menu::mainMenu()
 {
 	this->txt.setString("MAIN MENU");
+	this->txt.setOrigin(this->txt.getLocalBounds().width / 2, this->txt.getLocalBounds().height / 2);
 	this->buttons.push_back(new Button(400, txt.getPosition().y * 3 + txt.getCharacterSize(), "Start", GAME));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Help", HELP));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Exit", EXIT));
@@ -96,6 +102,7 @@ void Menu::mainMenu()
 void Menu::pauseMenu()
 {
 	this->txt.setString("PAUSE");
+	this->txt.setOrigin(this->txt.getLocalBounds().width / 2, this->txt.getLocalBounds().height / 2);
 	this->buttons.push_back(new Button(400, txt.getPosition().y * 3 + txt.getCharacterSize(), "Resume", GAME));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Help", HELP_PAUSE));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Exit to menu", MENU));
@@ -104,11 +111,31 @@ void Menu::helpMainMenu()
 {
 	draw_help = true;
 	this->txt.setString("HELP");
+	this->txt.setOrigin(this->txt.getLocalBounds().width / 2, this->txt.getLocalBounds().height / 2);
 	this->buttons.push_back(new Button(400, 550, "Back", MENU));
 }
 void Menu::helpMenu()
 {
 	draw_help = true;
 	this->txt.setString("HELP");
+	this->txt.setOrigin(this->txt.getLocalBounds().width / 2, this->txt.getLocalBounds().height / 2);
 	this->buttons.push_back(new Button(400, 550, "Back", PAUSE));
+}
+void Menu::redWinScreen()
+{
+	this->txt.setString("RED TEAM WINS");
+	this->txt.setOrigin(this->txt.getLocalBounds().width / 2, this->txt.getLocalBounds().height / 2);
+	this->txt.setFillColor(sf::Color(255, 0, 0));
+	this->buttons.push_back(new Button(400, txt.getPosition().y * 3 + txt.getCharacterSize(), "Retry", GAME));
+	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Help", HELP_PAUSE));
+	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Exit to menu", MENU));
+}
+void Menu::blueWinScreen()
+{
+	this->txt.setString("BLUE TEAM WINS");
+	this->txt.setOrigin(this->txt.getLocalBounds().width / 2, this->txt.getLocalBounds().height / 2);
+	this->txt.setFillColor(sf::Color(0, 0, 255));
+	this->buttons.push_back(new Button(400, txt.getPosition().y * 3 + txt.getCharacterSize(), "Retry", GAME));
+	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Help", HELP_PAUSE));
+	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Exit to menu", MENU));
 }

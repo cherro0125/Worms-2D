@@ -76,7 +76,7 @@ void GameWindow::endGame()
 
 void GameWindow::MainLoop()
 {
-	
+
 	//this->fpsCounter->start();
 	water.update();
 
@@ -84,6 +84,22 @@ void GameWindow::MainLoop()
 		this->startGame();
 	else if (this->game_started == true && this->game_state == MENU)
 		this->endGame();
+	if (this->game_started == true)
+	{
+		if (this->worm_count <= 0)
+		{
+			this->endGame();
+			this->game_state = BLUE_WIN;
+			this->menu.changeMenu(game_state);
+		}
+		else if (this->worm_count_b <= 0)
+		{
+			this->endGame();
+			this->game_state = RED_WIN;
+			this->menu.changeMenu(game_state);
+		}
+	}
+		
 
 	this->window->clear(sf::Color(30, 40, 70));
 	this->window->draw(water);
@@ -168,7 +184,7 @@ void GameWindow::MainLoop()
 				std::vector<Worm*>::iterator it = std::find(worms_b->begin(), worms_b->end(),
 					worms_b->at(i));
 				worms_b->erase(it);
-				i--;
+				i-=1;
 			}
 
 		}
