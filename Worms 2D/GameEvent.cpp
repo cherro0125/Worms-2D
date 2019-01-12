@@ -54,6 +54,57 @@ void GameEvent::handleEvents()
 					*current_worm = worms->at(*current_worm_id);
 				}
 
+				if(sf::Joystick::isButtonPressed(0,2))
+				{
+					Weapon *newWeapon = new Bazooka((*current_worm)->getWormX(), (*current_worm)->getSprite().getPosition().y + (*current_worm)->getSprite().getLocalBounds().height*(*current_worm)->getScale() / 2);
+					if ((*current_worm)->isLookingOnLeft())
+					{
+
+						newWeapon->setScaleVector({ -newWeapon->getScale(),newWeapon->getScale() });
+					}
+					else
+					{
+						newWeapon->setScaleVector({ newWeapon->getScale(),newWeapon->getScale() });
+					}
+					newWeapon->update();
+					(*current_worm)->setWeapon(newWeapon);
+					(*current_worm)->update();
+				}
+
+				if(sf::Joystick::isButtonPressed(0,3))
+				{
+					Weapon *newWeapon = new Revolver((*current_worm)->getWormX(), (*current_worm)->getSprite().getPosition().y + (*current_worm)->getSprite().getLocalBounds().height*(*current_worm)->getScale() / 2);
+					if ((*current_worm)->isLookingOnLeft())
+					{
+
+						newWeapon->setScaleVector({ -newWeapon->getScale(),newWeapon->getScale() });
+					}
+					else
+					{
+						newWeapon->setScaleVector({ newWeapon->getScale(),newWeapon->getScale() });
+					}
+					newWeapon->update();
+					(*current_worm)->setWeapon(newWeapon);
+					(*current_worm)->update();
+				}
+
+				if(sf::Joystick::isButtonPressed(0,5))
+				{
+					if ((*current_worm)->hasWeapon())
+					{
+						if ((*current_worm)->getWeapon()->getIsShooting())
+							continue;
+						if ((*current_worm)->isLookingOnLeft())
+						{
+							(*current_worm)->getWeapon()->shoot((*current_worm)->getWeapon()->getRotation() - 180);
+						}
+						else
+						{
+							(*current_worm)->getWeapon()->shoot((*current_worm)->getWeapon()->getRotation());
+						}
+					}
+				}
+
 			}
 		}
 		if (this->event.type == sf::Event::Closed)
@@ -269,7 +320,7 @@ void GameEvent::handleEvents()
 			(*current_worm)->stopMove();
 		}
 
-		if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Up)))
+		if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) || sf::Joystick::getAxisPosition(0,sf::Joystick::PovY) > 15.0f)
 		{
 			if ((*current_worm)->hasWeapon())
 			{
@@ -295,7 +346,7 @@ void GameEvent::handleEvents()
 				std::cout << (*current_worm)->getWeapon()->getRotation() << std::endl;
 			}
 		}
-		if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Down)))
+		if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) || sf::Joystick::getAxisPosition(0,sf::Joystick::PovY) < -15.0f)
 		{
 			if ((*current_worm)->hasWeapon())
 			{

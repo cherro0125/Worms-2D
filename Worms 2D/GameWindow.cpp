@@ -129,6 +129,8 @@ void GameWindow::MainLoop()
 
 							break;
 						}
+
+					
 					}
 			}
 			if (worms->size() != worm_count)
@@ -148,6 +150,19 @@ void GameWindow::MainLoop()
 			}
 
 		}
+
+		//if(current_worm->hasWeapon() && current_worm->getWeapon()->getIsShooting())
+		//{
+		//	if(current_worm->getWeapon()->getBullet()->getPosX() > this->width-1 || current_worm->getWeapon()->getBullet()->getPosX() > this->width - 1  < 1 
+		//		|| current_worm->getWeapon()->getBullet()->getPosY() > this->height - 1 || current_worm->getWeapon()->getBullet()->getPosY() < 0 )
+		//	{
+		//		//delete current_worm->getWeapon()->getBullet();
+		//		current_worm->getWeapon()->setIsShooting(false);
+		//		current_worm->getWeapon()->setBullet(nullptr);
+
+
+		//	}
+		//}
 
 		for (int i = 0; i < worm_count_b; ++i)
 		{
