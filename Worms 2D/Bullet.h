@@ -3,7 +3,10 @@
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/Graphics/RenderTarget.hpp>
-
+/*!
+ * \brief Klasa pocisku
+ *
+ */
 class Bullet : public sf::Drawable
 {
 public:

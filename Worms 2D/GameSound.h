@@ -2,6 +2,10 @@
 #include<string>
 #include<SFML/Audio.hpp>
 #include<iostream>
+/*!
+ * \brief Klasa dźwięków gry
+ *
+ */
 class GameSound
 {
 public:

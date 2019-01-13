@@ -1,5 +1,9 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
+/*!
+ * \brief Klasa licznika FPS'ów
+ *
+ */
 class FPSCounter
 {
 public:

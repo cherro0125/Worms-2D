@@ -2,8 +2,15 @@
 #include <SFML/Graphics.hpp>
 #include "Button.h"
 #include <vector>
-
+/*!
+ * \brief Typ wyliczeniowy dla stanów gry
+ *
+ */
 enum game_states { GAME, PAUSE, MENU, HELP, HELP_PAUSE, RED_WIN, BLUE_WIN, EXIT, KEYBOARD, GAMEPAD };
+/*!
+ * \brief Klasa g³ównego menu
+ *
+ */
 class Menu : public sf::Drawable
 {
 public:

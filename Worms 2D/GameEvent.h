@@ -2,6 +2,10 @@
 #include <SFML/Graphics.hpp>
 #include "GameWindow.h"
 #include<vector>
+/*!
+ * \brief Klasa zdarzeń gry
+ *
+ */
 class GameEvent
 {
 public:

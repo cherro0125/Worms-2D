@@ -1,6 +1,9 @@
 ﻿#pragma once
 #include "Weapon.h"
-
+/*!
+ * \brief Klasa bazooki
+ *
+ */
 class Bazooka : public Weapon
 {
 public:

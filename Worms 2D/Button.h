@@ -1,5 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+/*!
+ * \brief Klasa przycisku
+ *
+ */
 class Button : public sf::Drawable
 {
 public:

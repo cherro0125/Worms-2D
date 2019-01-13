@@ -1,5 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+/*!
+ * \brief Klasa terenu(mapy)
+ *
+ */
 class Terrain : public sf::Drawable
 {
 public:

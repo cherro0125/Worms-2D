@@ -11,6 +11,10 @@
 #include "Bazooka.h"
 #include "Water.h"
 #include "Menu.h"
+/*!
+ * \brief Klasa okna głównego
+ *
+ */
 class GameWindow
 {
 public:

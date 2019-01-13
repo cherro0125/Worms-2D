@@ -1,5 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+/*!
+ * \brief Klasa wody
+ *
+ */
 class Water : public sf::Drawable
 {
 public:
