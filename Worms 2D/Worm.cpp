@@ -19,7 +19,7 @@ Worm::Worm()
 	this->hpShape.setPosition(this->sprite.getPosition().x, this->sprite.getPosition().y - 10);
 	//this->sprite.setRadius(wormRadius);
 	//this->sprite.setFillColor(sf::Color::White);
-	
+
 	if (!texture.loadFromFile(textureImagePath))
 		return;
 	if (!texture2.loadFromFile(textureImagePath2))
@@ -32,7 +32,7 @@ Worm::Worm()
 	this->sprite.setScale(wormScale, wormScale);
 	this->sprite.setOrigin(((this->sprite.getLocalBounds().width)*wormScale), 0);
 	this->weapon = new Bazooka(0, 0);
-	if(weapon!=nullptr)
+	if (weapon != nullptr)
 	{
 		weapon->setPosX(getWormX());
 		weapon->setPosY(getSprite().getPosition().y + getSprite().getLocalBounds().height*getScale() / 2);
@@ -41,8 +41,8 @@ Worm::Worm()
 
 
 	this->collisionPoints[UP] = { getWormX(), getWormY() };
-	this->collisionPoints[UP_LEFT] = { left(), getWormY() + ((sprite.getLocalBounds().height*wormScale)*1/5) };
-	this->collisionPoints[UP_RIGHT] = { right(), getWormY() +((sprite.getLocalBounds().height*wormScale) * 1 / 5) };
+	this->collisionPoints[UP_LEFT] = { left(), getWormY() + ((sprite.getLocalBounds().height*wormScale) * 1 / 5) };
+	this->collisionPoints[UP_RIGHT] = { right(), getWormY() + ((sprite.getLocalBounds().height*wormScale) * 1 / 5) };
 	this->collisionPoints[DOWN] = { getWormX(), bottom() };
 	this->collisionPoints[DOWN_LEFT] = { left(), bottom() };
 	this->collisionPoints[DOWN_RIGHT] = { right(), bottom() };
@@ -69,7 +69,7 @@ Worm::~Worm()
 
 void Worm::update()
 {
-	if(weapon!= nullptr)
+	if (weapon != nullptr)
 	{
 		sprite.setTexture(texture3);
 	}
@@ -77,7 +77,7 @@ void Worm::update()
 	{
 		this->velocity.y = 0;
 	}
-	
+
 	if (this->velocity.x < 0 && (checkCollision(collisionPoints[LEFT]) || checkCollision(collisionPoints[UP_LEFT])))
 	{
 		this->velocity.x = 0;
@@ -86,8 +86,8 @@ void Worm::update()
 	{
 		this->velocity.x = 0;
 	}
-	
-	if(isMoving)
+
+	if (isMoving)
 		this->sprite.move(velocity);
 	this->posX = this->sprite.getPosition().x;
 	this->posY = this->sprite.getPosition().y;
@@ -100,15 +100,15 @@ void Worm::update()
 	}
 
 	this->collisionPoints[UP] = { getWormX(), getWormY() };
-	this->collisionPoints[UP_LEFT] = { left(), getWormY() + ((sprite.getLocalBounds().height*wormScale)  / 5) };
-	this->collisionPoints[UP_RIGHT] = { right(), getWormY() + ((sprite.getLocalBounds().height*wormScale)  / 5) };
+	this->collisionPoints[UP_LEFT] = { left(), getWormY() + ((sprite.getLocalBounds().height*wormScale) / 5) };
+	this->collisionPoints[UP_RIGHT] = { right(), getWormY() + ((sprite.getLocalBounds().height*wormScale) / 5) };
 	this->collisionPoints[DOWN] = { getWormX(), bottom() };
 	this->collisionPoints[DOWN_LEFT] = { left(), bottom() - ((sprite.getLocalBounds().height*wormScale) / 5) };
 	this->collisionPoints[DOWN_RIGHT] = { right(), bottom() - ((sprite.getLocalBounds().height*wormScale) / 5) };
 	this->collisionPoints[LEFT] = { left(),sprite.getPosition().y + (sprite.getLocalBounds().height*wormScale / 2) };
 	this->collisionPoints[RIGHT] = { right(),sprite.getPosition().y + (sprite.getLocalBounds().height*wormScale / 2) };
 
-	if(!checkCollision(collisionPoints[DOWN]))
+	if (!checkCollision(collisionPoints[DOWN]))
 	{
 		this->velocity.y += 1;
 		if (this->velocity.y > 10)
@@ -129,21 +129,21 @@ void Worm::update()
 	{
 
 		//sprite.setPosition(sprite.getPosition().x, windowHeight - sprite.getLocalBounds().height*wormScale);
-		sprite.setPosition(sprite.getPosition().x, sprite.getPosition().y+ getOffsetY(collisionPoints[DOWN]));
+		sprite.setPosition(sprite.getPosition().x, sprite.getPosition().y + getOffsetY(collisionPoints[DOWN]));
 		this->velocity.y = 0;
 		isJumping = false;
 	}
 
 	this->hpShape.setPosition(this->sprite.getPosition().x, this->sprite.getPosition().y - 10);
 	this->hpShape.setSize(sf::Vector2f(this->hp - 0.5f, this->hpShape.getSize().y));
-	if (this->posX <= -100 || this->posX>=900 || this->posY >= 610)
+	if (this->posX <= -100 || this->posX >= 900 || this->posY >= 610)
 	{
 		std::cout << hp << std::endl;
 		this->damage(200);
 	}
 
 
-	
+
 
 }
 void Worm::setColMap(sf::Image *image)
@@ -210,13 +210,13 @@ bool Worm::checkCollision(sf::Vector2f point)
 
 void Worm::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
-	if(this->hp > 0.0f)
+	if (this->hp > 0.0f)
 	{
 		target.draw(this->sprite, states);
 		target.draw(this->hpShape, states);
 		if (weapon != nullptr)
 			target.draw(*weapon);
-	
+
 	}
 	if (weapon != nullptr && weapon->getIsShooting())
 		target.draw(*weapon->getBullet());
@@ -226,11 +226,11 @@ void Worm::draw(sf::RenderTarget & target, sf::RenderStates states) const
 
 float Worm::left() const
 {
-	return sprite.getPosition().x - (sprite.getLocalBounds().width* wormScale) / 2.f ;
+	return sprite.getPosition().x - (sprite.getLocalBounds().width* wormScale) / 2.f;
 }
 float Worm::right() const
 {
-	return sprite.getPosition().x + (sprite.getLocalBounds().width* wormScale) / 2.f ;
+	return sprite.getPosition().x + (sprite.getLocalBounds().width* wormScale) / 2.f;
 }
 float Worm::top() const
 {
@@ -259,23 +259,9 @@ void Worm::stopMove()
 		this->velocity.x = 0;
 	}
 	sprite.setTexture(texture);
-	
+
 }
 
-void Worm::moveUp()
-{
-	this->isMoving = true;
-	this->velocity.y += -baseVelocity;
-	//this->velocity.x = 0;
-}
-
-void Worm::moveDown()
-{
-	
-	this->isMoving = true;
-	this->velocity.y += baseVelocity;
-	//this->velocity.x = 0;
-}
 
 void Worm::lookLeft()
 {
@@ -317,8 +303,8 @@ void Worm::setNormal()
 
 void Worm::moveLeft()
 {
-	if(!checkCollision(collisionPoints[LEFT])&& !checkCollision(collisionPoints[UP_LEFT]) )
-	{ 
+	if (!checkCollision(collisionPoints[LEFT]) && !checkCollision(collisionPoints[UP_LEFT]))
+	{
 		sprite.setTexture(texture2);
 		if (this->velocity.x > 0.0f)
 			this->velocity.x = 0;
@@ -329,13 +315,13 @@ void Worm::moveLeft()
 			this->velocity.x = -3;
 
 		this->lookLeft();
-		
+
 	}
 }
 
 void Worm::moveRight()
 {
-	if (!checkCollision(collisionPoints[RIGHT]) && !checkCollision(collisionPoints[UP_RIGHT]) )
+	if (!checkCollision(collisionPoints[RIGHT]) && !checkCollision(collisionPoints[UP_RIGHT]))
 	{
 		sprite.setTexture(texture2);
 		if (this->velocity.x < 0.0f)
@@ -375,11 +361,11 @@ bool Worm::isAlive()
 sf::Text Worm::getDebugTxt()
 {
 	std::string debugInfo = "Worm X:" + std::to_string(getWormX()) + " Y:" + std::to_string(getWormY()) + "\n Has_weapon: " + std::to_string(hasWeapon());
-	if(hasWeapon() && getWeapon()->getBullet() != nullptr)
+	if (hasWeapon() && getWeapon()->getBullet() != nullptr)
 	{
 		debugInfo += "\n Bullet X:" + std::to_string(getWeapon()->getBullet()->getPosX()) + " Y:" + std::to_string(getWeapon()->getBullet()->getPosY()) + " isShooting" + std::to_string(getWeapon()->getIsShooting());
 	}
-	if(sf::Joystick::isConnected(0))
+	if (sf::Joystick::isConnected(0))
 	{
 		debugInfo += "\n Connected controller: Xbox One controller ";
 	}
@@ -399,11 +385,11 @@ bool Worm::hasWeapon() const
 
 void Worm::setTeam(team t)
 {
-	if(t == team::RED)
+	if (t == team::RED)
 	{
 		this->hpShape.setFillColor(sf::Color::Red);
 	}
-	else if(t == team::BLUE)
+	else if (t == team::BLUE)
 	{
 		this->hpShape.setFillColor(sf::Color::Blue);
 	}

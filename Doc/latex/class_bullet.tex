@@ -1,0 +1,386 @@
+\hypertarget{class_bullet}{}\section{Dokumentacja klasy Bullet}
+\label{class_bullet}\index{Bullet@{Bullet}}
+
+
+{\ttfamily \#include $<$Bullet.\+h$>$}
+
+Diagram dziedziczenia dla Bullet\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bullet}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bullet_a5e8fd8844271779a2e6cf28a72b54da9}{Bullet}} ()=delete
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny który jest usunięty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bullet_a9e0d7efa717b245dec0f436d5b3fe0c1}{Bullet}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em konstruktor pocisku \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_bullet_a051f364dc1951449fc0a3eb50537e681}{$\sim$\+Bullet}} ()=default
+\begin{DoxyCompactList}\small\item\em Destruktor domyślny. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a34f6859e7b7e11fef77acbe8c58e84f8}{set\+Scale}} (float scale)
+\begin{DoxyCompactList}\small\item\em Ustawia skale pocisku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_ad80b48a0ec4a81fad7e8fce823be2663}{set\+Rotation}} (float rotation)
+\begin{DoxyCompactList}\small\item\em Ustawia rotacje pocisku. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_bullet_a6808b8e55c477d41e24adc92d7726ad2}{get\+Sprite}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca obiekt wyświetlającego się pocisku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a1a518fd30f6af391e54d6e4fe1382bf9}{set\+Velocity}} (sf\+::\+Vector2f velocity)
+\begin{DoxyCompactList}\small\item\em Ustawia wektor prędkości pocisku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a2bb01459022a349fb8e7bd82d0a53283}{set\+Velocity}} (float x, float y=0)
+\begin{DoxyCompactList}\small\item\em Ustawia wektor prędkości pocisku. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_bullet_a1b48210b12476530fcc4da1baf6cf44c}{get\+Velocity}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca wektor prędkości pocisku. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bullet_ab9d387e9b8149d347a63bc82cede9549}{get\+PosX}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca X pozycji pocisku na ekranie. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bullet_a06183fe0cba63d671a05fc8e19102966}{get\+PosY}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca Y pozycji pocisku na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a3e9ef53d97f7f26289b2a6a7a62b2184}{set\+PosX}} (float x)
+\begin{DoxyCompactList}\small\item\em Ustawia wartość X pozycji pocisku na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a600b82ffa52d709ac44db182a2b02c78}{set\+PosY}} (float y)
+\begin{DoxyCompactList}\small\item\em Ustawia wartość Y pozycji pocisku na ekranie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a32f4a0611fe2dd245fee955d14ca1f68}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizuje obiekt co klatke. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_bullet_a252b146bfd709799990523fcbb0c6a4b}{get\+Scale}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca wartość skali pocisku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_ae6b6d87e11805a0e76f04fb7187d674e}{set\+Scale\+Vector}} (sf\+::\+Vector2f scale)
+\begin{DoxyCompactList}\small\item\em Ustawia wektor skali pocisku. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_bullet_a506586cdb96da5f682ea48139627096d}{get\+Scale\+Vector}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca wektor skali pocisku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_bullet_a36d1d889cfc8095dcd9631a766b35cf0}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 7 pliku Bullet.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_bullet_a5e8fd8844271779a2e6cf28a72b54da9}\label{class_bullet_a5e8fd8844271779a2e6cf28a72b54da9}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Konstruktor domyślny który jest usunięty. 
+
+\mbox{\Hypertarget{class_bullet_a9e0d7efa717b245dec0f436d5b3fe0c1}\label{class_bullet_a9e0d7efa717b245dec0f436d5b3fe0c1}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+konstruktor pocisku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & -\/ współrzędna X pojawienia się pocisku na ekranie \\
+\hline
+{\em y} & -\/ współrzędna Y pojawienia się pocisku na ekranie \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 5 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a051f364dc1951449fc0a3eb50537e681}\label{class_bullet_a051f364dc1951449fc0a3eb50537e681}} 
+\index{Bullet@{Bullet}!````~Bullet@{$\sim$\+Bullet}}
+\index{````~Bullet@{$\sim$\+Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{$\sim$\+Bullet()}{~Bullet()}}
+{\footnotesize\ttfamily virtual Bullet\+::$\sim$\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destruktor domyślny. 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_bullet_a36d1d889cfc8095dcd9631a766b35cf0}\label{class_bullet_a36d1d889cfc8095dcd9631a766b35cf0}} 
+\index{Bullet@{Bullet}!draw@{draw}}
+\index{draw@{draw}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Bullet\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & \\
+\hline
+{\em states} & \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 94 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_ab9d387e9b8149d347a63bc82cede9549}\label{class_bullet_ab9d387e9b8149d347a63bc82cede9549}} 
+\index{Bullet@{Bullet}!get\+PosX@{get\+PosX}}
+\index{get\+PosX@{get\+PosX}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{get\+Pos\+X()}{getPosX()}}
+{\footnotesize\ttfamily float Bullet\+::get\+PosX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca X pozycji pocisku na ekranie. 
+
+\begin{DoxyReturn}{Zwraca}
+X pozycji pocisku na ekranie 
+\end{DoxyReturn}
+
+
+Definicja w linii 49 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a06183fe0cba63d671a05fc8e19102966}\label{class_bullet_a06183fe0cba63d671a05fc8e19102966}} 
+\index{Bullet@{Bullet}!get\+PosY@{get\+PosY}}
+\index{get\+PosY@{get\+PosY}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{get\+Pos\+Y()}{getPosY()}}
+{\footnotesize\ttfamily float Bullet\+::get\+PosY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca Y pozycji pocisku na ekranie. 
+
+\begin{DoxyReturn}{Zwraca}
+Y pozycji pocisku na ekranie 
+\end{DoxyReturn}
+
+
+Definicja w linii 54 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a252b146bfd709799990523fcbb0c6a4b}\label{class_bullet_a252b146bfd709799990523fcbb0c6a4b}} 
+\index{Bullet@{Bullet}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily float Bullet\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca wartość skali pocisku. 
+
+\begin{DoxyReturn}{Zwraca}
+wartość skali pocisku 
+\end{DoxyReturn}
+
+
+Definicja w linii 78 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a506586cdb96da5f682ea48139627096d}\label{class_bullet_a506586cdb96da5f682ea48139627096d}} 
+\index{Bullet@{Bullet}!get\+Scale\+Vector@{get\+Scale\+Vector}}
+\index{get\+Scale\+Vector@{get\+Scale\+Vector}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{get\+Scale\+Vector()}{getScaleVector()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Bullet\+::get\+Scale\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca wektor skali pocisku. 
+
+\begin{DoxyReturn}{Zwraca}
+wektor skali pocisku 
+\end{DoxyReturn}
+
+
+Definicja w linii 88 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a6808b8e55c477d41e24adc92d7726ad2}\label{class_bullet_a6808b8e55c477d41e24adc92d7726ad2}} 
+\index{Bullet@{Bullet}!get\+Sprite@{get\+Sprite}}
+\index{get\+Sprite@{get\+Sprite}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{get\+Sprite()}{getSprite()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Bullet\+::get\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca obiekt wyświetlającego się pocisku. 
+
+\begin{DoxyReturn}{Zwraca}
+obiekt sprite\textquotesingle{}a pocisku 
+\end{DoxyReturn}
+
+
+Definicja w linii 28 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a1b48210b12476530fcc4da1baf6cf44c}\label{class_bullet_a1b48210b12476530fcc4da1baf6cf44c}} 
+\index{Bullet@{Bullet}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Bullet\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca wektor prędkości pocisku. 
+
+\begin{DoxyReturn}{Zwraca}
+wektor prędkości pocisku 
+\end{DoxyReturn}
+
+
+Definicja w linii 44 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a3e9ef53d97f7f26289b2a6a7a62b2184}\label{class_bullet_a3e9ef53d97f7f26289b2a6a7a62b2184}} 
+\index{Bullet@{Bullet}!set\+PosX@{set\+PosX}}
+\index{set\+PosX@{set\+PosX}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{set\+Pos\+X()}{setPosX()}}
+{\footnotesize\ttfamily void Bullet\+::set\+PosX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Ustawia wartość X pozycji pocisku na ekranie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & -\/ współrzędna X pocisku na ekranie \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 59 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a600b82ffa52d709ac44db182a2b02c78}\label{class_bullet_a600b82ffa52d709ac44db182a2b02c78}} 
+\index{Bullet@{Bullet}!set\+PosY@{set\+PosY}}
+\index{set\+PosY@{set\+PosY}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{set\+Pos\+Y()}{setPosY()}}
+{\footnotesize\ttfamily void Bullet\+::set\+PosY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Ustawia wartość Y pozycji pocisku na ekranie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em y} & -\/ współrzędna Y pocisku na ekranie \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 64 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_ad80b48a0ec4a81fad7e8fce823be2663}\label{class_bullet_ad80b48a0ec4a81fad7e8fce823be2663}} 
+\index{Bullet@{Bullet}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}}
+{\footnotesize\ttfamily void Bullet\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Ustawia rotacje pocisku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em rotation} & -\/ rotacja pocisku \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 23 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a34f6859e7b7e11fef77acbe8c58e84f8}\label{class_bullet_a34f6859e7b7e11fef77acbe8c58e84f8}} 
+\index{Bullet@{Bullet}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{set\+Scale()}{setScale()}}
+{\footnotesize\ttfamily void Bullet\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Ustawia skale pocisku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em scale} & -\/ skala pocisku \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 18 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_ae6b6d87e11805a0e76f04fb7187d674e}\label{class_bullet_ae6b6d87e11805a0e76f04fb7187d674e}} 
+\index{Bullet@{Bullet}!set\+Scale\+Vector@{set\+Scale\+Vector}}
+\index{set\+Scale\+Vector@{set\+Scale\+Vector}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{set\+Scale\+Vector()}{setScaleVector()}}
+{\footnotesize\ttfamily void Bullet\+::set\+Scale\+Vector (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{scale }\end{DoxyParamCaption})}
+
+
+
+Ustawia wektor skali pocisku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em scale} & -\/ wektor skali pocisku \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 83 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a1a518fd30f6af391e54d6e4fe1382bf9}\label{class_bullet_a1a518fd30f6af391e54d6e4fe1382bf9}} 
+\index{Bullet@{Bullet}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bullet\+::set\+Velocity (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Ustawia wektor prędkości pocisku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em velocity} & -\/ wektor prędkości pocisku \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 33 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a2bb01459022a349fb8e7bd82d0a53283}\label{class_bullet_a2bb01459022a349fb8e7bd82d0a53283}} 
+\index{Bullet@{Bullet}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bullet\+::set\+Velocity (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Ustawia wektor prędkości pocisku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & -\/ składowa X wektora prędkości pocisku \\
+\hline
+{\em y} & -\/ składowa Y wektora prędkości pocisku \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 38 pliku Bullet.\+cpp.
+
+\mbox{\Hypertarget{class_bullet_a32f4a0611fe2dd245fee955d14ca1f68}\label{class_bullet_a32f4a0611fe2dd245fee955d14ca1f68}} 
+\index{Bullet@{Bullet}!update@{update}}
+\index{update@{update}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Bullet\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje obiekt co klatke. 
+
+
+
+Definicja w linii 69 pliku Bullet.\+cpp.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\mbox{\hyperlink{_bullet_8h}{Bullet.\+h}}\item 
+D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\mbox{\hyperlink{_bullet_8cpp}{Bullet.\+cpp}}\end{DoxyCompactItemize}

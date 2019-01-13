@@ -1,0 +1,95 @@
+\hypertarget{_worm_8h}{}\section{Dokumentacja pliku D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Worm.h}
+\label{_worm_8h}\index{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Worm.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Worm.\+h}}
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}Weapon.\+h\char`\"{}}\newline
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_worm}{Worm}}
+\end{DoxyCompactItemize}
+\subsection*{Wyliczenia}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98}{collision}} \{ \newline
+\mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98aba595d8bca8bc5e67c37c0a9d89becfa}{UP}}, 
+\mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98aa30e5e6cfd104178275f087ae51b3b74}{U\+P\+\_\+\+L\+E\+FT}}, 
+\mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a91a530eb0387ac0d86947784a1946a14}{U\+P\+\_\+\+R\+I\+G\+HT}}, 
+\mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a9b0b4a95b99523966e0e34ffdadac9da}{D\+O\+WN}}, 
+\newline
+\mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a0ae724cef12b771121df5a7c083bf1b6}{D\+O\+W\+N\+\_\+\+L\+E\+FT}}, 
+\mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a2877ba4eb53c0dec12f0363cfca35d0e}{D\+O\+W\+N\+\_\+\+R\+I\+G\+HT}}, 
+\mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98adb45120aafd37a973140edee24708065}{L\+E\+FT}}, 
+\mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98aec8379af7490bb9eaaf579cf17876f38}{R\+I\+G\+HT}}
+ \}
+\item 
+enum \mbox{\hyperlink{_worm_8h_ae79581ee1998185d7cb41ab84352b97e}{team}} \{ \mbox{\hyperlink{_worm_8h_ae79581ee1998185d7cb41ab84352b97eaf80f9a890089d211842d59625e561f88}{R\+ED}}, 
+\mbox{\hyperlink{_worm_8h_ae79581ee1998185d7cb41ab84352b97ea35d6719cb4d7577c031b3d79057a1b79}{B\+L\+UE}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja typów wyliczanych}
+\mbox{\Hypertarget{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98}\label{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98}} 
+\index{Worm.\+h@{Worm.\+h}!collision@{collision}}
+\index{collision@{collision}!Worm.\+h@{Worm.\+h}}
+\subsubsection{\texorpdfstring{collision}{collision}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98}{collision}}}
+
+\begin{DoxyEnumFields}{Wartości wyliczeń}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP@{UP}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!UP@{UP}}}\mbox{\Hypertarget{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98aba595d8bca8bc5e67c37c0a9d89becfa}\label{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98aba595d8bca8bc5e67c37c0a9d89becfa}} 
+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+P\+\_\+\+L\+E\+FT@{U\+P\+\_\+\+L\+E\+FT}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!U\+P\+\_\+\+L\+E\+FT@{U\+P\+\_\+\+L\+E\+FT}}}\mbox{\Hypertarget{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98aa30e5e6cfd104178275f087ae51b3b74}\label{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98aa30e5e6cfd104178275f087ae51b3b74}} 
+U\+P\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+P\+\_\+\+R\+I\+G\+HT@{U\+P\+\_\+\+R\+I\+G\+HT}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!U\+P\+\_\+\+R\+I\+G\+HT@{U\+P\+\_\+\+R\+I\+G\+HT}}}\mbox{\Hypertarget{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a91a530eb0387ac0d86947784a1946a14}\label{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a91a530eb0387ac0d86947784a1946a14}} 
+U\+P\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+O\+WN@{D\+O\+WN}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!D\+O\+WN@{D\+O\+WN}}}\mbox{\Hypertarget{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a9b0b4a95b99523966e0e34ffdadac9da}\label{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a9b0b4a95b99523966e0e34ffdadac9da}} 
+D\+O\+WN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+O\+W\+N\+\_\+\+L\+E\+FT@{D\+O\+W\+N\+\_\+\+L\+E\+FT}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!D\+O\+W\+N\+\_\+\+L\+E\+FT@{D\+O\+W\+N\+\_\+\+L\+E\+FT}}}\mbox{\Hypertarget{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a0ae724cef12b771121df5a7c083bf1b6}\label{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a0ae724cef12b771121df5a7c083bf1b6}} 
+D\+O\+W\+N\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{D\+O\+W\+N\+\_\+\+R\+I\+G\+HT@{D\+O\+W\+N\+\_\+\+R\+I\+G\+HT}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!D\+O\+W\+N\+\_\+\+R\+I\+G\+HT@{D\+O\+W\+N\+\_\+\+R\+I\+G\+HT}}}\mbox{\Hypertarget{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a2877ba4eb53c0dec12f0363cfca35d0e}\label{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98a2877ba4eb53c0dec12f0363cfca35d0e}} 
+D\+O\+W\+N\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+E\+FT@{L\+E\+FT}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!L\+E\+FT@{L\+E\+FT}}}\mbox{\Hypertarget{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98adb45120aafd37a973140edee24708065}\label{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98adb45120aafd37a973140edee24708065}} 
+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+I\+G\+HT@{R\+I\+G\+HT}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!R\+I\+G\+HT@{R\+I\+G\+HT}}}\mbox{\Hypertarget{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98aec8379af7490bb9eaaf579cf17876f38}\label{_worm_8h_ab9795ec391d6982eb7e6e62ad9266c98aec8379af7490bb9eaaf579cf17876f38}} 
+R\+I\+G\+HT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definicja w linii 6 pliku Worm.\+h.
+
+\mbox{\Hypertarget{_worm_8h_ae79581ee1998185d7cb41ab84352b97e}\label{_worm_8h_ae79581ee1998185d7cb41ab84352b97e}} 
+\index{Worm.\+h@{Worm.\+h}!team@{team}}
+\index{team@{team}!Worm.\+h@{Worm.\+h}}
+\subsubsection{\texorpdfstring{team}{team}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_worm_8h_ae79581ee1998185d7cb41ab84352b97e}{team}}}
+
+\begin{DoxyEnumFields}{Wartości wyliczeń}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+ED@{R\+ED}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!R\+ED@{R\+ED}}}\mbox{\Hypertarget{_worm_8h_ae79581ee1998185d7cb41ab84352b97eaf80f9a890089d211842d59625e561f88}\label{_worm_8h_ae79581ee1998185d7cb41ab84352b97eaf80f9a890089d211842d59625e561f88}} 
+R\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+L\+UE@{B\+L\+UE}!Worm.\+h@{Worm.\+h}}\index{Worm.\+h@{Worm.\+h}!B\+L\+UE@{B\+L\+UE}}}\mbox{\Hypertarget{_worm_8h_ae79581ee1998185d7cb41ab84352b97ea35d6719cb4d7577c031b3d79057a1b79}\label{_worm_8h_ae79581ee1998185d7cb41ab84352b97ea35d6719cb4d7577c031b3d79057a1b79}} 
+B\+L\+UE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definicja w linii 7 pliku Worm.\+h.
+

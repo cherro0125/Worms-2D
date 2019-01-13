@@ -1,0 +1,83 @@
+\hypertarget{_menu_8h}{}\section{Dokumentacja pliku D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Menu.h}
+\label{_menu_8h}\index{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Menu.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Menu.\+h}}
+{\ttfamily \#include $<$S\+F\+M\+L/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}Button.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_menu}{Menu}}
+\end{DoxyCompactItemize}
+\subsection*{Wyliczenia}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60}{game\+\_\+states}} \{ \newline
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60ad50cf309d7568040619ed26ee6835a84}{G\+A\+ME}}, 
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a56b36d0d0bb01b339cf1041adc08e262}{P\+A\+U\+SE}}, 
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a4c40e60bc71a32b924ce1f08d57f9721}{M\+E\+NU}}, 
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a9f5cb747b2e1f0ea781d2b1f2a5b4824}{H\+E\+LP}}, 
+\newline
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a3ac9fba6b0ae8890116f0c18730bacd7}{H\+E\+L\+P\+\_\+\+P\+A\+U\+SE}}, 
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a34fc7bcc4121e170f43e668bf806d56f}{R\+E\+D\+\_\+\+W\+IN}}, 
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60afa9ff0ce517298c80a045e4acbe471c9}{B\+L\+U\+E\+\_\+\+W\+IN}}, 
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a7a10b5d68d31711288e1fe0fa17dbf4f}{E\+X\+IT}}, 
+\newline
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60ad14e2514427609da194a72091721f4c7}{K\+E\+Y\+B\+O\+A\+RD}}, 
+\mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a273c15ddc1f5abadaf24cd191e7db5e0}{G\+A\+M\+E\+P\+AD}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja typów wyliczanych}
+\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60}} 
+\index{Menu.\+h@{Menu.\+h}!game\+\_\+states@{game\+\_\+states}}
+\index{game\+\_\+states@{game\+\_\+states}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{game\+\_\+states}{game\_states}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60}{game\+\_\+states}}}
+
+\begin{DoxyEnumFields}{Wartości wyliczeń}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+A\+ME@{G\+A\+ME}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!G\+A\+ME@{G\+A\+ME}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60ad50cf309d7568040619ed26ee6835a84}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60ad50cf309d7568040619ed26ee6835a84}} 
+G\+A\+ME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{P\+A\+U\+SE@{P\+A\+U\+SE}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!P\+A\+U\+SE@{P\+A\+U\+SE}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a56b36d0d0bb01b339cf1041adc08e262}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a56b36d0d0bb01b339cf1041adc08e262}} 
+P\+A\+U\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+E\+NU@{M\+E\+NU}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!M\+E\+NU@{M\+E\+NU}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a4c40e60bc71a32b924ce1f08d57f9721}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a4c40e60bc71a32b924ce1f08d57f9721}} 
+M\+E\+NU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H\+E\+LP@{H\+E\+LP}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!H\+E\+LP@{H\+E\+LP}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a9f5cb747b2e1f0ea781d2b1f2a5b4824}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a9f5cb747b2e1f0ea781d2b1f2a5b4824}} 
+H\+E\+LP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H\+E\+L\+P\+\_\+\+P\+A\+U\+SE@{H\+E\+L\+P\+\_\+\+P\+A\+U\+SE}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!H\+E\+L\+P\+\_\+\+P\+A\+U\+SE@{H\+E\+L\+P\+\_\+\+P\+A\+U\+SE}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a3ac9fba6b0ae8890116f0c18730bacd7}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a3ac9fba6b0ae8890116f0c18730bacd7}} 
+H\+E\+L\+P\+\_\+\+P\+A\+U\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+E\+D\+\_\+\+W\+IN@{R\+E\+D\+\_\+\+W\+IN}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!R\+E\+D\+\_\+\+W\+IN@{R\+E\+D\+\_\+\+W\+IN}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a34fc7bcc4121e170f43e668bf806d56f}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a34fc7bcc4121e170f43e668bf806d56f}} 
+R\+E\+D\+\_\+\+W\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+L\+U\+E\+\_\+\+W\+IN@{B\+L\+U\+E\+\_\+\+W\+IN}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!B\+L\+U\+E\+\_\+\+W\+IN@{B\+L\+U\+E\+\_\+\+W\+IN}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60afa9ff0ce517298c80a045e4acbe471c9}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60afa9ff0ce517298c80a045e4acbe471c9}} 
+B\+L\+U\+E\+\_\+\+W\+IN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+X\+IT@{E\+X\+IT}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!E\+X\+IT@{E\+X\+IT}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a7a10b5d68d31711288e1fe0fa17dbf4f}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a7a10b5d68d31711288e1fe0fa17dbf4f}} 
+E\+X\+IT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{K\+E\+Y\+B\+O\+A\+RD@{K\+E\+Y\+B\+O\+A\+RD}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!K\+E\+Y\+B\+O\+A\+RD@{K\+E\+Y\+B\+O\+A\+RD}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60ad14e2514427609da194a72091721f4c7}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60ad14e2514427609da194a72091721f4c7}} 
+K\+E\+Y\+B\+O\+A\+RD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+A\+M\+E\+P\+AD@{G\+A\+M\+E\+P\+AD}!Menu.\+h@{Menu.\+h}}\index{Menu.\+h@{Menu.\+h}!G\+A\+M\+E\+P\+AD@{G\+A\+M\+E\+P\+AD}}}\mbox{\Hypertarget{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a273c15ddc1f5abadaf24cd191e7db5e0}\label{_menu_8h_ab0edca8721ed515bb9906f1c3e538c60a273c15ddc1f5abadaf24cd191e7db5e0}} 
+G\+A\+M\+E\+P\+AD&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definicja w linii 6 pliku Menu.\+h.
+

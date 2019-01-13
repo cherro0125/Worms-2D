@@ -2,7 +2,7 @@
 #include "Bullet.h"
 
 GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name) : width(width), height(height),
-                                                                                    windowName(name)
+windowName(name)
 {
 	if (this->window == nullptr)
 	{
@@ -19,7 +19,7 @@ GameWindow::GameWindow(unsigned int width, unsigned int height, std::string name
 		this->menu.changeMenu(game_state);
 		this->game_started = false;
 
-		
+
 	}
 }
 
@@ -79,7 +79,7 @@ void GameWindow::endGame()
 void GameWindow::MainLoop()
 {
 
-	//this->fpsCounter->start();
+	this->fpsCounter->start();
 	water.update();
 
 	if (this->game_started == false && this->game_state == GAME)
@@ -101,11 +101,11 @@ void GameWindow::MainLoop()
 			this->menu.changeMenu(game_state);
 		}
 	}
-		
+
 
 	this->window->clear(sf::Color(30, 40, 70));
 	this->window->draw(water);
-	
+
 	if (game_started)
 	{
 		this->timer = this->clock.getElapsedTime();
@@ -131,7 +131,7 @@ void GameWindow::MainLoop()
 							break;
 						}
 
-					
+
 					}
 			}
 			if (worms->size() != worm_count)
@@ -204,7 +204,7 @@ void GameWindow::MainLoop()
 				std::vector<Worm*>::iterator it = std::find(worms_b->begin(), worms_b->end(),
 					worms_b->at(i));
 				worms_b->erase(it);
-				i-=1;
+				i -= 1;
 			}
 
 		}
@@ -224,9 +224,9 @@ void GameWindow::MainLoop()
 			}
 		}
 		std::cout << "TIMER:" << this->timer.asSeconds() << std::endl;
-		if(static_cast<int>(this->timer.asSeconds()) == 8)
+		if (static_cast<int>(this->timer.asSeconds()) == 8)
 		{
-			if(*GetCurrentTeam() == team::RED)
+			if (*GetCurrentTeam() == team::RED)
 			{
 				this->SwitchToBlueTeam();
 			}
@@ -239,8 +239,8 @@ void GameWindow::MainLoop()
 
 		this->SetChooseStates();
 
-		
-			
+
+
 	}
 	//test
 	if (game_state != GAME)
@@ -249,7 +249,7 @@ void GameWindow::MainLoop()
 		this->window->draw(menu);
 	}
 
-	//this->fpsCounter->drawFPS();
+	this->fpsCounter->drawFPS();
 	//this->window->draw((**(this->GetCurrentWorm())).getDebugTxt());
 	this->window->display();
 }
@@ -331,7 +331,7 @@ void GameWindow::SwitchToRedTeam()
 
 void GameWindow::SwitchToBlueTeam()
 {
-	if(worm_count_b)
+	if (worm_count_b)
 	{
 		SwitchTeam(team::BLUE);
 	}
@@ -339,7 +339,7 @@ void GameWindow::SwitchToBlueTeam()
 
 void GameWindow::SetChooseStates()
 {
-	for(int i =0; i < worms->size(); i++)
+	for (int i = 0; i < worms->size(); i++)
 	{
 		if (current_worm != worms->at(i))
 			this->worms->at(i)->setNormal();

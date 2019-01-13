@@ -10,7 +10,7 @@ Bullet::Bullet(float x, float y)
 	if (!texture.loadFromFile(texturePath))
 		return;
 	this->sprite.setTexture(texture);
-	this->sprite.setOrigin((this->sprite.getLocalBounds().width*scale/2), (this->sprite.getLocalBounds().height*scale / 2));
+	this->sprite.setOrigin((this->sprite.getLocalBounds().width*scale / 2), (this->sprite.getLocalBounds().height*scale / 2));
 	this->sprite.setScale(scale, scale);
 	this->sprite.setRotation(rotation);
 }
@@ -93,5 +93,5 @@ sf::Vector2f Bullet::getScaleVector() const
 
 void Bullet::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
-	target.draw(this->sprite,states);
+	target.draw(this->sprite, states);
 }

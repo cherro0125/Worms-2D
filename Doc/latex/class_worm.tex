@@ -1,0 +1,463 @@
+\hypertarget{class_worm}{}\section{Dokumentacja klasy Worm}
+\label{class_worm}\index{Worm@{Worm}}
+
+
+{\ttfamily \#include $<$Worm.\+h$>$}
+
+Diagram dziedziczenia dla Worm\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_worm}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_worm_aaec23e2156f969303d6bfac36cae63e3}{Worm}} ()
+\item 
+virtual \mbox{\hyperlink{class_worm_ade7672966c551bb91663ed03e06f297f}{$\sim$\+Worm}} ()
+\item 
+void \mbox{\hyperlink{class_worm_adcb6219ae98887e491327c4ef02cf4b9}{update}} ()
+\item 
+float \mbox{\hyperlink{class_worm_ab517b492de0e583254c288cc583cbeb1}{left}} () const
+\item 
+float \mbox{\hyperlink{class_worm_a52905b36980b4aa37fe1b004df9edc0e}{right}} () const
+\item 
+float \mbox{\hyperlink{class_worm_a3d65c40350e8e0317bd594a3cb7c8bba}{top}} () const
+\item 
+float \mbox{\hyperlink{class_worm_a68061fb5be175ab42739a7c157d7073d}{bottom}} () const
+\item 
+float \mbox{\hyperlink{class_worm_a9787181c41ca3a4ac5098277e8a4a142}{get\+WormX}} () const
+\item 
+float \mbox{\hyperlink{class_worm_aa1a5e5334f8d3e339f15b36a9af31f27}{get\+WormY}} () const
+\item 
+void \mbox{\hyperlink{class_worm_a1cdb0c544127417ba4b95fd8e5d3f9fc}{stop\+Move}} ()
+\item 
+void \mbox{\hyperlink{class_worm_ae2d842c005b7bc4b20ae8333ebc9c19c}{move\+Up}} ()
+\item 
+void \mbox{\hyperlink{class_worm_a08f64ed1ed9149084d8d64296253c4be}{move\+Down}} ()
+\item 
+void \mbox{\hyperlink{class_worm_a93d02457a10bbbfc1d2028168419ecb8}{move\+Left}} ()
+\item 
+void \mbox{\hyperlink{class_worm_a6d4b33910c18b0e266e310d9b5512d75}{move\+Right}} ()
+\item 
+void \mbox{\hyperlink{class_worm_ae4cd763e0edd18cecab42b39142cea14}{jump}} ()
+\item 
+void \mbox{\hyperlink{class_worm_aa57fe22ce4031e5332d16d709e7274c8}{damage}} (float dmg)
+\item 
+bool \mbox{\hyperlink{class_worm_a606868b7856598eef50b8ebcd2374927}{is\+Alive}} ()
+\item 
+bool \mbox{\hyperlink{class_worm_a61589ff1104deb3cbf1cb6978e7f95f4}{check\+Collision}} (sf\+::\+Vector2f point)
+\item 
+int \mbox{\hyperlink{class_worm_a5a9fb6f1859a7b5cf6c447ea3ae0c1e5}{get\+OffsetY}} (sf\+::\+Vector2f point)
+\item 
+float \mbox{\hyperlink{class_worm_a72cf5070503bcba6423773de3367cdfd}{get\+Scale}} () const
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_worm_a9b314b9a4bb91830aac7f616ef071c07}{get\+Sprite}} () const
+\item 
+void \mbox{\hyperlink{class_worm_a9f2a337a176e5186c7227880337c98c3}{set\+Weapon}} (\mbox{\hyperlink{class_weapon}{Weapon}} $\ast$weapon)
+\item 
+\mbox{\hyperlink{class_weapon}{Weapon}} $\ast$ \mbox{\hyperlink{class_worm_a42f56e4d14502d65c500fb20bd31a561}{get\+Weapon}} () const
+\item 
+void \mbox{\hyperlink{class_worm_adbede9b2b03f764f71629a299aec5299}{delete\+Weapon}} ()
+\item 
+void \mbox{\hyperlink{class_worm_af851e558c46b33b245b96a43bb2e5c56}{set\+Col\+Map}} (sf\+::\+Image $\ast$image)
+\item 
+sf\+::\+Text \mbox{\hyperlink{class_worm_afed2a8beb878659d49977440293ef884}{get\+Debug\+Txt}} ()
+\item 
+bool \mbox{\hyperlink{class_worm_a3a90a91ddbe99e67f48e54a57d12b5c7}{is\+Looking\+On\+Left}} () const
+\item 
+bool \mbox{\hyperlink{class_worm_a15fc66d733ecfe886495910f591d1a34}{has\+Weapon}} () const
+\item 
+void \mbox{\hyperlink{class_worm_a8eb6b3e55c2e6cb7c87b1593f34dac52}{set\+Team}} (\mbox{\hyperlink{_worm_8h_ae79581ee1998185d7cb41ab84352b97e}{team}} t)
+\item 
+void \mbox{\hyperlink{class_worm_a84fbbdac67be083a5492bf38cf83544b}{look\+Left}} ()
+\item 
+void \mbox{\hyperlink{class_worm_a4dbc714c26c5b09a94bd53f10172b4c1}{look\+Right}} ()
+\item 
+void \mbox{\hyperlink{class_worm_ac5daf6e0926f483415886c5ae297714a}{set\+Choosen}} ()
+\item 
+void \mbox{\hyperlink{class_worm_ab316cd13ecdfe9696e28687bfce47a4c}{set\+Normal}} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_worm_a6e519d20cdeca0c88847c0b7284ca302}{collision\+Points}} \mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_worm_adc9fd6dc3b770d4feada327666f31ee3}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 9 pliku Worm.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_worm_aaec23e2156f969303d6bfac36cae63e3}\label{class_worm_aaec23e2156f969303d6bfac36cae63e3}} 
+\index{Worm@{Worm}!Worm@{Worm}}
+\index{Worm@{Worm}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{Worm()}{Worm()}}
+{\footnotesize\ttfamily Worm\+::\+Worm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 8 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_ade7672966c551bb91663ed03e06f297f}\label{class_worm_ade7672966c551bb91663ed03e06f297f}} 
+\index{Worm@{Worm}!````~Worm@{$\sim$\+Worm}}
+\index{````~Worm@{$\sim$\+Worm}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{$\sim$\+Worm()}{~Worm()}}
+{\footnotesize\ttfamily Worm\+::$\sim$\+Worm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definicja w linii 65 pliku Worm.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_worm_a68061fb5be175ab42739a7c157d7073d}\label{class_worm_a68061fb5be175ab42739a7c157d7073d}} 
+\index{Worm@{Worm}!bottom@{bottom}}
+\index{bottom@{bottom}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{bottom()}{bottom()}}
+{\footnotesize\ttfamily float Worm\+::bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 239 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a61589ff1104deb3cbf1cb6978e7f95f4}\label{class_worm_a61589ff1104deb3cbf1cb6978e7f95f4}} 
+\index{Worm@{Worm}!check\+Collision@{check\+Collision}}
+\index{check\+Collision@{check\+Collision}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{check\+Collision()}{checkCollision()}}
+{\footnotesize\ttfamily bool Worm\+::check\+Collision (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{point }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 197 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_aa57fe22ce4031e5332d16d709e7274c8}\label{class_worm_aa57fe22ce4031e5332d16d709e7274c8}} 
+\index{Worm@{Worm}!damage@{damage}}
+\index{damage@{damage}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{damage()}{damage()}}
+{\footnotesize\ttfamily void Worm\+::damage (\begin{DoxyParamCaption}\item[{float}]{dmg }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 365 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_adbede9b2b03f764f71629a299aec5299}\label{class_worm_adbede9b2b03f764f71629a299aec5299}} 
+\index{Worm@{Worm}!delete\+Weapon@{delete\+Weapon}}
+\index{delete\+Weapon@{delete\+Weapon}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{delete\+Weapon()}{deleteWeapon()}}
+{\footnotesize\ttfamily void Worm\+::delete\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 191 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_adc9fd6dc3b770d4feada327666f31ee3}\label{class_worm_adc9fd6dc3b770d4feada327666f31ee3}} 
+\index{Worm@{Worm}!draw@{draw}}
+\index{draw@{draw}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Worm\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Definicja w linii 211 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_afed2a8beb878659d49977440293ef884}\label{class_worm_afed2a8beb878659d49977440293ef884}} 
+\index{Worm@{Worm}!get\+Debug\+Txt@{get\+Debug\+Txt}}
+\index{get\+Debug\+Txt@{get\+Debug\+Txt}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{get\+Debug\+Txt()}{getDebugTxt()}}
+{\footnotesize\ttfamily sf\+::\+Text Worm\+::get\+Debug\+Txt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 375 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a5a9fb6f1859a7b5cf6c447ea3ae0c1e5}\label{class_worm_a5a9fb6f1859a7b5cf6c447ea3ae0c1e5}} 
+\index{Worm@{Worm}!get\+OffsetY@{get\+OffsetY}}
+\index{get\+OffsetY@{get\+OffsetY}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{get\+Offset\+Y()}{getOffsetY()}}
+{\footnotesize\ttfamily int Worm\+::get\+OffsetY (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{point }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 153 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a72cf5070503bcba6423773de3367cdfd}\label{class_worm_a72cf5070503bcba6423773de3367cdfd}} 
+\index{Worm@{Worm}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily float Worm\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 168 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a9b314b9a4bb91830aac7f616ef071c07}\label{class_worm_a9b314b9a4bb91830aac7f616ef071c07}} 
+\index{Worm@{Worm}!get\+Sprite@{get\+Sprite}}
+\index{get\+Sprite@{get\+Sprite}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{get\+Sprite()}{getSprite()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Worm\+::get\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 173 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a42f56e4d14502d65c500fb20bd31a561}\label{class_worm_a42f56e4d14502d65c500fb20bd31a561}} 
+\index{Worm@{Worm}!get\+Weapon@{get\+Weapon}}
+\index{get\+Weapon@{get\+Weapon}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{get\+Weapon()}{getWeapon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_weapon}{Weapon}} $\ast$ Worm\+::get\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 186 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a9787181c41ca3a4ac5098277e8a4a142}\label{class_worm_a9787181c41ca3a4ac5098277e8a4a142}} 
+\index{Worm@{Worm}!get\+WormX@{get\+WormX}}
+\index{get\+WormX@{get\+WormX}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{get\+Worm\+X()}{getWormX()}}
+{\footnotesize\ttfamily float Worm\+::get\+WormX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 244 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_aa1a5e5334f8d3e339f15b36a9af31f27}\label{class_worm_aa1a5e5334f8d3e339f15b36a9af31f27}} 
+\index{Worm@{Worm}!get\+WormY@{get\+WormY}}
+\index{get\+WormY@{get\+WormY}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{get\+Worm\+Y()}{getWormY()}}
+{\footnotesize\ttfamily float Worm\+::get\+WormY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 249 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a15fc66d733ecfe886495910f591d1a34}\label{class_worm_a15fc66d733ecfe886495910f591d1a34}} 
+\index{Worm@{Worm}!has\+Weapon@{has\+Weapon}}
+\index{has\+Weapon@{has\+Weapon}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{has\+Weapon()}{hasWeapon()}}
+{\footnotesize\ttfamily bool Worm\+::has\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 395 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a606868b7856598eef50b8ebcd2374927}\label{class_worm_a606868b7856598eef50b8ebcd2374927}} 
+\index{Worm@{Worm}!is\+Alive@{is\+Alive}}
+\index{is\+Alive@{is\+Alive}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{is\+Alive()}{isAlive()}}
+{\footnotesize\ttfamily bool Worm\+::is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 370 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a3a90a91ddbe99e67f48e54a57d12b5c7}\label{class_worm_a3a90a91ddbe99e67f48e54a57d12b5c7}} 
+\index{Worm@{Worm}!is\+Looking\+On\+Left@{is\+Looking\+On\+Left}}
+\index{is\+Looking\+On\+Left@{is\+Looking\+On\+Left}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{is\+Looking\+On\+Left()}{isLookingOnLeft()}}
+{\footnotesize\ttfamily bool Worm\+::is\+Looking\+On\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 390 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_ae4cd763e0edd18cecab42b39142cea14}\label{class_worm_ae4cd763e0edd18cecab42b39142cea14}} 
+\index{Worm@{Worm}!jump@{jump}}
+\index{jump@{jump}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Worm\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 354 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_ab517b492de0e583254c288cc583cbeb1}\label{class_worm_ab517b492de0e583254c288cc583cbeb1}} 
+\index{Worm@{Worm}!left@{left}}
+\index{left@{left}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily float Worm\+::left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 227 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a84fbbdac67be083a5492bf38cf83544b}\label{class_worm_a84fbbdac67be083a5492bf38cf83544b}} 
+\index{Worm@{Worm}!look\+Left@{look\+Left}}
+\index{look\+Left@{look\+Left}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{look\+Left()}{lookLeft()}}
+{\footnotesize\ttfamily void Worm\+::look\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 280 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a4dbc714c26c5b09a94bd53f10172b4c1}\label{class_worm_a4dbc714c26c5b09a94bd53f10172b4c1}} 
+\index{Worm@{Worm}!look\+Right@{look\+Right}}
+\index{look\+Right@{look\+Right}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{look\+Right()}{lookRight()}}
+{\footnotesize\ttfamily void Worm\+::look\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 293 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a08f64ed1ed9149084d8d64296253c4be}\label{class_worm_a08f64ed1ed9149084d8d64296253c4be}} 
+\index{Worm@{Worm}!move\+Down@{move\+Down}}
+\index{move\+Down@{move\+Down}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{move\+Down()}{moveDown()}}
+{\footnotesize\ttfamily void Worm\+::move\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 272 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a93d02457a10bbbfc1d2028168419ecb8}\label{class_worm_a93d02457a10bbbfc1d2028168419ecb8}} 
+\index{Worm@{Worm}!move\+Left@{move\+Left}}
+\index{move\+Left@{move\+Left}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{move\+Left()}{moveLeft()}}
+{\footnotesize\ttfamily void Worm\+::move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 318 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a6d4b33910c18b0e266e310d9b5512d75}\label{class_worm_a6d4b33910c18b0e266e310d9b5512d75}} 
+\index{Worm@{Worm}!move\+Right@{move\+Right}}
+\index{move\+Right@{move\+Right}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{move\+Right()}{moveRight()}}
+{\footnotesize\ttfamily void Worm\+::move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 336 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_ae2d842c005b7bc4b20ae8333ebc9c19c}\label{class_worm_ae2d842c005b7bc4b20ae8333ebc9c19c}} 
+\index{Worm@{Worm}!move\+Up@{move\+Up}}
+\index{move\+Up@{move\+Up}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{move\+Up()}{moveUp()}}
+{\footnotesize\ttfamily void Worm\+::move\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 265 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a52905b36980b4aa37fe1b004df9edc0e}\label{class_worm_a52905b36980b4aa37fe1b004df9edc0e}} 
+\index{Worm@{Worm}!right@{right}}
+\index{right@{right}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily float Worm\+::right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 231 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_ac5daf6e0926f483415886c5ae297714a}\label{class_worm_ac5daf6e0926f483415886c5ae297714a}} 
+\index{Worm@{Worm}!set\+Choosen@{set\+Choosen}}
+\index{set\+Choosen@{set\+Choosen}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{set\+Choosen()}{setChoosen()}}
+{\footnotesize\ttfamily void Worm\+::set\+Choosen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 307 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_af851e558c46b33b245b96a43bb2e5c56}\label{class_worm_af851e558c46b33b245b96a43bb2e5c56}} 
+\index{Worm@{Worm}!set\+Col\+Map@{set\+Col\+Map}}
+\index{set\+Col\+Map@{set\+Col\+Map}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{set\+Col\+Map()}{setColMap()}}
+{\footnotesize\ttfamily void Worm\+::set\+Col\+Map (\begin{DoxyParamCaption}\item[{sf\+::\+Image $\ast$}]{image }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 149 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_ab316cd13ecdfe9696e28687bfce47a4c}\label{class_worm_ab316cd13ecdfe9696e28687bfce47a4c}} 
+\index{Worm@{Worm}!set\+Normal@{set\+Normal}}
+\index{set\+Normal@{set\+Normal}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{set\+Normal()}{setNormal()}}
+{\footnotesize\ttfamily void Worm\+::set\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 313 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a8eb6b3e55c2e6cb7c87b1593f34dac52}\label{class_worm_a8eb6b3e55c2e6cb7c87b1593f34dac52}} 
+\index{Worm@{Worm}!set\+Team@{set\+Team}}
+\index{set\+Team@{set\+Team}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{set\+Team()}{setTeam()}}
+{\footnotesize\ttfamily void Worm\+::set\+Team (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_worm_8h_ae79581ee1998185d7cb41ab84352b97e}{team}}}]{t }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 400 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a9f2a337a176e5186c7227880337c98c3}\label{class_worm_a9f2a337a176e5186c7227880337c98c3}} 
+\index{Worm@{Worm}!set\+Weapon@{set\+Weapon}}
+\index{set\+Weapon@{set\+Weapon}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{set\+Weapon()}{setWeapon()}}
+{\footnotesize\ttfamily void Worm\+::set\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_weapon}{Weapon}} $\ast$}]{weapon }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 178 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a1cdb0c544127417ba4b95fd8e5d3f9fc}\label{class_worm_a1cdb0c544127417ba4b95fd8e5d3f9fc}} 
+\index{Worm@{Worm}!stop\+Move@{stop\+Move}}
+\index{stop\+Move@{stop\+Move}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{stop\+Move()}{stopMove()}}
+{\footnotesize\ttfamily void Worm\+::stop\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 254 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_a3d65c40350e8e0317bd594a3cb7c8bba}\label{class_worm_a3d65c40350e8e0317bd594a3cb7c8bba}} 
+\index{Worm@{Worm}!top@{top}}
+\index{top@{top}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily float Worm\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 235 pliku Worm.\+cpp.
+
+\mbox{\Hypertarget{class_worm_adcb6219ae98887e491327c4ef02cf4b9}\label{class_worm_adcb6219ae98887e491327c4ef02cf4b9}} 
+\index{Worm@{Worm}!update@{update}}
+\index{update@{update}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Worm\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 70 pliku Worm.\+cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_worm_a6e519d20cdeca0c88847c0b7284ca302}\label{class_worm_a6e519d20cdeca0c88847c0b7284ca302}} 
+\index{Worm@{Worm}!collision\+Points@{collision\+Points}}
+\index{collision\+Points@{collision\+Points}!Worm@{Worm}}
+\subsubsection{\texorpdfstring{collision\+Points}{collisionPoints}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Worm\+::collision\+Points\mbox{[}8\mbox{]}}
+
+
+
+Definicja w linii 33 pliku Worm.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\mbox{\hyperlink{_worm_8h}{Worm.\+h}}\item 
+D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\mbox{\hyperlink{_worm_8cpp}{Worm.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,686 @@
+\hypertarget{class_weapon}{}\section{Dokumentacja klasy Weapon}
+\label{class_weapon}\index{Weapon@{Weapon}}
+
+
+Klasa bazowa broni.  
+
+
+
+
+{\ttfamily \#include $<$Weapon.\+h$>$}
+
+Diagram dziedziczenia dla Weapon\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_weapon}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_weapon_afe032e854c543fe393fda4e3e6b9fafc}{Weapon}} ()=delete
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny broni który jest usunięty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_weapon_a0640cf23068ebf732ce564329e5c40f4}{Weapon}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Konstruktor broni. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_weapon_af06462587d8fd8878be4af2a2479f9bb}{$\sim$\+Weapon}} ()=default
+\begin{DoxyCompactList}\small\item\em Domyślny destruktor wirtualny broni. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_ae7f10f6f35f5b1cc4e073530841ade5d}{set\+Scale}} (float \mbox{\hyperlink{class_weapon_a425a9f9fc4bb9bf0e4de80855d3e2ac0}{scale}})
+\begin{DoxyCompactList}\small\item\em Metoda ustawiająca skale broni. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_a057b4129e261b70f3a12703e475da353}{set\+Rotation}} (float \mbox{\hyperlink{class_weapon_aea591386a659ecf7dd7e41ada97db990}{rotation}})
+\begin{DoxyCompactList}\small\item\em Metoda ustawiająca rotacje broni. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_ac7ab3d1fc902d0a063d5c447ebda674b}{get\+Scale}} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca skale broni. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_af16afbd2da86bee0e48680e962abeca5}{get\+Rotation}} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca rotacje broni. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_weapon_a1da4c7c6528d560e2a183ecd6e65d27b}{get\+Sprite}} () const
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca obiekt sprite\textquotesingle{}a broni. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_ac46e15594ab133d8bd9484f31675c087}{get\+PosX}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca wspołrzędną X broni. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_a725696ea526b49b35b4219fdd7faa68e}{get\+PosY}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca współrzędną Y broni. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_a889af631d759a2911045d699d6801623}{set\+PosX}} (float x)
+\begin{DoxyCompactList}\small\item\em Ustawia współrzędną X broni. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_acd2619f9d9d417cf655d53149ee53540}{set\+PosY}} (float y)
+\begin{DoxyCompactList}\small\item\em Ustawia współrzedną Y broni. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_addd624ea7d811b1bf61c2abb4a812f87}{set\+Bullet}} (\mbox{\hyperlink{class_bullet}{Bullet}} $\ast$\mbox{\hyperlink{class_weapon_a799874e40f4d2235ffa259eb46674fe5}{bullet}})
+\begin{DoxyCompactList}\small\item\em Ustawia pocisk broni na wskazany w parametrze obiekt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_afc47346b4e4f0f41599fdaec6c47ae6d}{set\+Scale\+Vector}} (sf\+::\+Vector2f \mbox{\hyperlink{class_weapon_a425a9f9fc4bb9bf0e4de80855d3e2ac0}{scale}})
+\begin{DoxyCompactList}\small\item\em Ustawia wektor skali broni. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_weapon_a91adf453c2d656f577686b31d1f87e25}{get\+Scale\+Vector}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca wektor skali broni. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ \mbox{\hyperlink{class_weapon_a9cf68e4a72e5513266ca3e59f48da323}{get\+Bullet}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca wskaźnik na obiekt pocisku danej broni. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_a1b3f76c5275b67f0bb8073157a27e736}{update}} ()
+\begin{DoxyCompactList}\small\item\em Metoda aktualizująca obiekt broni co klatke. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_weapon_a954c06c805704aeea451f88221e5c74c}{shoot}} (float angle)
+\begin{DoxyCompactList}\small\item\em Wirtualna metoda sprawiająca, że broń wystrzeli. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weapon_a71c1102f1e752307efbb83c7140bca66}{get\+Is\+Shooting}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca wartość informującą o tym czy broń aktualnie strzela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_abadbad398e52fb1ef6364cd2e0d2defb}{set\+Is\+Shooting}} (bool \mbox{\hyperlink{class_weapon_aa546d4d559c3fe1d7aefa13f62eb2890}{is\+Shooting}})
+\begin{DoxyCompactList}\small\item\em Ustawia stan strzelania broni na podany w parametrze. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_weapon_aaf32c85f3e70d3c8392c928b9e6e75ca}{play\+Shoot\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Odtwarza dźwięk wystrzału broni. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weapon_a00809195a729c5efc854a0fe6dda72aa}{set\+Damage}} (float \mbox{\hyperlink{class_weapon_a5fd71198c35ebc63e9d5c4fc486d2510}{damage}})
+\begin{DoxyCompactList}\small\item\em Ustawia obrażenia od danej broni. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_a35dc33e086bd053d95b10d4a7c83494c}{get\+Damage}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca obrażenia danej broni. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_weapon_ae0cdebb7e5fde5a913a390ff573001e2}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{class_weapon_ad56c11bff999e073bf880d482d54e06b}{sprite}}
+\begin{DoxyCompactList}\small\item\em Obiekt rysowany na ekranie. \end{DoxyCompactList}\item 
+sf\+::\+Texture \mbox{\hyperlink{class_weapon_a57095692a0468a109bba97fbd8c25db5}{texture}}
+\begin{DoxyCompactList}\small\item\em Tekstura obiektu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_weapon_a340a6850f1bbf30d874aede653c249a9}{texture\+Path}}
+\begin{DoxyCompactList}\small\item\em Ścieżka do tekstury obiektu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ \mbox{\hyperlink{class_weapon_a799874e40f4d2235ffa259eb46674fe5}{bullet}} = nullptr
+\item 
+float \mbox{\hyperlink{class_weapon_aea591386a659ecf7dd7e41ada97db990}{rotation}} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Wartość rotacji broni. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_a425a9f9fc4bb9bf0e4de80855d3e2ac0}{scale}} = 0.\+2f
+\begin{DoxyCompactList}\small\item\em Wartość skali broni. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_a977cf65797ba61f2b8cba78a6cd6adfa}{posX}}
+\begin{DoxyCompactList}\small\item\em Pozycja X broni na ekranie. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_a17ab9aa81f8c4476b43a8f71cd93a994}{posY}}
+\begin{DoxyCompactList}\small\item\em Pozycja Y broni na ekranie. \end{DoxyCompactList}\item 
+sf\+::\+Vector2f \mbox{\hyperlink{class_weapon_a8783dd00b0d4281cf384f58db5f488b1}{scale\+Vector}} = \{ \mbox{\hyperlink{class_weapon_a425a9f9fc4bb9bf0e4de80855d3e2ac0}{scale}},\mbox{\hyperlink{class_weapon_a425a9f9fc4bb9bf0e4de80855d3e2ac0}{scale}} \}
+\begin{DoxyCompactList}\small\item\em Wektor skali broni. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_weapon_aa546d4d559c3fe1d7aefa13f62eb2890}{is\+Shooting}} = false
+\begin{DoxyCompactList}\small\item\em Przechowuje informacje o tym czy broń strzela. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_weapon_a5fd71198c35ebc63e9d5c4fc486d2510}{damage}} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Obrażenia broni. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa bazowa broni. 
+
+Definicja w linii 12 pliku Weapon.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_weapon_afe032e854c543fe393fda4e3e6b9fafc}\label{class_weapon_afe032e854c543fe393fda4e3e6b9fafc}} 
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{Weapon()}{Weapon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Weapon\+::\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Konstruktor domyślny broni który jest usunięty. 
+
+\mbox{\Hypertarget{class_weapon_a0640cf23068ebf732ce564329e5c40f4}\label{class_weapon_a0640cf23068ebf732ce564329e5c40f4}} 
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\index{Weapon@{Weapon}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{Weapon()}{Weapon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Weapon\+::\+Weapon (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Konstruktor broni. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & -\/ współrzędna x wyświetlenia miejsca broni \\
+\hline
+{\em y} & -\/ współrzędna y wyświetlenia miejsca broni \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 4 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_af06462587d8fd8878be4af2a2479f9bb}\label{class_weapon_af06462587d8fd8878be4af2a2479f9bb}} 
+\index{Weapon@{Weapon}!````~Weapon@{$\sim$\+Weapon}}
+\index{````~Weapon@{$\sim$\+Weapon}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{$\sim$\+Weapon()}{~Weapon()}}
+{\footnotesize\ttfamily virtual Weapon\+::$\sim$\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Domyślny destruktor wirtualny broni. 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_weapon_ae0cdebb7e5fde5a913a390ff573001e2}\label{class_weapon_ae0cdebb7e5fde5a913a390ff573001e2}} 
+\index{Weapon@{Weapon}!draw@{draw}}
+\index{draw@{draw}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Weapon\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & \\
+\hline
+{\em states} & \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 131 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a9cf68e4a72e5513266ca3e59f48da323}\label{class_weapon_a9cf68e4a72e5513266ca3e59f48da323}} 
+\index{Weapon@{Weapon}!get\+Bullet@{get\+Bullet}}
+\index{get\+Bullet@{get\+Bullet}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+Bullet()}{getBullet()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bullet}{Bullet}} $\ast$ Weapon\+::get\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca wskaźnik na obiekt pocisku danej broni. 
+
+\begin{DoxyReturn}{Zwraca}
+Wskaźnik obiekt pocisku danej broni 
+\end{DoxyReturn}
+
+
+Definicja w linii 75 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a35dc33e086bd053d95b10d4a7c83494c}\label{class_weapon_a35dc33e086bd053d95b10d4a7c83494c}} 
+\index{Weapon@{Weapon}!get\+Damage@{get\+Damage}}
+\index{get\+Damage@{get\+Damage}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+Damage()}{getDamage()}}
+{\footnotesize\ttfamily float Weapon\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca obrażenia danej broni. 
+
+\begin{DoxyReturn}{Zwraca}
+obrażenia broni 
+\end{DoxyReturn}
+
+
+Definicja w linii 126 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a71c1102f1e752307efbb83c7140bca66}\label{class_weapon_a71c1102f1e752307efbb83c7140bca66}} 
+\index{Weapon@{Weapon}!get\+Is\+Shooting@{get\+Is\+Shooting}}
+\index{get\+Is\+Shooting@{get\+Is\+Shooting}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+Is\+Shooting()}{getIsShooting()}}
+{\footnotesize\ttfamily bool Weapon\+::get\+Is\+Shooting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca wartość informującą o tym czy broń aktualnie strzela. 
+
+\begin{DoxyReturn}{Zwraca}
+wartość informującą o tym czy broń aktualnie strzela 
+\end{DoxyReturn}
+
+
+Definicja w linii 107 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_ac46e15594ab133d8bd9484f31675c087}\label{class_weapon_ac46e15594ab133d8bd9484f31675c087}} 
+\index{Weapon@{Weapon}!get\+PosX@{get\+PosX}}
+\index{get\+PosX@{get\+PosX}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+Pos\+X()}{getPosX()}}
+{\footnotesize\ttfamily float Weapon\+::get\+PosX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca wspołrzędną X broni. 
+
+\begin{DoxyReturn}{Zwraca}
+współrzędną X broni 
+\end{DoxyReturn}
+
+
+Definicja w linii 40 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a725696ea526b49b35b4219fdd7faa68e}\label{class_weapon_a725696ea526b49b35b4219fdd7faa68e}} 
+\index{Weapon@{Weapon}!get\+PosY@{get\+PosY}}
+\index{get\+PosY@{get\+PosY}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+Pos\+Y()}{getPosY()}}
+{\footnotesize\ttfamily float Weapon\+::get\+PosY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca współrzędną Y broni. 
+
+\begin{DoxyReturn}{Zwraca}
+współrzędną Y broni 
+\end{DoxyReturn}
+
+
+Definicja w linii 45 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_af16afbd2da86bee0e48680e962abeca5}\label{class_weapon_af16afbd2da86bee0e48680e962abeca5}} 
+\index{Weapon@{Weapon}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily float Weapon\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda zwracająca rotacje broni. 
+
+\begin{DoxyReturn}{Zwraca}
+Zwraca rotacje broni jako float 
+\end{DoxyReturn}
+
+
+Definicja w linii 30 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_ac7ab3d1fc902d0a063d5c447ebda674b}\label{class_weapon_ac7ab3d1fc902d0a063d5c447ebda674b}} 
+\index{Weapon@{Weapon}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily float Weapon\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda zwracająca skale broni. 
+
+\begin{DoxyReturn}{Zwraca}
+Zwraca skale broni 
+\end{DoxyReturn}
+
+
+Definicja w linii 25 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a91adf453c2d656f577686b31d1f87e25}\label{class_weapon_a91adf453c2d656f577686b31d1f87e25}} 
+\index{Weapon@{Weapon}!get\+Scale\+Vector@{get\+Scale\+Vector}}
+\index{get\+Scale\+Vector@{get\+Scale\+Vector}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+Scale\+Vector()}{getScaleVector()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Weapon\+::get\+Scale\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Zwraca wektor skali broni. 
+
+\begin{DoxyReturn}{Zwraca}
+Wektor skali broni 
+\end{DoxyReturn}
+
+
+Definicja w linii 70 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a1da4c7c6528d560e2a183ecd6e65d27b}\label{class_weapon_a1da4c7c6528d560e2a183ecd6e65d27b}} 
+\index{Weapon@{Weapon}!get\+Sprite@{get\+Sprite}}
+\index{get\+Sprite@{get\+Sprite}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{get\+Sprite()}{getSprite()}}
+{\footnotesize\ttfamily sf\+::\+Sprite Weapon\+::get\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Metoda zwracająca obiekt sprite\textquotesingle{}a broni. 
+
+\begin{DoxyReturn}{Zwraca}
+obiekt sf\+::\+Sprite broni 
+\end{DoxyReturn}
+
+
+Definicja w linii 35 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_aaf32c85f3e70d3c8392c928b9e6e75ca}\label{class_weapon_aaf32c85f3e70d3c8392c928b9e6e75ca}} 
+\index{Weapon@{Weapon}!play\+Shoot\+Sound@{play\+Shoot\+Sound}}
+\index{play\+Shoot\+Sound@{play\+Shoot\+Sound}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{play\+Shoot\+Sound()}{playShootSound()}}
+{\footnotesize\ttfamily void Weapon\+::play\+Shoot\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Odtwarza dźwięk wystrzału broni. 
+
+
+
+Reimplementowana w \mbox{\hyperlink{class_bazooka_a2645b8043766ec5045e82d452828acdd}{Bazooka}} i \mbox{\hyperlink{class_revolver_acc5cf142969078c7ee588582cd7c9316}{Revolver}}.
+
+
+
+Definicja w linii 117 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_addd624ea7d811b1bf61c2abb4a812f87}\label{class_weapon_addd624ea7d811b1bf61c2abb4a812f87}} 
+\index{Weapon@{Weapon}!set\+Bullet@{set\+Bullet}}
+\index{set\+Bullet@{set\+Bullet}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{set\+Bullet()}{setBullet()}}
+{\footnotesize\ttfamily void Weapon\+::set\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bullet}{Bullet}} $\ast$}]{bullet }\end{DoxyParamCaption})}
+
+
+
+Ustawia pocisk broni na wskazany w parametrze obiekt. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em bullet} & -\/ wskaźnik na obiekt pocisku \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 60 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a00809195a729c5efc854a0fe6dda72aa}\label{class_weapon_a00809195a729c5efc854a0fe6dda72aa}} 
+\index{Weapon@{Weapon}!set\+Damage@{set\+Damage}}
+\index{set\+Damage@{set\+Damage}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{set\+Damage()}{setDamage()}}
+{\footnotesize\ttfamily void Weapon\+::set\+Damage (\begin{DoxyParamCaption}\item[{float}]{damage }\end{DoxyParamCaption})}
+
+
+
+Ustawia obrażenia od danej broni. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em damage} & -\/ obrażenia broni \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 121 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_abadbad398e52fb1ef6364cd2e0d2defb}\label{class_weapon_abadbad398e52fb1ef6364cd2e0d2defb}} 
+\index{Weapon@{Weapon}!set\+Is\+Shooting@{set\+Is\+Shooting}}
+\index{set\+Is\+Shooting@{set\+Is\+Shooting}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{set\+Is\+Shooting()}{setIsShooting()}}
+{\footnotesize\ttfamily void Weapon\+::set\+Is\+Shooting (\begin{DoxyParamCaption}\item[{bool}]{is\+Shooting }\end{DoxyParamCaption})}
+
+
+
+Ustawia stan strzelania broni na podany w parametrze. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em is\+Shooting} & -\/ czy broń strzela (true -\/ tak, false -\/ nie ) \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 112 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a889af631d759a2911045d699d6801623}\label{class_weapon_a889af631d759a2911045d699d6801623}} 
+\index{Weapon@{Weapon}!set\+PosX@{set\+PosX}}
+\index{set\+PosX@{set\+PosX}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{set\+Pos\+X()}{setPosX()}}
+{\footnotesize\ttfamily void Weapon\+::set\+PosX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Ustawia współrzędną X broni. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & -\/ Współrzędna x dla broni \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 50 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_acd2619f9d9d417cf655d53149ee53540}\label{class_weapon_acd2619f9d9d417cf655d53149ee53540}} 
+\index{Weapon@{Weapon}!set\+PosY@{set\+PosY}}
+\index{set\+PosY@{set\+PosY}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{set\+Pos\+Y()}{setPosY()}}
+{\footnotesize\ttfamily void Weapon\+::set\+PosY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Ustawia współrzedną Y broni. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em y} & -\/ współrzedna y dla broni \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 55 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a057b4129e261b70f3a12703e475da353}\label{class_weapon_a057b4129e261b70f3a12703e475da353}} 
+\index{Weapon@{Weapon}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}}
+{\footnotesize\ttfamily void Weapon\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Metoda ustawiająca rotacje broni. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em rotation} & -\/ rotacja broni \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 20 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_ae7f10f6f35f5b1cc4e073530841ade5d}\label{class_weapon_ae7f10f6f35f5b1cc4e073530841ade5d}} 
+\index{Weapon@{Weapon}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{set\+Scale()}{setScale()}}
+{\footnotesize\ttfamily void Weapon\+::set\+Scale (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Metoda ustawiająca skale broni. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em scale} & -\/ skala broni \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 15 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_afc47346b4e4f0f41599fdaec6c47ae6d}\label{class_weapon_afc47346b4e4f0f41599fdaec6c47ae6d}} 
+\index{Weapon@{Weapon}!set\+Scale\+Vector@{set\+Scale\+Vector}}
+\index{set\+Scale\+Vector@{set\+Scale\+Vector}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{set\+Scale\+Vector()}{setScaleVector()}}
+{\footnotesize\ttfamily void Weapon\+::set\+Scale\+Vector (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{scale }\end{DoxyParamCaption})}
+
+
+
+Ustawia wektor skali broni. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em scale} & -\/ wektor skali \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 65 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a954c06c805704aeea451f88221e5c74c}\label{class_weapon_a954c06c805704aeea451f88221e5c74c}} 
+\index{Weapon@{Weapon}!shoot@{shoot}}
+\index{shoot@{shoot}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void Weapon\+::shoot (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Wirtualna metoda sprawiająca, że broń wystrzeli. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em angle} & -\/ kąt pod jakim wystrzelony zostanie pocisk \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 90 pliku Weapon.\+cpp.
+
+\mbox{\Hypertarget{class_weapon_a1b3f76c5275b67f0bb8073157a27e736}\label{class_weapon_a1b3f76c5275b67f0bb8073157a27e736}} 
+\index{Weapon@{Weapon}!update@{update}}
+\index{update@{update}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Weapon\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda aktualizująca obiekt broni co klatke. 
+
+
+
+Definicja w linii 80 pliku Weapon.\+cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_weapon_a799874e40f4d2235ffa259eb46674fe5}\label{class_weapon_a799874e40f4d2235ffa259eb46674fe5}} 
+\index{Weapon@{Weapon}!bullet@{bullet}}
+\index{bullet@{bullet}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{bullet}{bullet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bullet}{Bullet}}$\ast$ Weapon\+::bullet = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+/brief Wskaźnik na pocisk 
+
+Definicja w linii 177 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_a5fd71198c35ebc63e9d5c4fc486d2510}\label{class_weapon_a5fd71198c35ebc63e9d5c4fc486d2510}} 
+\index{Weapon@{Weapon}!damage@{damage}}
+\index{damage@{damage}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily float Weapon\+::damage = 0.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Obrażenia broni. 
+
+
+
+Definicja w linii 212 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_aa546d4d559c3fe1d7aefa13f62eb2890}\label{class_weapon_aa546d4d559c3fe1d7aefa13f62eb2890}} 
+\index{Weapon@{Weapon}!is\+Shooting@{is\+Shooting}}
+\index{is\+Shooting@{is\+Shooting}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{is\+Shooting}{isShooting}}
+{\footnotesize\ttfamily bool Weapon\+::is\+Shooting = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Przechowuje informacje o tym czy broń strzela. 
+
+
+
+Definicja w linii 207 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_a977cf65797ba61f2b8cba78a6cd6adfa}\label{class_weapon_a977cf65797ba61f2b8cba78a6cd6adfa}} 
+\index{Weapon@{Weapon}!posX@{posX}}
+\index{posX@{posX}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{posX}{posX}}
+{\footnotesize\ttfamily float Weapon\+::posX\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pozycja X broni na ekranie. 
+
+
+
+Definicja w linii 192 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_a17ab9aa81f8c4476b43a8f71cd93a994}\label{class_weapon_a17ab9aa81f8c4476b43a8f71cd93a994}} 
+\index{Weapon@{Weapon}!posY@{posY}}
+\index{posY@{posY}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{posY}{posY}}
+{\footnotesize\ttfamily float Weapon\+::posY\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pozycja Y broni na ekranie. 
+
+
+
+Definicja w linii 197 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_aea591386a659ecf7dd7e41ada97db990}\label{class_weapon_aea591386a659ecf7dd7e41ada97db990}} 
+\index{Weapon@{Weapon}!rotation@{rotation}}
+\index{rotation@{rotation}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily float Weapon\+::rotation = 0.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wartość rotacji broni. 
+
+
+
+Definicja w linii 182 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_a425a9f9fc4bb9bf0e4de80855d3e2ac0}\label{class_weapon_a425a9f9fc4bb9bf0e4de80855d3e2ac0}} 
+\index{Weapon@{Weapon}!scale@{scale}}
+\index{scale@{scale}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily float Weapon\+::scale = 0.\+2f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wartość skali broni. 
+
+
+
+Definicja w linii 187 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_a8783dd00b0d4281cf384f58db5f488b1}\label{class_weapon_a8783dd00b0d4281cf384f58db5f488b1}} 
+\index{Weapon@{Weapon}!scale\+Vector@{scale\+Vector}}
+\index{scale\+Vector@{scale\+Vector}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{scale\+Vector}{scaleVector}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Weapon\+::scale\+Vector = \{ \mbox{\hyperlink{class_weapon_a425a9f9fc4bb9bf0e4de80855d3e2ac0}{scale}},\mbox{\hyperlink{class_weapon_a425a9f9fc4bb9bf0e4de80855d3e2ac0}{scale}} \}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wektor skali broni. 
+
+
+
+Definicja w linii 202 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_ad56c11bff999e073bf880d482d54e06b}\label{class_weapon_ad56c11bff999e073bf880d482d54e06b}} 
+\index{Weapon@{Weapon}!sprite@{sprite}}
+\index{sprite@{sprite}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Weapon\+::sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Obiekt rysowany na ekranie. 
+
+
+
+Definicja w linii 162 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_a57095692a0468a109bba97fbd8c25db5}\label{class_weapon_a57095692a0468a109bba97fbd8c25db5}} 
+\index{Weapon@{Weapon}!texture@{texture}}
+\index{texture@{texture}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily sf\+::\+Texture Weapon\+::texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Tekstura obiektu. 
+
+
+
+Definicja w linii 167 pliku Weapon.\+h.
+
+\mbox{\Hypertarget{class_weapon_a340a6850f1bbf30d874aede653c249a9}\label{class_weapon_a340a6850f1bbf30d874aede653c249a9}} 
+\index{Weapon@{Weapon}!texture\+Path@{texture\+Path}}
+\index{texture\+Path@{texture\+Path}!Weapon@{Weapon}}
+\subsubsection{\texorpdfstring{texture\+Path}{texturePath}}
+{\footnotesize\ttfamily std\+::string Weapon\+::texture\+Path\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ścieżka do tekstury obiektu. 
+
+
+
+Definicja w linii 172 pliku Weapon.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\mbox{\hyperlink{_weapon_8h}{Weapon.\+h}}\item 
+D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\mbox{\hyperlink{_weapon_8cpp}{Weapon.\+cpp}}\end{DoxyCompactItemize}

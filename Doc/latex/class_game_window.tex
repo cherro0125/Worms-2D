@@ -1,0 +1,333 @@
+\hypertarget{class_game_window}{}\section{Dokumentacja klasy Game\+Window}
+\label{class_game_window}\index{Game\+Window@{Game\+Window}}
+
+
+{\ttfamily \#include $<$Game\+Window.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_window_aeb8fe4d63cdd9e9d3e6fdcb35d15a37c}{Game\+Window}} ()=delete
+\item 
+\mbox{\hyperlink{class_game_window_a55b071c0390e45c064a160c1e6baaa08}{$\sim$\+Game\+Window}} ()
+\item 
+\mbox{\hyperlink{class_game_window_a22da49d930c2fd26888b223049a9da18}{Game\+Window}} (unsigned int width, unsigned int height, std\+::string name)
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_game_window_aa5ef8ededf54c333a5b19344b95220de}{Get\+Instance}} () const
+\item 
+void \mbox{\hyperlink{class_game_window_af2b8df98b008a25d8c64f67cd6f23f59}{Change\+Frame\+Limit}} (unsigned int limit=60) const
+\item 
+void \mbox{\hyperlink{class_game_window_a7dcdd3731da278a522c59a72ecee77b3}{Main\+Loop}} ()
+\item 
+void \mbox{\hyperlink{class_game_window_a043804fa483c8ea2f348b6fb1dac4e4a}{Update\+Worms}} (int i)
+\item 
+void \mbox{\hyperlink{class_game_window_aa6659ccbd2a5d27141eb3f00fdc72ea6}{Update\+WormsB}} (int i)
+\item 
+\mbox{\hyperlink{class_worm}{Worm}} $\ast$$\ast$ \mbox{\hyperlink{class_game_window_a172c7184152f5c49a5089205ae3528f5}{Get\+Current\+Worm}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_worm}{Worm}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_game_window_a7535403f5d3ab3ffe22c711665102052}{Get\+Worms\+Array}} () const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_worm}{Worm}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_game_window_ab9695e10e5a991a9df920911402b9272}{Get\+Worms\+ArrayB}} () const
+\item 
+int \mbox{\hyperlink{class_game_window_acfef11596afd262e0e4e77051ed24cde}{Get\+Worm\+Count}} () const
+\item 
+int \mbox{\hyperlink{class_game_window_a6c6d7e7da6cfc12d33c6da6f84596b15}{Get\+Worm\+CountB}} () const
+\item 
+int $\ast$ \mbox{\hyperlink{class_game_window_a67485df550fda5b1cc0aa6e7644f72e8}{Get\+Current\+Team}} ()
+\item 
+int $\ast$ \mbox{\hyperlink{class_game_window_a6dbc377a22fff8ab01f30b10337dc5ae}{Get\+Current\+Worm\+ID}} ()
+\item 
+void \mbox{\hyperlink{class_game_window_a856649fd2f3954b6ae3c6cf9da6b17a6}{Set\+Background\+Color}} (sf\+::\+Color color)
+\item 
+\mbox{\hyperlink{class_game_sound}{Game\+Sound}} $\ast$ \mbox{\hyperlink{class_game_window_aa3280056f0018da1eee85ccb1e5fd2ac}{Get\+Game\+Sound}} () const
+\item 
+void \mbox{\hyperlink{class_game_window_a735db6bd1918401c3b36502d14c8fd7b}{Switch\+To\+Red\+Team}} ()
+\item 
+void \mbox{\hyperlink{class_game_window_aa7c5976b188b842fc2ce45190b55bdfa}{Switch\+To\+Blue\+Team}} ()
+\item 
+void \mbox{\hyperlink{class_game_window_a24b9dd0b93ad629da3b2e15661fdea0c}{Set\+Choose\+States}} ()
+\end{DoxyCompactItemize}
+\subsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_game_window}{Game\+Window}} $\ast$ \mbox{\hyperlink{class_game_window_a9c480a3795bfd6d22a9dc8a3bae47b1b}{Get\+Game\+Window\+Instance}} (unsigned int width=1280, unsigned int height=1024, std\+::string name=\char`\"{}Worms 2\+D\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_terrain}{Terrain}} \mbox{\hyperlink{class_game_window_ab5d02e9738d1f7f3fea4cd146172cf11}{terrain}}
+\item 
+\mbox{\hyperlink{class_menu}{Menu}} \mbox{\hyperlink{class_game_window_a3c63dc36f53ecb9b1d055923293daffd}{menu}}
+\item 
+int \mbox{\hyperlink{class_game_window_aafe2b1768f704b81e4fe94115287b9f7}{game\+\_\+state}}
+\item 
+bool \mbox{\hyperlink{class_game_window_a5ce0d59c491a490bc1d98afcac741016}{game\+\_\+started}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+
+
+Definicja w linii 14 pliku Game\+Window.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_game_window_aeb8fe4d63cdd9e9d3e6fdcb35d15a37c}\label{class_game_window_aeb8fe4d63cdd9e9d3e6fdcb35d15a37c}} 
+\index{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}}
+\index{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Game\+Window()}{GameWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Window\+::\+Game\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{class_game_window_a55b071c0390e45c064a160c1e6baaa08}\label{class_game_window_a55b071c0390e45c064a160c1e6baaa08}} 
+\index{Game\+Window@{Game\+Window}!````~Game\+Window@{$\sim$\+Game\+Window}}
+\index{````~Game\+Window@{$\sim$\+Game\+Window}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{$\sim$\+Game\+Window()}{~GameWindow()}}
+{\footnotesize\ttfamily Game\+Window\+::$\sim$\+Game\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 26 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a22da49d930c2fd26888b223049a9da18}\label{class_game_window_a22da49d930c2fd26888b223049a9da18}} 
+\index{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}}
+\index{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Game\+Window()}{GameWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Window\+::\+Game\+Window (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 4 pliku Game\+Window.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_game_window_af2b8df98b008a25d8c64f67cd6f23f59}\label{class_game_window_af2b8df98b008a25d8c64f67cd6f23f59}} 
+\index{Game\+Window@{Game\+Window}!Change\+Frame\+Limit@{Change\+Frame\+Limit}}
+\index{Change\+Frame\+Limit@{Change\+Frame\+Limit}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Change\+Frame\+Limit()}{ChangeFrameLimit()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Change\+Frame\+Limit (\begin{DoxyParamCaption}\item[{unsigned int}]{limit = {\ttfamily 60} }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 37 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a67485df550fda5b1cc0aa6e7644f72e8}\label{class_game_window_a67485df550fda5b1cc0aa6e7644f72e8}} 
+\index{Game\+Window@{Game\+Window}!Get\+Current\+Team@{Get\+Current\+Team}}
+\index{Get\+Current\+Team@{Get\+Current\+Team}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Current\+Team()}{GetCurrentTeam()}}
+{\footnotesize\ttfamily int $\ast$ Game\+Window\+::\+Get\+Current\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 293 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a172c7184152f5c49a5089205ae3528f5}\label{class_game_window_a172c7184152f5c49a5089205ae3528f5}} 
+\index{Game\+Window@{Game\+Window}!Get\+Current\+Worm@{Get\+Current\+Worm}}
+\index{Get\+Current\+Worm@{Get\+Current\+Worm}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Current\+Worm()}{GetCurrentWorm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_worm}{Worm}} $\ast$$\ast$ Game\+Window\+::\+Get\+Current\+Worm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 268 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a6dbc377a22fff8ab01f30b10337dc5ae}\label{class_game_window_a6dbc377a22fff8ab01f30b10337dc5ae}} 
+\index{Game\+Window@{Game\+Window}!Get\+Current\+Worm\+ID@{Get\+Current\+Worm\+ID}}
+\index{Get\+Current\+Worm\+ID@{Get\+Current\+Worm\+ID}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Current\+Worm\+I\+D()}{GetCurrentWormID()}}
+{\footnotesize\ttfamily int $\ast$ Game\+Window\+::\+Get\+Current\+Worm\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 298 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_aa3280056f0018da1eee85ccb1e5fd2ac}\label{class_game_window_aa3280056f0018da1eee85ccb1e5fd2ac}} 
+\index{Game\+Window@{Game\+Window}!Get\+Game\+Sound@{Get\+Game\+Sound}}
+\index{Get\+Game\+Sound@{Get\+Game\+Sound}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Game\+Sound()}{GetGameSound()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_sound}{Game\+Sound}} $\ast$ Game\+Window\+::\+Get\+Game\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 308 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a9c480a3795bfd6d22a9dc8a3bae47b1b}\label{class_game_window_a9c480a3795bfd6d22a9dc8a3bae47b1b}} 
+\index{Game\+Window@{Game\+Window}!Get\+Game\+Window\+Instance@{Get\+Game\+Window\+Instance}}
+\index{Get\+Game\+Window\+Instance@{Get\+Game\+Window\+Instance}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Game\+Window\+Instance()}{GetGameWindowInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_window}{Game\+Window}} $\ast$ Game\+Window\+::\+Get\+Game\+Window\+Instance (\begin{DoxyParamCaption}\item[{unsigned int}]{width = {\ttfamily 1280},  }\item[{unsigned int}]{height = {\ttfamily 1024},  }\item[{std\+::string}]{name = {\ttfamily \char`\"{}Worms~2D\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definicja w linii 373 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_aa5ef8ededf54c333a5b19344b95220de}\label{class_game_window_aa5ef8ededf54c333a5b19344b95220de}} 
+\index{Game\+Window@{Game\+Window}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Instance()}{GetInstance()}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window $\ast$ Game\+Window\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 32 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_acfef11596afd262e0e4e77051ed24cde}\label{class_game_window_acfef11596afd262e0e4e77051ed24cde}} 
+\index{Game\+Window@{Game\+Window}!Get\+Worm\+Count@{Get\+Worm\+Count}}
+\index{Get\+Worm\+Count@{Get\+Worm\+Count}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Worm\+Count()}{GetWormCount()}}
+{\footnotesize\ttfamily int Game\+Window\+::\+Get\+Worm\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 283 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a6c6d7e7da6cfc12d33c6da6f84596b15}\label{class_game_window_a6c6d7e7da6cfc12d33c6da6f84596b15}} 
+\index{Game\+Window@{Game\+Window}!Get\+Worm\+CountB@{Get\+Worm\+CountB}}
+\index{Get\+Worm\+CountB@{Get\+Worm\+CountB}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Worm\+Count\+B()}{GetWormCountB()}}
+{\footnotesize\ttfamily int Game\+Window\+::\+Get\+Worm\+CountB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 288 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a7535403f5d3ab3ffe22c711665102052}\label{class_game_window_a7535403f5d3ab3ffe22c711665102052}} 
+\index{Game\+Window@{Game\+Window}!Get\+Worms\+Array@{Get\+Worms\+Array}}
+\index{Get\+Worms\+Array@{Get\+Worms\+Array}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Worms\+Array()}{GetWormsArray()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_worm}{Worm}} $\ast$ $>$ $\ast$ Game\+Window\+::\+Get\+Worms\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 273 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_ab9695e10e5a991a9df920911402b9272}\label{class_game_window_ab9695e10e5a991a9df920911402b9272}} 
+\index{Game\+Window@{Game\+Window}!Get\+Worms\+ArrayB@{Get\+Worms\+ArrayB}}
+\index{Get\+Worms\+ArrayB@{Get\+Worms\+ArrayB}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Get\+Worms\+Array\+B()}{GetWormsArrayB()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_worm}{Worm}} $\ast$ $>$ $\ast$ Game\+Window\+::\+Get\+Worms\+ArrayB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 278 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a7dcdd3731da278a522c59a72ecee77b3}\label{class_game_window_a7dcdd3731da278a522c59a72ecee77b3}} 
+\index{Game\+Window@{Game\+Window}!Main\+Loop@{Main\+Loop}}
+\index{Main\+Loop@{Main\+Loop}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Main\+Loop()}{MainLoop()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Main\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 79 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a856649fd2f3954b6ae3c6cf9da6b17a6}\label{class_game_window_a856649fd2f3954b6ae3c6cf9da6b17a6}} 
+\index{Game\+Window@{Game\+Window}!Set\+Background\+Color@{Set\+Background\+Color}}
+\index{Set\+Background\+Color@{Set\+Background\+Color}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Set\+Background\+Color()}{SetBackgroundColor()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Set\+Background\+Color (\begin{DoxyParamCaption}\item[{sf\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 303 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a24b9dd0b93ad629da3b2e15661fdea0c}\label{class_game_window_a24b9dd0b93ad629da3b2e15661fdea0c}} 
+\index{Game\+Window@{Game\+Window}!Set\+Choose\+States@{Set\+Choose\+States}}
+\index{Set\+Choose\+States@{Set\+Choose\+States}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Set\+Choose\+States()}{SetChooseStates()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Set\+Choose\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 340 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_aa7c5976b188b842fc2ce45190b55bdfa}\label{class_game_window_aa7c5976b188b842fc2ce45190b55bdfa}} 
+\index{Game\+Window@{Game\+Window}!Switch\+To\+Blue\+Team@{Switch\+To\+Blue\+Team}}
+\index{Switch\+To\+Blue\+Team@{Switch\+To\+Blue\+Team}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Switch\+To\+Blue\+Team()}{SwitchToBlueTeam()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Switch\+To\+Blue\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 332 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a735db6bd1918401c3b36502d14c8fd7b}\label{class_game_window_a735db6bd1918401c3b36502d14c8fd7b}} 
+\index{Game\+Window@{Game\+Window}!Switch\+To\+Red\+Team@{Switch\+To\+Red\+Team}}
+\index{Switch\+To\+Red\+Team@{Switch\+To\+Red\+Team}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Switch\+To\+Red\+Team()}{SwitchToRedTeam()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Switch\+To\+Red\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 324 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_a043804fa483c8ea2f348b6fb1dac4e4a}\label{class_game_window_a043804fa483c8ea2f348b6fb1dac4e4a}} 
+\index{Game\+Window@{Game\+Window}!Update\+Worms@{Update\+Worms}}
+\index{Update\+Worms@{Update\+Worms}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Update\+Worms()}{UpdateWorms()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Update\+Worms (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 258 pliku Game\+Window.\+cpp.
+
+\mbox{\Hypertarget{class_game_window_aa6659ccbd2a5d27141eb3f00fdc72ea6}\label{class_game_window_aa6659ccbd2a5d27141eb3f00fdc72ea6}} 
+\index{Game\+Window@{Game\+Window}!Update\+WormsB@{Update\+WormsB}}
+\index{Update\+WormsB@{Update\+WormsB}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{Update\+Worms\+B()}{UpdateWormsB()}}
+{\footnotesize\ttfamily void Game\+Window\+::\+Update\+WormsB (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 263 pliku Game\+Window.\+cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_game_window_a5ce0d59c491a490bc1d98afcac741016}\label{class_game_window_a5ce0d59c491a490bc1d98afcac741016}} 
+\index{Game\+Window@{Game\+Window}!game\+\_\+started@{game\+\_\+started}}
+\index{game\+\_\+started@{game\+\_\+started}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{game\+\_\+started}{game\_started}}
+{\footnotesize\ttfamily bool Game\+Window\+::game\+\_\+started}
+
+
+
+Definicja w linii 38 pliku Game\+Window.\+h.
+
+\mbox{\Hypertarget{class_game_window_aafe2b1768f704b81e4fe94115287b9f7}\label{class_game_window_aafe2b1768f704b81e4fe94115287b9f7}} 
+\index{Game\+Window@{Game\+Window}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{game\+\_\+state}{game\_state}}
+{\footnotesize\ttfamily int Game\+Window\+::game\+\_\+state}
+
+
+
+Definicja w linii 37 pliku Game\+Window.\+h.
+
+\mbox{\Hypertarget{class_game_window_a3c63dc36f53ecb9b1d055923293daffd}\label{class_game_window_a3c63dc36f53ecb9b1d055923293daffd}} 
+\index{Game\+Window@{Game\+Window}!menu@{menu}}
+\index{menu@{menu}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_menu}{Menu}} Game\+Window\+::menu}
+
+
+
+Definicja w linii 36 pliku Game\+Window.\+h.
+
+\mbox{\Hypertarget{class_game_window_ab5d02e9738d1f7f3fea4cd146172cf11}\label{class_game_window_ab5d02e9738d1f7f3fea4cd146172cf11}} 
+\index{Game\+Window@{Game\+Window}!terrain@{terrain}}
+\index{terrain@{terrain}!Game\+Window@{Game\+Window}}
+\subsubsection{\texorpdfstring{terrain}{terrain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_terrain}{Terrain}} Game\+Window\+::terrain}
+
+
+
+Definicja w linii 35 pliku Game\+Window.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\mbox{\hyperlink{_game_window_8h}{Game\+Window.\+h}}\item 
+D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\mbox{\hyperlink{_game_window_8cpp}{Game\+Window.\+cpp}}\end{DoxyCompactItemize}
