@@ -146,6 +146,11 @@ public:
 	 */
 	bool game_started;
 	/*!
+	 * \brief Informacja czy gra ma zmienić drużynę
+	 *
+	 */
+	bool make_switch;
+	/*!
 	 * \brief Zmienia aktualny team na Czerwony (zmiana tury)
 	 *
 	 */

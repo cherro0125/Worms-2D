@@ -18,7 +18,7 @@ windowName(name)
 		this->black_overlay.setSize(sf::Vector2f(800, 600));
 		this->menu.changeMenu(game_state);
 		this->game_started = false;
-
+		
 
 	}
 }
@@ -64,6 +64,7 @@ void GameWindow::startGame()
 		worms->at(i)->setColMap(&(terrain.map));
 		worms_b->at(i)->setColMap(&(terrain.map));
 	}
+	this->make_switch = false;
 }
 
 void GameWindow::endGame()
@@ -224,17 +225,25 @@ void GameWindow::MainLoop()
 			}
 		}
 		std::cout << "TIMER:" << this->timer.asSeconds() << std::endl;
-		if (static_cast<int>(this->timer.asSeconds()) == 8)
+		if (game_state==GAME&&(static_cast<int>(this->timer.asSeconds()) >= 8 || make_switch))
 		{
-			if (*GetCurrentTeam() == team::RED)
+			make_switch = true;
+			if (current_worm->hasWeapon() && !current_worm->getWeapon()->getIsShooting())
 			{
-				this->SwitchToBlueTeam();
+				if (*GetCurrentTeam() == team::RED)
+				{
+					this->SwitchToBlueTeam();
+					make_switch = false;
+					this->timer = this->clock.restart();
+				}
+				else
+				{
+					this->SwitchToRedTeam();
+					make_switch = false;
+					this->timer = this->clock.restart();
+				}
 			}
-			else
-			{
-				this->SwitchToRedTeam();
-			}
-			this->timer = this->clock.restart();
+			
 		}
 
 		this->SetChooseStates();

@@ -134,7 +134,7 @@ void Worm::update()
 		isJumping = false;
 	}
 
-	this->hpShape.setPosition(this->sprite.getPosition().x, this->sprite.getPosition().y - 10);
+	this->hpShape.setPosition(this->sprite.getPosition().x - (hpShape.getSize().x/4), this->sprite.getPosition().y - 10);
 	this->hpShape.setSize(sf::Vector2f(this->hp - 0.5f, this->hpShape.getSize().y));
 	if (this->posX <= -100 || this->posX >= 900 || this->posY >= 610)
 	{
@@ -303,6 +303,7 @@ void Worm::setNormal()
 
 void Worm::moveLeft()
 {
+	this->lookLeft();
 	if (!checkCollision(collisionPoints[LEFT]) && !checkCollision(collisionPoints[UP_LEFT]))
 	{
 		sprite.setTexture(texture2);
@@ -314,13 +315,14 @@ void Worm::moveLeft()
 		if (this->velocity.x < -3)
 			this->velocity.x = -3;
 
-		this->lookLeft();
+		
 
 	}
 }
 
 void Worm::moveRight()
 {
+	this->lookRight();
 	if (!checkCollision(collisionPoints[RIGHT]) && !checkCollision(collisionPoints[UP_RIGHT]))
 	{
 		sprite.setTexture(texture2);
@@ -332,7 +334,7 @@ void Worm::moveRight()
 		if (this->velocity.x > 3)
 			this->velocity.x = 3;
 
-		this->lookRight();
+		
 	}
 
 }
