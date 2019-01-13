@@ -72,7 +72,7 @@ public:
 	 */
 	float getWormY() const;
 	/*!
-	 * \brif Zatrzymuje worma
+	 * \brief Zatrzymuje worma
 	 *
 	 */
 	void stopMove();

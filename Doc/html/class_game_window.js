@@ -22,6 +22,7 @@ var class_game_window =
     [ "UpdateWormsB", "class_game_window.html#aa6659ccbd2a5d27141eb3f00fdc72ea6", null ],
     [ "game_started", "class_game_window.html#a5ce0d59c491a490bc1d98afcac741016", null ],
     [ "game_state", "class_game_window.html#aafe2b1768f704b81e4fe94115287b9f7", null ],
+    [ "make_switch", "class_game_window.html#a5c677a419a09972501ce2c64b5166180", null ],
     [ "menu", "class_game_window.html#a3c63dc36f53ecb9b1d055923293daffd", null ],
     [ "terrain", "class_game_window.html#ab5d02e9738d1f7f3fea4cd146172cf11", null ]
 ];

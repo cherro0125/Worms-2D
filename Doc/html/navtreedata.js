@@ -49,7 +49,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_bazooka_8cpp.html",
-"class_worm.html#ac5daf6e0926f483415886c5ae297714a"
+"class_worm.html#ab517b492de0e583254c288cc583cbeb1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
