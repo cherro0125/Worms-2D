@@ -1,5 +1,7 @@
 #include "Menu.h"
 #include <iostream>
+#include "GameSound.h"
+#include "GameWindow.h"
 
 Menu::Menu()
 {
@@ -168,6 +170,8 @@ void Menu::redWinScreen()
 	this->buttons.push_back(new Button(400, txt.getPosition().y * 3 + txt.getCharacterSize(), "Retry", GAME));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Help", HELP_PAUSE));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Exit to menu", MENU));
+	GameSound *gs = GameWindow::GetGameWindowInstance()->GetGameSound();
+	gs->PlayWin();
 }
 void Menu::blueWinScreen()
 {
@@ -177,6 +181,8 @@ void Menu::blueWinScreen()
 	this->buttons.push_back(new Button(400, txt.getPosition().y * 3 + txt.getCharacterSize(), "Retry", GAME));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Help", HELP_PAUSE));
 	this->buttons.push_back(new Button(400, buttons.back()->getPosition().y + buttons.back()->getSize().y, "Exit to menu", MENU));
+	GameSound *gs = GameWindow::GetGameWindowInstance()->GetGameSound();
+	gs->PlayWin();
 }
 void Menu::changeDrawKeyboard()
 {

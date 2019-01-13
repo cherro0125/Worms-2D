@@ -23,7 +23,13 @@ GameSound::GameSound()
 	if(!deathSoundBuffer.loadFromFile(deathSoundPath))
 		std::cout << "Error with initialization death sound" << std::endl;
 	deathSound.setBuffer(deathSoundBuffer);
-	deathSound.setVolume(100);
+	deathSound.setVolume(60);
+
+	if(!winSoundBuffer.loadFromFile(winSoundPath))
+		std::cout << "Error with initialization win sound" << std::endl;
+	winSound.setBuffer(winSoundBuffer);
+	winSound.setVolume(90);
+
 
 	
 }
@@ -76,4 +82,14 @@ void GameSound::PlayDeath()
 void GameSound::StopDeath()
 {
 	deathSound.stop();
+}
+
+void GameSound::PlayWin()
+{
+	winSound.play();
+}
+
+void GameSound::StopWin()
+{
+	winSound.stop();
 }

@@ -16,6 +16,8 @@ public:
 	void StopBazookaSound();
 	void PlayDeath();
 	void StopDeath();
+	void PlayWin();
+	void StopWin();
 	
 	
 private:
@@ -25,6 +27,7 @@ private:
 	std::string revolverSoundPath = "resources/sounds/revolver_sound.ogg";
 	std::string bazookaSoundPath = "resources/sounds/bazooka_sound.ogg";
 	std::string deathSoundPath = "resources/sounds/death.ogg";
+	std::string winSoundPath = "resources/sounds/fatality.ogg";
 	sf::SoundBuffer testSampleBuffer;
 	sf::Sound testSampleSound;
 	sf::SoundBuffer revolverSoundBuffer;
@@ -33,6 +36,8 @@ private:
 	sf::Sound bazookaSound;
 	sf::SoundBuffer deathSoundBuffer;
 	sf::Sound deathSound;
+	sf::SoundBuffer winSoundBuffer;
+	sf::Sound winSound;
 	
 
 
