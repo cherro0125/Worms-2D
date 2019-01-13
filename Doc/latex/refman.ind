@@ -1,0 +1,571 @@
+\begin{theindex}
+
+  \item {$\sim$\+Bazooka}
+    \subitem {Bazooka}, \hyperpage{8}
+  \item {$\sim$\+Bullet}
+    \subitem {Bullet}, \hyperpage{10}
+  \item {$\sim$\+Game\+Event}
+    \subitem {Game\+Event}, \hyperpage{22}
+  \item {$\sim$\+Game\+Window}
+    \subitem {Game\+Window}, \hyperpage{28}
+  \item {$\sim$\+Revolver}
+    \subitem {Revolver}, \hyperpage{38}
+  \item {$\sim$\+Weapon}
+    \subitem {Weapon}, \hyperpage{46}
+  \item {$\sim$\+Worm}
+    \subitem {Worm}, \hyperpage{56}
+
+  \indexspace
+
+  \item {Bazooka}, \hyperpage{7}
+    \subitem {$\sim$\+Bazooka}, \hyperpage{8}
+    \subitem {Bazooka}, \hyperpage{8}
+    \subitem {play\+Shoot\+Sound}, \hyperpage{8}
+  \item {bottom}
+    \subitem {Worm}, \hyperpage{57}
+  \item {Bullet}, \hyperpage{9}
+    \subitem {$\sim$\+Bullet}, \hyperpage{10}
+    \subitem {Bullet}, \hyperpage{10}
+    \subitem {draw}, \hyperpage{11}
+    \subitem {get\+PosX}, \hyperpage{11}
+    \subitem {get\+PosY}, \hyperpage{11}
+    \subitem {get\+Scale}, \hyperpage{11}
+    \subitem {get\+Scale\+Vector}, \hyperpage{12}
+    \subitem {get\+Sprite}, \hyperpage{12}
+    \subitem {get\+Velocity}, \hyperpage{12}
+    \subitem {set\+PosX}, \hyperpage{12}
+    \subitem {set\+PosY}, \hyperpage{13}
+    \subitem {set\+Rotation}, \hyperpage{13}
+    \subitem {set\+Scale}, \hyperpage{13}
+    \subitem {set\+Scale\+Vector}, \hyperpage{14}
+    \subitem {set\+Velocity}, \hyperpage{14}
+    \subitem {update}, \hyperpage{15}
+  \item {bullet}
+    \subitem {Weapon}, \hyperpage{52}
+  \item {Button}, \hyperpage{15}
+    \subitem {Button}, \hyperpage{16}
+    \subitem {clear}, \hyperpage{16}
+    \subitem {click}, \hyperpage{16}
+    \subitem {draw}, \hyperpage{17}
+    \subitem {get\+Id}, \hyperpage{17}
+    \subitem {get\+Position}, \hyperpage{17}
+    \subitem {get\+Size}, \hyperpage{17}
+    \subitem {hover}, \hyperpage{18}
+    \subitem {is\+Clicked}, \hyperpage{18}
+    \subitem {is\+Hovered}, \hyperpage{18}
+    \subitem {set\+Color\+Clicked}, \hyperpage{18}
+    \subitem {set\+Color\+Default}, \hyperpage{19}
+    \subitem {set\+Color\+Hovered}, \hyperpage{19}
+
+  \indexspace
+
+  \item {Change\+Frame\+Limit}
+    \subitem {Game\+Window}, \hyperpage{29}
+  \item {change\+Menu}
+    \subitem {Menu}, \hyperpage{36}
+  \item {check\+Collision}
+    \subitem {Worm}, \hyperpage{57}
+  \item {clear}
+    \subitem {Button}, \hyperpage{16}
+    \subitem {Menu}, \hyperpage{36}
+  \item {clear\+Clicked\+Button}
+    \subitem {Menu}, \hyperpage{36}
+  \item {click}
+    \subitem {Button}, \hyperpage{16}
+  \item {collision}
+    \subitem {Worm.\+h}, \hyperpage{74}
+  \item {collision\+Points}
+    \subitem {Worm}, \hyperpage{65}
+
+  \indexspace
+
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bazooka.\+cpp}, 
+		\hyperpage{67}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bazooka.\+h}, 
+		\hyperpage{67}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bullet.\+cpp}, 
+		\hyperpage{67}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bullet.\+h}, 
+		\hyperpage{67}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Button.\+cpp}, 
+		\hyperpage{68}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Button.\+h}, 
+		\hyperpage{68}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+F\+P\+S\+Counter.\+cpp}, 
+		\hyperpage{68}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+F\+P\+S\+Counter.\+h}, 
+		\hyperpage{68}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Event.\+cpp}, 
+		\hyperpage{69}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Event.\+h}, 
+		\hyperpage{69}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Sound.\+cpp}, 
+		\hyperpage{69}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Sound.\+h}, 
+		\hyperpage{69}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Window.\+cpp}, 
+		\hyperpage{70}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Window.\+h}, 
+		\hyperpage{70}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Menu.\+cpp}, 
+		\hyperpage{70}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Menu.\+h}, 
+		\hyperpage{70}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Revolver.\+cpp}, 
+		\hyperpage{71}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Revolver.\+h}, 
+		\hyperpage{72}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Source.\+cpp}, 
+		\hyperpage{72}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Terrain.\+cpp}, 
+		\hyperpage{72}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Terrain.\+h}, 
+		\hyperpage{73}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Water.\+cpp}, 
+		\hyperpage{73}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Water.\+h}, 
+		\hyperpage{73}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Weapon.\+cpp}, 
+		\hyperpage{73}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Weapon.\+h}, 
+		\hyperpage{73}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Worm.\+cpp}, 
+		\hyperpage{74}
+  \item {D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Worm.\+h}, 
+		\hyperpage{74}
+  \item {damage}
+    \subitem {Weapon}, \hyperpage{52}
+    \subitem {Worm}, \hyperpage{57}
+  \item {delete\+Weapon}
+    \subitem {Worm}, \hyperpage{59}
+  \item {draw}
+    \subitem {Bullet}, \hyperpage{11}
+    \subitem {Button}, \hyperpage{17}
+    \subitem {Menu}, \hyperpage{36}
+    \subitem {Terrain}, \hyperpage{40}
+    \subitem {Water}, \hyperpage{42}
+    \subitem {Weapon}, \hyperpage{46}
+    \subitem {Worm}, \hyperpage{59}
+  \item {draw\+F\+PS}
+    \subitem {F\+P\+S\+Counter}, \hyperpage{20}
+
+  \indexspace
+
+  \item {erase}
+    \subitem {Terrain}, \hyperpage{41}
+
+  \indexspace
+
+  \item {F\+P\+S\+Counter}, \hyperpage{19}
+    \subitem {draw\+F\+PS}, \hyperpage{20}
+    \subitem {F\+P\+S\+Counter}, \hyperpage{20}
+    \subitem {set\+Color}, \hyperpage{20}
+    \subitem {start}, \hyperpage{21}
+
+  \indexspace
+
+  \item {game\+\_\+started}
+    \subitem {Game\+Window}, \hyperpage{34}
+  \item {game\+\_\+state}
+    \subitem {Game\+Window}, \hyperpage{34}
+  \item {game\+\_\+states}
+    \subitem {Menu.\+h}, \hyperpage{71}
+  \item {Game\+Event}, \hyperpage{21}
+    \subitem {$\sim$\+Game\+Event}, \hyperpage{22}
+    \subitem {Game\+Event}, \hyperpage{22}
+    \subitem {Get\+Event\+Instance}, \hyperpage{22}
+    \subitem {Get\+Instance}, \hyperpage{22}
+    \subitem {handle\+Events}, \hyperpage{22}
+  \item {Game\+Sound}, \hyperpage{23}
+    \subitem {Game\+Sound}, \hyperpage{24}
+    \subitem {Pause\+Sample}, \hyperpage{24}
+    \subitem {Play\+Death}, \hyperpage{24}
+    \subitem {Play\+Main\+Music}, \hyperpage{24}
+    \subitem {Play\+Win}, \hyperpage{24}
+    \subitem {Start\+Bazooka\+Sound}, \hyperpage{25}
+    \subitem {Start\+Revolver\+Sound}, \hyperpage{25}
+    \subitem {Start\+Sample}, \hyperpage{25}
+    \subitem {Stop\+Bazooka\+Sound}, \hyperpage{25}
+    \subitem {Stop\+Death}, \hyperpage{25}
+    \subitem {Stop\+Revolver\+Sound}, \hyperpage{26}
+    \subitem {Stop\+Sample}, \hyperpage{26}
+    \subitem {Stop\+Win}, \hyperpage{26}
+  \item {Game\+Window}, \hyperpage{26}
+    \subitem {$\sim$\+Game\+Window}, \hyperpage{28}
+    \subitem {Change\+Frame\+Limit}, \hyperpage{29}
+    \subitem {game\+\_\+started}, \hyperpage{34}
+    \subitem {game\+\_\+state}, \hyperpage{34}
+    \subitem {Game\+Window}, \hyperpage{28}
+    \subitem {Get\+Current\+Team}, \hyperpage{29}
+    \subitem {Get\+Current\+Worm}, \hyperpage{29}
+    \subitem {Get\+Current\+Worm\+ID}, \hyperpage{29}
+    \subitem {Get\+Game\+Sound}, \hyperpage{30}
+    \subitem {Get\+Game\+Window\+Instance}, \hyperpage{30}
+    \subitem {Get\+Instance}, \hyperpage{30}
+    \subitem {Get\+Worm\+Count}, \hyperpage{31}
+    \subitem {Get\+Worm\+CountB}, \hyperpage{31}
+    \subitem {Get\+Worms\+Array}, \hyperpage{31}
+    \subitem {Get\+Worms\+ArrayB}, \hyperpage{31}
+    \subitem {Main\+Loop}, \hyperpage{32}
+    \subitem {menu}, \hyperpage{34}
+    \subitem {Set\+Background\+Color}, \hyperpage{32}
+    \subitem {Set\+Choose\+States}, \hyperpage{32}
+    \subitem {Switch\+To\+Blue\+Team}, \hyperpage{32}
+    \subitem {Switch\+To\+Red\+Team}, \hyperpage{33}
+    \subitem {terrain}, \hyperpage{34}
+    \subitem {Update\+Worms}, \hyperpage{33}
+    \subitem {Update\+WormsB}, \hyperpage{33}
+  \item {get\+Bullet}
+    \subitem {Weapon}, \hyperpage{46}
+  \item {get\+Button}
+    \subitem {Menu}, \hyperpage{37}
+  \item {Get\+Current\+Team}
+    \subitem {Game\+Window}, \hyperpage{29}
+  \item {Get\+Current\+Worm}
+    \subitem {Game\+Window}, \hyperpage{29}
+  \item {Get\+Current\+Worm\+ID}
+    \subitem {Game\+Window}, \hyperpage{29}
+  \item {get\+Damage}
+    \subitem {Weapon}, \hyperpage{46}
+  \item {get\+Debug\+Txt}
+    \subitem {Worm}, \hyperpage{59}
+  \item {Get\+Event\+Instance}
+    \subitem {Game\+Event}, \hyperpage{22}
+  \item {Get\+Game\+Sound}
+    \subitem {Game\+Window}, \hyperpage{30}
+  \item {Get\+Game\+Window\+Instance}
+    \subitem {Game\+Window}, \hyperpage{30}
+  \item {get\+Id}
+    \subitem {Button}, \hyperpage{17}
+  \item {Get\+Instance}
+    \subitem {Game\+Event}, \hyperpage{22}
+    \subitem {Game\+Window}, \hyperpage{30}
+  \item {get\+Is\+Shooting}
+    \subitem {Weapon}, \hyperpage{47}
+  \item {get\+OffsetY}
+    \subitem {Worm}, \hyperpage{59}
+  \item {get\+Position}
+    \subitem {Button}, \hyperpage{17}
+  \item {get\+PosX}
+    \subitem {Bullet}, \hyperpage{11}
+    \subitem {Weapon}, \hyperpage{47}
+  \item {get\+PosY}
+    \subitem {Bullet}, \hyperpage{11}
+    \subitem {Weapon}, \hyperpage{47}
+  \item {get\+Rotation}
+    \subitem {Weapon}, \hyperpage{47}
+  \item {get\+Scale}
+    \subitem {Bullet}, \hyperpage{11}
+    \subitem {Weapon}, \hyperpage{48}
+    \subitem {Worm}, \hyperpage{60}
+  \item {get\+Scale\+Vector}
+    \subitem {Bullet}, \hyperpage{12}
+    \subitem {Weapon}, \hyperpage{48}
+  \item {get\+Size}
+    \subitem {Button}, \hyperpage{17}
+  \item {get\+Sprite}
+    \subitem {Bullet}, \hyperpage{12}
+    \subitem {Weapon}, \hyperpage{48}
+    \subitem {Worm}, \hyperpage{60}
+  \item {get\+Velocity}
+    \subitem {Bullet}, \hyperpage{12}
+  \item {get\+Weapon}
+    \subitem {Worm}, \hyperpage{60}
+  \item {Get\+Worm\+Count}
+    \subitem {Game\+Window}, \hyperpage{31}
+  \item {Get\+Worm\+CountB}
+    \subitem {Game\+Window}, \hyperpage{31}
+  \item {Get\+Worms\+Array}
+    \subitem {Game\+Window}, \hyperpage{31}
+  \item {Get\+Worms\+ArrayB}
+    \subitem {Game\+Window}, \hyperpage{31}
+  \item {get\+WormX}
+    \subitem {Worm}, \hyperpage{61}
+  \item {get\+WormY}
+    \subitem {Worm}, \hyperpage{61}
+
+  \indexspace
+
+  \item {handle\+Events}
+    \subitem {Game\+Event}, \hyperpage{22}
+  \item {has\+Weapon}
+    \subitem {Worm}, \hyperpage{61}
+  \item {hover}
+    \subitem {Button}, \hyperpage{18}
+
+  \indexspace
+
+  \item {is\+Alive}
+    \subitem {Worm}, \hyperpage{61}
+  \item {is\+Clicked}
+    \subitem {Button}, \hyperpage{18}
+  \item {is\+Hovered}
+    \subitem {Button}, \hyperpage{18}
+  \item {is\+Looking\+On\+Left}
+    \subitem {Worm}, \hyperpage{62}
+  \item {is\+Shooting}
+    \subitem {Weapon}, \hyperpage{52}
+
+  \indexspace
+
+  \item {jump}
+    \subitem {Worm}, \hyperpage{62}
+
+  \indexspace
+
+  \item {left}
+    \subitem {Worm}, \hyperpage{62}
+  \item {look\+Left}
+    \subitem {Worm}, \hyperpage{62}
+  \item {look\+Right}
+    \subitem {Worm}, \hyperpage{63}
+
+  \indexspace
+
+  \item {main}
+    \subitem {Source.\+cpp}, \hyperpage{72}
+  \item {Main\+Loop}
+    \subitem {Game\+Window}, \hyperpage{32}
+  \item {map}
+    \subitem {Terrain}, \hyperpage{41}
+  \item {Menu}, \hyperpage{35}
+    \subitem {change\+Menu}, \hyperpage{36}
+    \subitem {clear}, \hyperpage{36}
+    \subitem {clear\+Clicked\+Button}, \hyperpage{36}
+    \subitem {draw}, \hyperpage{36}
+    \subitem {get\+Button}, \hyperpage{37}
+    \subitem {Menu}, \hyperpage{35}
+  \item {menu}
+    \subitem {Game\+Window}, \hyperpage{34}
+  \item {Menu.\+h}
+    \subitem {game\+\_\+states}, \hyperpage{71}
+  \item {move\+Left}
+    \subitem {Worm}, \hyperpage{63}
+  \item {move\+Right}
+    \subitem {Worm}, \hyperpage{63}
+
+  \indexspace
+
+  \item {Pause\+Sample}
+    \subitem {Game\+Sound}, \hyperpage{24}
+  \item {Play\+Death}
+    \subitem {Game\+Sound}, \hyperpage{24}
+  \item {Play\+Main\+Music}
+    \subitem {Game\+Sound}, \hyperpage{24}
+  \item {play\+Shoot\+Sound}
+    \subitem {Bazooka}, \hyperpage{8}
+    \subitem {Revolver}, \hyperpage{39}
+    \subitem {Weapon}, \hyperpage{48}
+  \item {Play\+Win}
+    \subitem {Game\+Sound}, \hyperpage{24}
+  \item {posX}
+    \subitem {Weapon}, \hyperpage{52}
+  \item {posY}
+    \subitem {Weapon}, \hyperpage{52}
+
+  \indexspace
+
+  \item {reset}
+    \subitem {Terrain}, \hyperpage{41}
+  \item {Revolver}, \hyperpage{37}
+    \subitem {$\sim$\+Revolver}, \hyperpage{38}
+    \subitem {play\+Shoot\+Sound}, \hyperpage{39}
+    \subitem {Revolver}, \hyperpage{38}
+  \item {right}
+    \subitem {Worm}, \hyperpage{63}
+  \item {rotation}
+    \subitem {Weapon}, \hyperpage{53}
+
+  \indexspace
+
+  \item {scale}
+    \subitem {Weapon}, \hyperpage{53}
+  \item {scale\+Vector}
+    \subitem {Weapon}, \hyperpage{53}
+  \item {Set\+Background\+Color}
+    \subitem {Game\+Window}, \hyperpage{32}
+  \item {set\+Bullet}
+    \subitem {Weapon}, \hyperpage{49}
+  \item {Set\+Choose\+States}
+    \subitem {Game\+Window}, \hyperpage{32}
+  \item {set\+Choosen}
+    \subitem {Worm}, \hyperpage{63}
+  \item {set\+Col\+Map}
+    \subitem {Worm}, \hyperpage{64}
+  \item {set\+Color}
+    \subitem {F\+P\+S\+Counter}, \hyperpage{20}
+  \item {set\+Color\+Clicked}
+    \subitem {Button}, \hyperpage{18}
+  \item {set\+Color\+Default}
+    \subitem {Button}, \hyperpage{19}
+  \item {set\+Color\+Hovered}
+    \subitem {Button}, \hyperpage{19}
+  \item {set\+Damage}
+    \subitem {Weapon}, \hyperpage{49}
+  \item {set\+Is\+Shooting}
+    \subitem {Weapon}, \hyperpage{49}
+  \item {set\+Normal}
+    \subitem {Worm}, \hyperpage{64}
+  \item {set\+PosX}
+    \subitem {Bullet}, \hyperpage{12}
+    \subitem {Weapon}, \hyperpage{50}
+  \item {set\+PosY}
+    \subitem {Bullet}, \hyperpage{13}
+    \subitem {Weapon}, \hyperpage{50}
+  \item {set\+Rotation}
+    \subitem {Bullet}, \hyperpage{13}
+    \subitem {Weapon}, \hyperpage{50}
+  \item {set\+Scale}
+    \subitem {Bullet}, \hyperpage{13}
+    \subitem {Weapon}, \hyperpage{51}
+  \item {set\+Scale\+Vector}
+    \subitem {Bullet}, \hyperpage{14}
+    \subitem {Weapon}, \hyperpage{51}
+  \item {set\+Team}
+    \subitem {Worm}, \hyperpage{64}
+  \item {set\+Velocity}
+    \subitem {Bullet}, \hyperpage{14}
+  \item {set\+Weapon}
+    \subitem {Worm}, \hyperpage{64}
+  \item {shoot}
+    \subitem {Weapon}, \hyperpage{51}
+  \item {Source.\+cpp}
+    \subitem {main}, \hyperpage{72}
+  \item {sprite}
+    \subitem {Weapon}, \hyperpage{53}
+  \item {start}
+    \subitem {F\+P\+S\+Counter}, \hyperpage{21}
+  \item {Start\+Bazooka\+Sound}
+    \subitem {Game\+Sound}, \hyperpage{25}
+  \item {Start\+Revolver\+Sound}
+    \subitem {Game\+Sound}, \hyperpage{25}
+  \item {Start\+Sample}
+    \subitem {Game\+Sound}, \hyperpage{25}
+  \item {Stop\+Bazooka\+Sound}
+    \subitem {Game\+Sound}, \hyperpage{25}
+  \item {Stop\+Death}
+    \subitem {Game\+Sound}, \hyperpage{25}
+  \item {stop\+Move}
+    \subitem {Worm}, \hyperpage{65}
+  \item {Stop\+Revolver\+Sound}
+    \subitem {Game\+Sound}, \hyperpage{26}
+  \item {Stop\+Sample}
+    \subitem {Game\+Sound}, \hyperpage{26}
+  \item {Stop\+Win}
+    \subitem {Game\+Sound}, \hyperpage{26}
+  \item {Switch\+To\+Blue\+Team}
+    \subitem {Game\+Window}, \hyperpage{32}
+  \item {Switch\+To\+Red\+Team}
+    \subitem {Game\+Window}, \hyperpage{33}
+
+  \indexspace
+
+  \item {team}
+    \subitem {Worm.\+h}, \hyperpage{75}
+  \item {Terrain}, \hyperpage{39}
+    \subitem {draw}, \hyperpage{40}
+    \subitem {erase}, \hyperpage{41}
+    \subitem {map}, \hyperpage{41}
+    \subitem {reset}, \hyperpage{41}
+    \subitem {Terrain}, \hyperpage{40}
+  \item {terrain}
+    \subitem {Game\+Window}, \hyperpage{34}
+  \item {texture}
+    \subitem {Weapon}, \hyperpage{53}
+  \item {texture\+Path}
+    \subitem {Weapon}, \hyperpage{54}
+  \item {top}
+    \subitem {Worm}, \hyperpage{65}
+
+  \indexspace
+
+  \item {update}
+    \subitem {Bullet}, \hyperpage{15}
+    \subitem {Water}, \hyperpage{43}
+    \subitem {Weapon}, \hyperpage{51}
+    \subitem {Worm}, \hyperpage{65}
+  \item {Update\+Worms}
+    \subitem {Game\+Window}, \hyperpage{33}
+  \item {Update\+WormsB}
+    \subitem {Game\+Window}, \hyperpage{33}
+
+  \indexspace
+
+  \item {Water}, \hyperpage{42}
+    \subitem {draw}, \hyperpage{42}
+    \subitem {update}, \hyperpage{43}
+    \subitem {Water}, \hyperpage{42}
+  \item {Weapon}, \hyperpage{43}
+    \subitem {$\sim$\+Weapon}, \hyperpage{46}
+    \subitem {bullet}, \hyperpage{52}
+    \subitem {damage}, \hyperpage{52}
+    \subitem {draw}, \hyperpage{46}
+    \subitem {get\+Bullet}, \hyperpage{46}
+    \subitem {get\+Damage}, \hyperpage{46}
+    \subitem {get\+Is\+Shooting}, \hyperpage{47}
+    \subitem {get\+PosX}, \hyperpage{47}
+    \subitem {get\+PosY}, \hyperpage{47}
+    \subitem {get\+Rotation}, \hyperpage{47}
+    \subitem {get\+Scale}, \hyperpage{48}
+    \subitem {get\+Scale\+Vector}, \hyperpage{48}
+    \subitem {get\+Sprite}, \hyperpage{48}
+    \subitem {is\+Shooting}, \hyperpage{52}
+    \subitem {play\+Shoot\+Sound}, \hyperpage{48}
+    \subitem {posX}, \hyperpage{52}
+    \subitem {posY}, \hyperpage{52}
+    \subitem {rotation}, \hyperpage{53}
+    \subitem {scale}, \hyperpage{53}
+    \subitem {scale\+Vector}, \hyperpage{53}
+    \subitem {set\+Bullet}, \hyperpage{49}
+    \subitem {set\+Damage}, \hyperpage{49}
+    \subitem {set\+Is\+Shooting}, \hyperpage{49}
+    \subitem {set\+PosX}, \hyperpage{50}
+    \subitem {set\+PosY}, \hyperpage{50}
+    \subitem {set\+Rotation}, \hyperpage{50}
+    \subitem {set\+Scale}, \hyperpage{51}
+    \subitem {set\+Scale\+Vector}, \hyperpage{51}
+    \subitem {shoot}, \hyperpage{51}
+    \subitem {sprite}, \hyperpage{53}
+    \subitem {texture}, \hyperpage{53}
+    \subitem {texture\+Path}, \hyperpage{54}
+    \subitem {update}, \hyperpage{51}
+    \subitem {Weapon}, \hyperpage{45}
+  \item {Worm}, \hyperpage{54}
+    \subitem {$\sim$\+Worm}, \hyperpage{56}
+    \subitem {bottom}, \hyperpage{57}
+    \subitem {check\+Collision}, \hyperpage{57}
+    \subitem {collision\+Points}, \hyperpage{65}
+    \subitem {damage}, \hyperpage{57}
+    \subitem {delete\+Weapon}, \hyperpage{59}
+    \subitem {draw}, \hyperpage{59}
+    \subitem {get\+Debug\+Txt}, \hyperpage{59}
+    \subitem {get\+OffsetY}, \hyperpage{59}
+    \subitem {get\+Scale}, \hyperpage{60}
+    \subitem {get\+Sprite}, \hyperpage{60}
+    \subitem {get\+Weapon}, \hyperpage{60}
+    \subitem {get\+WormX}, \hyperpage{61}
+    \subitem {get\+WormY}, \hyperpage{61}
+    \subitem {has\+Weapon}, \hyperpage{61}
+    \subitem {is\+Alive}, \hyperpage{61}
+    \subitem {is\+Looking\+On\+Left}, \hyperpage{62}
+    \subitem {jump}, \hyperpage{62}
+    \subitem {left}, \hyperpage{62}
+    \subitem {look\+Left}, \hyperpage{62}
+    \subitem {look\+Right}, \hyperpage{63}
+    \subitem {move\+Left}, \hyperpage{63}
+    \subitem {move\+Right}, \hyperpage{63}
+    \subitem {right}, \hyperpage{63}
+    \subitem {set\+Choosen}, \hyperpage{63}
+    \subitem {set\+Col\+Map}, \hyperpage{64}
+    \subitem {set\+Normal}, \hyperpage{64}
+    \subitem {set\+Team}, \hyperpage{64}
+    \subitem {set\+Weapon}, \hyperpage{64}
+    \subitem {stop\+Move}, \hyperpage{65}
+    \subitem {top}, \hyperpage{65}
+    \subitem {update}, \hyperpage{65}
+    \subitem {Worm}, \hyperpage{56}
+  \item {Worm.\+h}
+    \subitem {collision}, \hyperpage{74}
+    \subitem {team}, \hyperpage{75}
+
+\end{theindex}

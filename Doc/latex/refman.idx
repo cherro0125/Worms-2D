@@ -1,0 +1,424 @@
+\indexentry{Bazooka@{Bazooka}|hyperpage}{7}
+\indexentry{Bazooka@{Bazooka}!Bazooka@{Bazooka}|hyperpage}{8}
+\indexentry{Bazooka@{Bazooka}!Bazooka@{Bazooka}|hyperpage}{8}
+\indexentry{Bazooka@{Bazooka}!Bazooka@{Bazooka}|hyperpage}{8}
+\indexentry{Bazooka@{Bazooka}!Bazooka@{Bazooka}|hyperpage}{8}
+\indexentry{Bazooka@{Bazooka}!````~Bazooka@{$\sim$\+Bazooka}|hyperpage}{8}
+\indexentry{````~Bazooka@{$\sim$\+Bazooka}!Bazooka@{Bazooka}|hyperpage}{8}
+\indexentry{Bazooka@{Bazooka}!play\+Shoot\+Sound@{play\+Shoot\+Sound}|hyperpage}{8}
+\indexentry{play\+Shoot\+Sound@{play\+Shoot\+Sound}!Bazooka@{Bazooka}|hyperpage}{8}
+\indexentry{Bullet@{Bullet}|hyperpage}{9}
+\indexentry{Bullet@{Bullet}!Bullet@{Bullet}|hyperpage}{10}
+\indexentry{Bullet@{Bullet}!Bullet@{Bullet}|hyperpage}{10}
+\indexentry{Bullet@{Bullet}!Bullet@{Bullet}|hyperpage}{10}
+\indexentry{Bullet@{Bullet}!Bullet@{Bullet}|hyperpage}{10}
+\indexentry{Bullet@{Bullet}!````~Bullet@{$\sim$\+Bullet}|hyperpage}{10}
+\indexentry{````~Bullet@{$\sim$\+Bullet}!Bullet@{Bullet}|hyperpage}{10}
+\indexentry{Bullet@{Bullet}!draw@{draw}|hyperpage}{11}
+\indexentry{draw@{draw}!Bullet@{Bullet}|hyperpage}{11}
+\indexentry{Bullet@{Bullet}!get\+PosX@{get\+PosX}|hyperpage}{11}
+\indexentry{get\+PosX@{get\+PosX}!Bullet@{Bullet}|hyperpage}{11}
+\indexentry{Bullet@{Bullet}!get\+PosY@{get\+PosY}|hyperpage}{11}
+\indexentry{get\+PosY@{get\+PosY}!Bullet@{Bullet}|hyperpage}{11}
+\indexentry{Bullet@{Bullet}!get\+Scale@{get\+Scale}|hyperpage}{11}
+\indexentry{get\+Scale@{get\+Scale}!Bullet@{Bullet}|hyperpage}{11}
+\indexentry{Bullet@{Bullet}!get\+Scale\+Vector@{get\+Scale\+Vector}|hyperpage}{12}
+\indexentry{get\+Scale\+Vector@{get\+Scale\+Vector}!Bullet@{Bullet}|hyperpage}{12}
+\indexentry{Bullet@{Bullet}!get\+Sprite@{get\+Sprite}|hyperpage}{12}
+\indexentry{get\+Sprite@{get\+Sprite}!Bullet@{Bullet}|hyperpage}{12}
+\indexentry{Bullet@{Bullet}!get\+Velocity@{get\+Velocity}|hyperpage}{12}
+\indexentry{get\+Velocity@{get\+Velocity}!Bullet@{Bullet}|hyperpage}{12}
+\indexentry{Bullet@{Bullet}!set\+PosX@{set\+PosX}|hyperpage}{12}
+\indexentry{set\+PosX@{set\+PosX}!Bullet@{Bullet}|hyperpage}{12}
+\indexentry{Bullet@{Bullet}!set\+PosY@{set\+PosY}|hyperpage}{13}
+\indexentry{set\+PosY@{set\+PosY}!Bullet@{Bullet}|hyperpage}{13}
+\indexentry{Bullet@{Bullet}!set\+Rotation@{set\+Rotation}|hyperpage}{13}
+\indexentry{set\+Rotation@{set\+Rotation}!Bullet@{Bullet}|hyperpage}{13}
+\indexentry{Bullet@{Bullet}!set\+Scale@{set\+Scale}|hyperpage}{13}
+\indexentry{set\+Scale@{set\+Scale}!Bullet@{Bullet}|hyperpage}{13}
+\indexentry{Bullet@{Bullet}!set\+Scale\+Vector@{set\+Scale\+Vector}|hyperpage}{14}
+\indexentry{set\+Scale\+Vector@{set\+Scale\+Vector}!Bullet@{Bullet}|hyperpage}{14}
+\indexentry{Bullet@{Bullet}!set\+Velocity@{set\+Velocity}|hyperpage}{14}
+\indexentry{set\+Velocity@{set\+Velocity}!Bullet@{Bullet}|hyperpage}{14}
+\indexentry{Bullet@{Bullet}!set\+Velocity@{set\+Velocity}|hyperpage}{14}
+\indexentry{set\+Velocity@{set\+Velocity}!Bullet@{Bullet}|hyperpage}{14}
+\indexentry{Bullet@{Bullet}!update@{update}|hyperpage}{15}
+\indexentry{update@{update}!Bullet@{Bullet}|hyperpage}{15}
+\indexentry{Button@{Button}|hyperpage}{15}
+\indexentry{Button@{Button}!Button@{Button}|hyperpage}{16}
+\indexentry{Button@{Button}!Button@{Button}|hyperpage}{16}
+\indexentry{Button@{Button}!clear@{clear}|hyperpage}{16}
+\indexentry{clear@{clear}!Button@{Button}|hyperpage}{16}
+\indexentry{Button@{Button}!click@{click}|hyperpage}{16}
+\indexentry{click@{click}!Button@{Button}|hyperpage}{16}
+\indexentry{Button@{Button}!draw@{draw}|hyperpage}{17}
+\indexentry{draw@{draw}!Button@{Button}|hyperpage}{17}
+\indexentry{Button@{Button}!get\+Id@{get\+Id}|hyperpage}{17}
+\indexentry{get\+Id@{get\+Id}!Button@{Button}|hyperpage}{17}
+\indexentry{Button@{Button}!get\+Position@{get\+Position}|hyperpage}{17}
+\indexentry{get\+Position@{get\+Position}!Button@{Button}|hyperpage}{17}
+\indexentry{Button@{Button}!get\+Size@{get\+Size}|hyperpage}{17}
+\indexentry{get\+Size@{get\+Size}!Button@{Button}|hyperpage}{17}
+\indexentry{Button@{Button}!hover@{hover}|hyperpage}{18}
+\indexentry{hover@{hover}!Button@{Button}|hyperpage}{18}
+\indexentry{Button@{Button}!is\+Clicked@{is\+Clicked}|hyperpage}{18}
+\indexentry{is\+Clicked@{is\+Clicked}!Button@{Button}|hyperpage}{18}
+\indexentry{Button@{Button}!is\+Hovered@{is\+Hovered}|hyperpage}{18}
+\indexentry{is\+Hovered@{is\+Hovered}!Button@{Button}|hyperpage}{18}
+\indexentry{Button@{Button}!set\+Color\+Clicked@{set\+Color\+Clicked}|hyperpage}{18}
+\indexentry{set\+Color\+Clicked@{set\+Color\+Clicked}!Button@{Button}|hyperpage}{18}
+\indexentry{Button@{Button}!set\+Color\+Default@{set\+Color\+Default}|hyperpage}{19}
+\indexentry{set\+Color\+Default@{set\+Color\+Default}!Button@{Button}|hyperpage}{19}
+\indexentry{Button@{Button}!set\+Color\+Hovered@{set\+Color\+Hovered}|hyperpage}{19}
+\indexentry{set\+Color\+Hovered@{set\+Color\+Hovered}!Button@{Button}|hyperpage}{19}
+\indexentry{F\+P\+S\+Counter@{F\+P\+S\+Counter}|hyperpage}{19}
+\indexentry{F\+P\+S\+Counter@{F\+P\+S\+Counter}!F\+P\+S\+Counter@{F\+P\+S\+Counter}|hyperpage}{20}
+\indexentry{F\+P\+S\+Counter@{F\+P\+S\+Counter}!F\+P\+S\+Counter@{F\+P\+S\+Counter}|hyperpage}{20}
+\indexentry{F\+P\+S\+Counter@{F\+P\+S\+Counter}!draw\+F\+PS@{draw\+F\+PS}|hyperpage}{20}
+\indexentry{draw\+F\+PS@{draw\+F\+PS}!F\+P\+S\+Counter@{F\+P\+S\+Counter}|hyperpage}{20}
+\indexentry{F\+P\+S\+Counter@{F\+P\+S\+Counter}!set\+Color@{set\+Color}|hyperpage}{20}
+\indexentry{set\+Color@{set\+Color}!F\+P\+S\+Counter@{F\+P\+S\+Counter}|hyperpage}{20}
+\indexentry{F\+P\+S\+Counter@{F\+P\+S\+Counter}!start@{start}|hyperpage}{21}
+\indexentry{start@{start}!F\+P\+S\+Counter@{F\+P\+S\+Counter}|hyperpage}{21}
+\indexentry{Game\+Event@{Game\+Event}|hyperpage}{21}
+\indexentry{Game\+Event@{Game\+Event}!Game\+Event@{Game\+Event}|hyperpage}{22}
+\indexentry{Game\+Event@{Game\+Event}!Game\+Event@{Game\+Event}|hyperpage}{22}
+\indexentry{Game\+Event@{Game\+Event}!````~Game\+Event@{$\sim$\+Game\+Event}|hyperpage}{22}
+\indexentry{````~Game\+Event@{$\sim$\+Game\+Event}!Game\+Event@{Game\+Event}|hyperpage}{22}
+\indexentry{Game\+Event@{Game\+Event}!Get\+Event\+Instance@{Get\+Event\+Instance}|hyperpage}{22}
+\indexentry{Get\+Event\+Instance@{Get\+Event\+Instance}!Game\+Event@{Game\+Event}|hyperpage}{22}
+\indexentry{Game\+Event@{Game\+Event}!Get\+Instance@{Get\+Instance}|hyperpage}{22}
+\indexentry{Get\+Instance@{Get\+Instance}!Game\+Event@{Game\+Event}|hyperpage}{22}
+\indexentry{Game\+Event@{Game\+Event}!handle\+Events@{handle\+Events}|hyperpage}{22}
+\indexentry{handle\+Events@{handle\+Events}!Game\+Event@{Game\+Event}|hyperpage}{22}
+\indexentry{Game\+Sound@{Game\+Sound}|hyperpage}{23}
+\indexentry{Game\+Sound@{Game\+Sound}!Game\+Sound@{Game\+Sound}|hyperpage}{24}
+\indexentry{Game\+Sound@{Game\+Sound}!Game\+Sound@{Game\+Sound}|hyperpage}{24}
+\indexentry{Game\+Sound@{Game\+Sound}!Pause\+Sample@{Pause\+Sample}|hyperpage}{24}
+\indexentry{Pause\+Sample@{Pause\+Sample}!Game\+Sound@{Game\+Sound}|hyperpage}{24}
+\indexentry{Game\+Sound@{Game\+Sound}!Play\+Death@{Play\+Death}|hyperpage}{24}
+\indexentry{Play\+Death@{Play\+Death}!Game\+Sound@{Game\+Sound}|hyperpage}{24}
+\indexentry{Game\+Sound@{Game\+Sound}!Play\+Main\+Music@{Play\+Main\+Music}|hyperpage}{24}
+\indexentry{Play\+Main\+Music@{Play\+Main\+Music}!Game\+Sound@{Game\+Sound}|hyperpage}{24}
+\indexentry{Game\+Sound@{Game\+Sound}!Play\+Win@{Play\+Win}|hyperpage}{24}
+\indexentry{Play\+Win@{Play\+Win}!Game\+Sound@{Game\+Sound}|hyperpage}{24}
+\indexentry{Game\+Sound@{Game\+Sound}!Start\+Bazooka\+Sound@{Start\+Bazooka\+Sound}|hyperpage}{25}
+\indexentry{Start\+Bazooka\+Sound@{Start\+Bazooka\+Sound}!Game\+Sound@{Game\+Sound}|hyperpage}{25}
+\indexentry{Game\+Sound@{Game\+Sound}!Start\+Revolver\+Sound@{Start\+Revolver\+Sound}|hyperpage}{25}
+\indexentry{Start\+Revolver\+Sound@{Start\+Revolver\+Sound}!Game\+Sound@{Game\+Sound}|hyperpage}{25}
+\indexentry{Game\+Sound@{Game\+Sound}!Start\+Sample@{Start\+Sample}|hyperpage}{25}
+\indexentry{Start\+Sample@{Start\+Sample}!Game\+Sound@{Game\+Sound}|hyperpage}{25}
+\indexentry{Game\+Sound@{Game\+Sound}!Stop\+Bazooka\+Sound@{Stop\+Bazooka\+Sound}|hyperpage}{25}
+\indexentry{Stop\+Bazooka\+Sound@{Stop\+Bazooka\+Sound}!Game\+Sound@{Game\+Sound}|hyperpage}{25}
+\indexentry{Game\+Sound@{Game\+Sound}!Stop\+Death@{Stop\+Death}|hyperpage}{25}
+\indexentry{Stop\+Death@{Stop\+Death}!Game\+Sound@{Game\+Sound}|hyperpage}{25}
+\indexentry{Game\+Sound@{Game\+Sound}!Stop\+Revolver\+Sound@{Stop\+Revolver\+Sound}|hyperpage}{26}
+\indexentry{Stop\+Revolver\+Sound@{Stop\+Revolver\+Sound}!Game\+Sound@{Game\+Sound}|hyperpage}{26}
+\indexentry{Game\+Sound@{Game\+Sound}!Stop\+Sample@{Stop\+Sample}|hyperpage}{26}
+\indexentry{Stop\+Sample@{Stop\+Sample}!Game\+Sound@{Game\+Sound}|hyperpage}{26}
+\indexentry{Game\+Sound@{Game\+Sound}!Stop\+Win@{Stop\+Win}|hyperpage}{26}
+\indexentry{Stop\+Win@{Stop\+Win}!Game\+Sound@{Game\+Sound}|hyperpage}{26}
+\indexentry{Game\+Window@{Game\+Window}|hyperpage}{26}
+\indexentry{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}|hyperpage}{28}
+\indexentry{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}|hyperpage}{28}
+\indexentry{Game\+Window@{Game\+Window}!````~Game\+Window@{$\sim$\+Game\+Window}|hyperpage}{28}
+\indexentry{````~Game\+Window@{$\sim$\+Game\+Window}!Game\+Window@{Game\+Window}|hyperpage}{28}
+\indexentry{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}|hyperpage}{28}
+\indexentry{Game\+Window@{Game\+Window}!Game\+Window@{Game\+Window}|hyperpage}{28}
+\indexentry{Game\+Window@{Game\+Window}!Change\+Frame\+Limit@{Change\+Frame\+Limit}|hyperpage}{29}
+\indexentry{Change\+Frame\+Limit@{Change\+Frame\+Limit}!Game\+Window@{Game\+Window}|hyperpage}{29}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Current\+Team@{Get\+Current\+Team}|hyperpage}{29}
+\indexentry{Get\+Current\+Team@{Get\+Current\+Team}!Game\+Window@{Game\+Window}|hyperpage}{29}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Current\+Worm@{Get\+Current\+Worm}|hyperpage}{29}
+\indexentry{Get\+Current\+Worm@{Get\+Current\+Worm}!Game\+Window@{Game\+Window}|hyperpage}{29}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Current\+Worm\+ID@{Get\+Current\+Worm\+ID}|hyperpage}{29}
+\indexentry{Get\+Current\+Worm\+ID@{Get\+Current\+Worm\+ID}!Game\+Window@{Game\+Window}|hyperpage}{29}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Game\+Sound@{Get\+Game\+Sound}|hyperpage}{30}
+\indexentry{Get\+Game\+Sound@{Get\+Game\+Sound}!Game\+Window@{Game\+Window}|hyperpage}{30}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Game\+Window\+Instance@{Get\+Game\+Window\+Instance}|hyperpage}{30}
+\indexentry{Get\+Game\+Window\+Instance@{Get\+Game\+Window\+Instance}!Game\+Window@{Game\+Window}|hyperpage}{30}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Instance@{Get\+Instance}|hyperpage}{30}
+\indexentry{Get\+Instance@{Get\+Instance}!Game\+Window@{Game\+Window}|hyperpage}{30}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Worm\+Count@{Get\+Worm\+Count}|hyperpage}{31}
+\indexentry{Get\+Worm\+Count@{Get\+Worm\+Count}!Game\+Window@{Game\+Window}|hyperpage}{31}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Worm\+CountB@{Get\+Worm\+CountB}|hyperpage}{31}
+\indexentry{Get\+Worm\+CountB@{Get\+Worm\+CountB}!Game\+Window@{Game\+Window}|hyperpage}{31}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Worms\+Array@{Get\+Worms\+Array}|hyperpage}{31}
+\indexentry{Get\+Worms\+Array@{Get\+Worms\+Array}!Game\+Window@{Game\+Window}|hyperpage}{31}
+\indexentry{Game\+Window@{Game\+Window}!Get\+Worms\+ArrayB@{Get\+Worms\+ArrayB}|hyperpage}{31}
+\indexentry{Get\+Worms\+ArrayB@{Get\+Worms\+ArrayB}!Game\+Window@{Game\+Window}|hyperpage}{31}
+\indexentry{Game\+Window@{Game\+Window}!Main\+Loop@{Main\+Loop}|hyperpage}{32}
+\indexentry{Main\+Loop@{Main\+Loop}!Game\+Window@{Game\+Window}|hyperpage}{32}
+\indexentry{Game\+Window@{Game\+Window}!Set\+Background\+Color@{Set\+Background\+Color}|hyperpage}{32}
+\indexentry{Set\+Background\+Color@{Set\+Background\+Color}!Game\+Window@{Game\+Window}|hyperpage}{32}
+\indexentry{Game\+Window@{Game\+Window}!Set\+Choose\+States@{Set\+Choose\+States}|hyperpage}{32}
+\indexentry{Set\+Choose\+States@{Set\+Choose\+States}!Game\+Window@{Game\+Window}|hyperpage}{32}
+\indexentry{Game\+Window@{Game\+Window}!Switch\+To\+Blue\+Team@{Switch\+To\+Blue\+Team}|hyperpage}{32}
+\indexentry{Switch\+To\+Blue\+Team@{Switch\+To\+Blue\+Team}!Game\+Window@{Game\+Window}|hyperpage}{32}
+\indexentry{Game\+Window@{Game\+Window}!Switch\+To\+Red\+Team@{Switch\+To\+Red\+Team}|hyperpage}{33}
+\indexentry{Switch\+To\+Red\+Team@{Switch\+To\+Red\+Team}!Game\+Window@{Game\+Window}|hyperpage}{33}
+\indexentry{Game\+Window@{Game\+Window}!Update\+Worms@{Update\+Worms}|hyperpage}{33}
+\indexentry{Update\+Worms@{Update\+Worms}!Game\+Window@{Game\+Window}|hyperpage}{33}
+\indexentry{Game\+Window@{Game\+Window}!Update\+WormsB@{Update\+WormsB}|hyperpage}{33}
+\indexentry{Update\+WormsB@{Update\+WormsB}!Game\+Window@{Game\+Window}|hyperpage}{33}
+\indexentry{Game\+Window@{Game\+Window}!game\+\_\+started@{game\+\_\+started}|hyperpage}{34}
+\indexentry{game\+\_\+started@{game\+\_\+started}!Game\+Window@{Game\+Window}|hyperpage}{34}
+\indexentry{Game\+Window@{Game\+Window}!game\+\_\+state@{game\+\_\+state}|hyperpage}{34}
+\indexentry{game\+\_\+state@{game\+\_\+state}!Game\+Window@{Game\+Window}|hyperpage}{34}
+\indexentry{Game\+Window@{Game\+Window}!menu@{menu}|hyperpage}{34}
+\indexentry{menu@{menu}!Game\+Window@{Game\+Window}|hyperpage}{34}
+\indexentry{Game\+Window@{Game\+Window}!terrain@{terrain}|hyperpage}{34}
+\indexentry{terrain@{terrain}!Game\+Window@{Game\+Window}|hyperpage}{34}
+\indexentry{Menu@{Menu}|hyperpage}{35}
+\indexentry{Menu@{Menu}!Menu@{Menu}|hyperpage}{35}
+\indexentry{Menu@{Menu}!Menu@{Menu}|hyperpage}{35}
+\indexentry{Menu@{Menu}!change\+Menu@{change\+Menu}|hyperpage}{36}
+\indexentry{change\+Menu@{change\+Menu}!Menu@{Menu}|hyperpage}{36}
+\indexentry{Menu@{Menu}!clear@{clear}|hyperpage}{36}
+\indexentry{clear@{clear}!Menu@{Menu}|hyperpage}{36}
+\indexentry{Menu@{Menu}!clear\+Clicked\+Button@{clear\+Clicked\+Button}|hyperpage}{36}
+\indexentry{clear\+Clicked\+Button@{clear\+Clicked\+Button}!Menu@{Menu}|hyperpage}{36}
+\indexentry{Menu@{Menu}!draw@{draw}|hyperpage}{36}
+\indexentry{draw@{draw}!Menu@{Menu}|hyperpage}{36}
+\indexentry{Menu@{Menu}!get\+Button@{get\+Button}|hyperpage}{37}
+\indexentry{get\+Button@{get\+Button}!Menu@{Menu}|hyperpage}{37}
+\indexentry{Revolver@{Revolver}|hyperpage}{37}
+\indexentry{Revolver@{Revolver}!Revolver@{Revolver}|hyperpage}{38}
+\indexentry{Revolver@{Revolver}!Revolver@{Revolver}|hyperpage}{38}
+\indexentry{Revolver@{Revolver}!Revolver@{Revolver}|hyperpage}{38}
+\indexentry{Revolver@{Revolver}!Revolver@{Revolver}|hyperpage}{38}
+\indexentry{Revolver@{Revolver}!````~Revolver@{$\sim$\+Revolver}|hyperpage}{38}
+\indexentry{````~Revolver@{$\sim$\+Revolver}!Revolver@{Revolver}|hyperpage}{38}
+\indexentry{Revolver@{Revolver}!play\+Shoot\+Sound@{play\+Shoot\+Sound}|hyperpage}{39}
+\indexentry{play\+Shoot\+Sound@{play\+Shoot\+Sound}!Revolver@{Revolver}|hyperpage}{39}
+\indexentry{Terrain@{Terrain}|hyperpage}{39}
+\indexentry{Terrain@{Terrain}!Terrain@{Terrain}|hyperpage}{40}
+\indexentry{Terrain@{Terrain}!Terrain@{Terrain}|hyperpage}{40}
+\indexentry{Terrain@{Terrain}!draw@{draw}|hyperpage}{40}
+\indexentry{draw@{draw}!Terrain@{Terrain}|hyperpage}{40}
+\indexentry{Terrain@{Terrain}!erase@{erase}|hyperpage}{41}
+\indexentry{erase@{erase}!Terrain@{Terrain}|hyperpage}{41}
+\indexentry{Terrain@{Terrain}!reset@{reset}|hyperpage}{41}
+\indexentry{reset@{reset}!Terrain@{Terrain}|hyperpage}{41}
+\indexentry{Terrain@{Terrain}!map@{map}|hyperpage}{41}
+\indexentry{map@{map}!Terrain@{Terrain}|hyperpage}{41}
+\indexentry{Water@{Water}|hyperpage}{42}
+\indexentry{Water@{Water}!Water@{Water}|hyperpage}{42}
+\indexentry{Water@{Water}!Water@{Water}|hyperpage}{42}
+\indexentry{Water@{Water}!draw@{draw}|hyperpage}{42}
+\indexentry{draw@{draw}!Water@{Water}|hyperpage}{42}
+\indexentry{Water@{Water}!update@{update}|hyperpage}{43}
+\indexentry{update@{update}!Water@{Water}|hyperpage}{43}
+\indexentry{Weapon@{Weapon}|hyperpage}{43}
+\indexentry{Weapon@{Weapon}!Weapon@{Weapon}|hyperpage}{45}
+\indexentry{Weapon@{Weapon}!Weapon@{Weapon}|hyperpage}{45}
+\indexentry{Weapon@{Weapon}!Weapon@{Weapon}|hyperpage}{45}
+\indexentry{Weapon@{Weapon}!Weapon@{Weapon}|hyperpage}{45}
+\indexentry{Weapon@{Weapon}!````~Weapon@{$\sim$\+Weapon}|hyperpage}{46}
+\indexentry{````~Weapon@{$\sim$\+Weapon}!Weapon@{Weapon}|hyperpage}{46}
+\indexentry{Weapon@{Weapon}!draw@{draw}|hyperpage}{46}
+\indexentry{draw@{draw}!Weapon@{Weapon}|hyperpage}{46}
+\indexentry{Weapon@{Weapon}!get\+Bullet@{get\+Bullet}|hyperpage}{46}
+\indexentry{get\+Bullet@{get\+Bullet}!Weapon@{Weapon}|hyperpage}{46}
+\indexentry{Weapon@{Weapon}!get\+Damage@{get\+Damage}|hyperpage}{46}
+\indexentry{get\+Damage@{get\+Damage}!Weapon@{Weapon}|hyperpage}{46}
+\indexentry{Weapon@{Weapon}!get\+Is\+Shooting@{get\+Is\+Shooting}|hyperpage}{47}
+\indexentry{get\+Is\+Shooting@{get\+Is\+Shooting}!Weapon@{Weapon}|hyperpage}{47}
+\indexentry{Weapon@{Weapon}!get\+PosX@{get\+PosX}|hyperpage}{47}
+\indexentry{get\+PosX@{get\+PosX}!Weapon@{Weapon}|hyperpage}{47}
+\indexentry{Weapon@{Weapon}!get\+PosY@{get\+PosY}|hyperpage}{47}
+\indexentry{get\+PosY@{get\+PosY}!Weapon@{Weapon}|hyperpage}{47}
+\indexentry{Weapon@{Weapon}!get\+Rotation@{get\+Rotation}|hyperpage}{47}
+\indexentry{get\+Rotation@{get\+Rotation}!Weapon@{Weapon}|hyperpage}{47}
+\indexentry{Weapon@{Weapon}!get\+Scale@{get\+Scale}|hyperpage}{48}
+\indexentry{get\+Scale@{get\+Scale}!Weapon@{Weapon}|hyperpage}{48}
+\indexentry{Weapon@{Weapon}!get\+Scale\+Vector@{get\+Scale\+Vector}|hyperpage}{48}
+\indexentry{get\+Scale\+Vector@{get\+Scale\+Vector}!Weapon@{Weapon}|hyperpage}{48}
+\indexentry{Weapon@{Weapon}!get\+Sprite@{get\+Sprite}|hyperpage}{48}
+\indexentry{get\+Sprite@{get\+Sprite}!Weapon@{Weapon}|hyperpage}{48}
+\indexentry{Weapon@{Weapon}!play\+Shoot\+Sound@{play\+Shoot\+Sound}|hyperpage}{48}
+\indexentry{play\+Shoot\+Sound@{play\+Shoot\+Sound}!Weapon@{Weapon}|hyperpage}{48}
+\indexentry{Weapon@{Weapon}!set\+Bullet@{set\+Bullet}|hyperpage}{49}
+\indexentry{set\+Bullet@{set\+Bullet}!Weapon@{Weapon}|hyperpage}{49}
+\indexentry{Weapon@{Weapon}!set\+Damage@{set\+Damage}|hyperpage}{49}
+\indexentry{set\+Damage@{set\+Damage}!Weapon@{Weapon}|hyperpage}{49}
+\indexentry{Weapon@{Weapon}!set\+Is\+Shooting@{set\+Is\+Shooting}|hyperpage}{49}
+\indexentry{set\+Is\+Shooting@{set\+Is\+Shooting}!Weapon@{Weapon}|hyperpage}{49}
+\indexentry{Weapon@{Weapon}!set\+PosX@{set\+PosX}|hyperpage}{50}
+\indexentry{set\+PosX@{set\+PosX}!Weapon@{Weapon}|hyperpage}{50}
+\indexentry{Weapon@{Weapon}!set\+PosY@{set\+PosY}|hyperpage}{50}
+\indexentry{set\+PosY@{set\+PosY}!Weapon@{Weapon}|hyperpage}{50}
+\indexentry{Weapon@{Weapon}!set\+Rotation@{set\+Rotation}|hyperpage}{50}
+\indexentry{set\+Rotation@{set\+Rotation}!Weapon@{Weapon}|hyperpage}{50}
+\indexentry{Weapon@{Weapon}!set\+Scale@{set\+Scale}|hyperpage}{51}
+\indexentry{set\+Scale@{set\+Scale}!Weapon@{Weapon}|hyperpage}{51}
+\indexentry{Weapon@{Weapon}!set\+Scale\+Vector@{set\+Scale\+Vector}|hyperpage}{51}
+\indexentry{set\+Scale\+Vector@{set\+Scale\+Vector}!Weapon@{Weapon}|hyperpage}{51}
+\indexentry{Weapon@{Weapon}!shoot@{shoot}|hyperpage}{51}
+\indexentry{shoot@{shoot}!Weapon@{Weapon}|hyperpage}{51}
+\indexentry{Weapon@{Weapon}!update@{update}|hyperpage}{51}
+\indexentry{update@{update}!Weapon@{Weapon}|hyperpage}{51}
+\indexentry{Weapon@{Weapon}!bullet@{bullet}|hyperpage}{52}
+\indexentry{bullet@{bullet}!Weapon@{Weapon}|hyperpage}{52}
+\indexentry{Weapon@{Weapon}!damage@{damage}|hyperpage}{52}
+\indexentry{damage@{damage}!Weapon@{Weapon}|hyperpage}{52}
+\indexentry{Weapon@{Weapon}!is\+Shooting@{is\+Shooting}|hyperpage}{52}
+\indexentry{is\+Shooting@{is\+Shooting}!Weapon@{Weapon}|hyperpage}{52}
+\indexentry{Weapon@{Weapon}!posX@{posX}|hyperpage}{52}
+\indexentry{posX@{posX}!Weapon@{Weapon}|hyperpage}{52}
+\indexentry{Weapon@{Weapon}!posY@{posY}|hyperpage}{52}
+\indexentry{posY@{posY}!Weapon@{Weapon}|hyperpage}{52}
+\indexentry{Weapon@{Weapon}!rotation@{rotation}|hyperpage}{53}
+\indexentry{rotation@{rotation}!Weapon@{Weapon}|hyperpage}{53}
+\indexentry{Weapon@{Weapon}!scale@{scale}|hyperpage}{53}
+\indexentry{scale@{scale}!Weapon@{Weapon}|hyperpage}{53}
+\indexentry{Weapon@{Weapon}!scale\+Vector@{scale\+Vector}|hyperpage}{53}
+\indexentry{scale\+Vector@{scale\+Vector}!Weapon@{Weapon}|hyperpage}{53}
+\indexentry{Weapon@{Weapon}!sprite@{sprite}|hyperpage}{53}
+\indexentry{sprite@{sprite}!Weapon@{Weapon}|hyperpage}{53}
+\indexentry{Weapon@{Weapon}!texture@{texture}|hyperpage}{53}
+\indexentry{texture@{texture}!Weapon@{Weapon}|hyperpage}{53}
+\indexentry{Weapon@{Weapon}!texture\+Path@{texture\+Path}|hyperpage}{54}
+\indexentry{texture\+Path@{texture\+Path}!Weapon@{Weapon}|hyperpage}{54}
+\indexentry{Worm@{Worm}|hyperpage}{54}
+\indexentry{Worm@{Worm}!Worm@{Worm}|hyperpage}{56}
+\indexentry{Worm@{Worm}!Worm@{Worm}|hyperpage}{56}
+\indexentry{Worm@{Worm}!````~Worm@{$\sim$\+Worm}|hyperpage}{56}
+\indexentry{````~Worm@{$\sim$\+Worm}!Worm@{Worm}|hyperpage}{56}
+\indexentry{Worm@{Worm}!bottom@{bottom}|hyperpage}{57}
+\indexentry{bottom@{bottom}!Worm@{Worm}|hyperpage}{57}
+\indexentry{Worm@{Worm}!check\+Collision@{check\+Collision}|hyperpage}{57}
+\indexentry{check\+Collision@{check\+Collision}!Worm@{Worm}|hyperpage}{57}
+\indexentry{Worm@{Worm}!damage@{damage}|hyperpage}{57}
+\indexentry{damage@{damage}!Worm@{Worm}|hyperpage}{57}
+\indexentry{Worm@{Worm}!delete\+Weapon@{delete\+Weapon}|hyperpage}{59}
+\indexentry{delete\+Weapon@{delete\+Weapon}!Worm@{Worm}|hyperpage}{59}
+\indexentry{Worm@{Worm}!draw@{draw}|hyperpage}{59}
+\indexentry{draw@{draw}!Worm@{Worm}|hyperpage}{59}
+\indexentry{Worm@{Worm}!get\+Debug\+Txt@{get\+Debug\+Txt}|hyperpage}{59}
+\indexentry{get\+Debug\+Txt@{get\+Debug\+Txt}!Worm@{Worm}|hyperpage}{59}
+\indexentry{Worm@{Worm}!get\+OffsetY@{get\+OffsetY}|hyperpage}{59}
+\indexentry{get\+OffsetY@{get\+OffsetY}!Worm@{Worm}|hyperpage}{59}
+\indexentry{Worm@{Worm}!get\+Scale@{get\+Scale}|hyperpage}{60}
+\indexentry{get\+Scale@{get\+Scale}!Worm@{Worm}|hyperpage}{60}
+\indexentry{Worm@{Worm}!get\+Sprite@{get\+Sprite}|hyperpage}{60}
+\indexentry{get\+Sprite@{get\+Sprite}!Worm@{Worm}|hyperpage}{60}
+\indexentry{Worm@{Worm}!get\+Weapon@{get\+Weapon}|hyperpage}{60}
+\indexentry{get\+Weapon@{get\+Weapon}!Worm@{Worm}|hyperpage}{60}
+\indexentry{Worm@{Worm}!get\+WormX@{get\+WormX}|hyperpage}{61}
+\indexentry{get\+WormX@{get\+WormX}!Worm@{Worm}|hyperpage}{61}
+\indexentry{Worm@{Worm}!get\+WormY@{get\+WormY}|hyperpage}{61}
+\indexentry{get\+WormY@{get\+WormY}!Worm@{Worm}|hyperpage}{61}
+\indexentry{Worm@{Worm}!has\+Weapon@{has\+Weapon}|hyperpage}{61}
+\indexentry{has\+Weapon@{has\+Weapon}!Worm@{Worm}|hyperpage}{61}
+\indexentry{Worm@{Worm}!is\+Alive@{is\+Alive}|hyperpage}{61}
+\indexentry{is\+Alive@{is\+Alive}!Worm@{Worm}|hyperpage}{61}
+\indexentry{Worm@{Worm}!is\+Looking\+On\+Left@{is\+Looking\+On\+Left}|hyperpage}{62}
+\indexentry{is\+Looking\+On\+Left@{is\+Looking\+On\+Left}!Worm@{Worm}|hyperpage}{62}
+\indexentry{Worm@{Worm}!jump@{jump}|hyperpage}{62}
+\indexentry{jump@{jump}!Worm@{Worm}|hyperpage}{62}
+\indexentry{Worm@{Worm}!left@{left}|hyperpage}{62}
+\indexentry{left@{left}!Worm@{Worm}|hyperpage}{62}
+\indexentry{Worm@{Worm}!look\+Left@{look\+Left}|hyperpage}{62}
+\indexentry{look\+Left@{look\+Left}!Worm@{Worm}|hyperpage}{62}
+\indexentry{Worm@{Worm}!look\+Right@{look\+Right}|hyperpage}{63}
+\indexentry{look\+Right@{look\+Right}!Worm@{Worm}|hyperpage}{63}
+\indexentry{Worm@{Worm}!move\+Left@{move\+Left}|hyperpage}{63}
+\indexentry{move\+Left@{move\+Left}!Worm@{Worm}|hyperpage}{63}
+\indexentry{Worm@{Worm}!move\+Right@{move\+Right}|hyperpage}{63}
+\indexentry{move\+Right@{move\+Right}!Worm@{Worm}|hyperpage}{63}
+\indexentry{Worm@{Worm}!right@{right}|hyperpage}{63}
+\indexentry{right@{right}!Worm@{Worm}|hyperpage}{63}
+\indexentry{Worm@{Worm}!set\+Choosen@{set\+Choosen}|hyperpage}{63}
+\indexentry{set\+Choosen@{set\+Choosen}!Worm@{Worm}|hyperpage}{63}
+\indexentry{Worm@{Worm}!set\+Col\+Map@{set\+Col\+Map}|hyperpage}{64}
+\indexentry{set\+Col\+Map@{set\+Col\+Map}!Worm@{Worm}|hyperpage}{64}
+\indexentry{Worm@{Worm}!set\+Normal@{set\+Normal}|hyperpage}{64}
+\indexentry{set\+Normal@{set\+Normal}!Worm@{Worm}|hyperpage}{64}
+\indexentry{Worm@{Worm}!set\+Team@{set\+Team}|hyperpage}{64}
+\indexentry{set\+Team@{set\+Team}!Worm@{Worm}|hyperpage}{64}
+\indexentry{Worm@{Worm}!set\+Weapon@{set\+Weapon}|hyperpage}{64}
+\indexentry{set\+Weapon@{set\+Weapon}!Worm@{Worm}|hyperpage}{64}
+\indexentry{Worm@{Worm}!stop\+Move@{stop\+Move}|hyperpage}{65}
+\indexentry{stop\+Move@{stop\+Move}!Worm@{Worm}|hyperpage}{65}
+\indexentry{Worm@{Worm}!top@{top}|hyperpage}{65}
+\indexentry{top@{top}!Worm@{Worm}|hyperpage}{65}
+\indexentry{Worm@{Worm}!update@{update}|hyperpage}{65}
+\indexentry{update@{update}!Worm@{Worm}|hyperpage}{65}
+\indexentry{Worm@{Worm}!collision\+Points@{collision\+Points}|hyperpage}{65}
+\indexentry{collision\+Points@{collision\+Points}!Worm@{Worm}|hyperpage}{65}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bazooka.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bazooka.\+cpp}|hyperpage}{67}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bazooka.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bazooka.\+h}|hyperpage}{67}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bullet.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bullet.\+cpp}|hyperpage}{67}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bullet.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Bullet.\+h}|hyperpage}{67}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Button.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Button.\+cpp}|hyperpage}{68}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Button.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Button.\+h}|hyperpage}{68}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+F\+P\+S\+Counter.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+F\+P\+S\+Counter.\+cpp}|hyperpage}{68}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+F\+P\+S\+Counter.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+F\+P\+S\+Counter.\+h}|hyperpage}{68}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Event.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Event.\+cpp}|hyperpage}{69}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Event.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Event.\+h}|hyperpage}{69}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Sound.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Sound.\+cpp}|hyperpage}{69}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Sound.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Sound.\+h}|hyperpage}{69}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Window.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Window.\+cpp}|hyperpage}{70}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Window.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Game\+Window.\+h}|hyperpage}{70}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Menu.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Menu.\+cpp}|hyperpage}{70}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Menu.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Menu.\+h}|hyperpage}{70}
+\indexentry{Menu.\+h@{Menu.\+h}!game\+\_\+states@{game\+\_\+states}|hyperpage}{71}
+\indexentry{game\+\_\+states@{game\+\_\+states}!Menu.\+h@{Menu.\+h}|hyperpage}{71}
+\indexentry{G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}ME@{G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}ME}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}ME@{G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}ME}|hyperpage}{71}
+\indexentry{P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}SE@{P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}SE}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}SE@{P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}SE}|hyperpage}{71}
+\indexentry{M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}NU@{M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}NU}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}NU@{M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}NU}|hyperpage}{71}
+\indexentry{H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}LP@{H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}LP}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}LP@{H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}LP}|hyperpage}{71}
+\indexentry{H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}SE@{H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}SE}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}SE@{H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}SE}|hyperpage}{71}
+\indexentry{R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IN@{R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IN}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IN@{R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IN}|hyperpage}{71}
+\indexentry{B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IN@{B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IN}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IN@{B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IN}|hyperpage}{71}
+\indexentry{E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}X\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IT@{E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}X\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IT}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}X\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IT@{E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}X\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}IT}|hyperpage}{71}
+\indexentry{K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}Y\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}RD@{K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}Y\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}RD}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}Y\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}RD@{K\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}Y\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}RD}|hyperpage}{71}
+\indexentry{G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}AD@{G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}AD}!Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{71}
+\indexentry{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Menu.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}AD@{G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}M\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}AD}|hyperpage}{71}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Revolver.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Revolver.\+cpp}|hyperpage}{71}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Revolver.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Revolver.\+h}|hyperpage}{72}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Source.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Source.\+cpp}|hyperpage}{72}
+\indexentry{Source.\+cpp@{Source.\+cpp}!main@{main}|hyperpage}{72}
+\indexentry{main@{main}!Source.\+cpp@{Source.\+cpp}|hyperpage}{72}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Terrain.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Terrain.\+cpp}|hyperpage}{72}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Terrain.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Terrain.\+h}|hyperpage}{73}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Water.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Water.\+cpp}|hyperpage}{73}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Water.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Water.\+h}|hyperpage}{73}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Weapon.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Weapon.\+cpp}|hyperpage}{73}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Weapon.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Weapon.\+h}|hyperpage}{73}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Worm.\+cpp@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Worm.\+cpp}|hyperpage}{74}
+\indexentry{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Worm.\+h@{D\+:/\+Projekty/\+C++/\+Programowanie w C2/\+Worms 2\+D/\+Worms 2\+D/\+Worm.\+h}|hyperpage}{74}
+\indexentry{Worm.\+h@{Worm.\+h}!collision@{collision}|hyperpage}{74}
+\indexentry{collision@{collision}!Worm.\+h@{Worm.\+h}|hyperpage}{74}
+\indexentry{UP@{UP}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!UP@{UP}|hyperpage}{75}
+\indexentry{U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT@{U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT@{U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT}|hyperpage}{75}
+\indexentry{U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT@{U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT@{U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT}|hyperpage}{75}
+\indexentry{D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}WN@{D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}WN}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}WN@{D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}WN}|hyperpage}{75}
+\indexentry{D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT@{D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT@{D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT}|hyperpage}{75}
+\indexentry{D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT@{D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT@{D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}N\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT}|hyperpage}{75}
+\indexentry{L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT@{L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT@{L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}FT}|hyperpage}{75}
+\indexentry{R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT@{R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT@{R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}HT}|hyperpage}{75}
+\indexentry{Worm.\+h@{Worm.\+h}!team@{team}|hyperpage}{75}
+\indexentry{team@{team}!Worm.\+h@{Worm.\+h}|hyperpage}{75}
+\indexentry{R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}ED@{R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}ED}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}ED@{R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}ED}|hyperpage}{75}
+\indexentry{B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}UE@{B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}UE}!Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{75}
+\indexentry{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Worm.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}UE@{B\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}UE}|hyperpage}{75}
