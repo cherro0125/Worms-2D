@@ -2,6 +2,11 @@
 \label{class_worm}\index{Worm@{Worm}}
 
 
+Klasa worma (gracza)  
+
+
+
+
 {\ttfamily \#include $<$Worm.\+h$>$}
 
 Diagram dziedziczenia dla Worm\begin{figure}[H]
@@ -14,87 +19,83 @@ Diagram dziedziczenia dla Worm\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_worm_aaec23e2156f969303d6bfac36cae63e3}{Worm}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_worm_ade7672966c551bb91663ed03e06f297f}{$\sim$\+Worm}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_adcb6219ae98887e491327c4ef02cf4b9}{update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Aktualizuje obiekt worma co klatke. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_worm_ab517b492de0e583254c288cc583cbeb1}{left}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca lewą pozycje obiektu worma. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_worm_a52905b36980b4aa37fe1b004df9edc0e}{right}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca prawą pozycje obiektu worma. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_worm_a3d65c40350e8e0317bd594a3cb7c8bba}{top}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca górną pozycje obiektu worma. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_worm_a68061fb5be175ab42739a7c157d7073d}{bottom}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca dolna pozycje obiektu worma. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_worm_a9787181c41ca3a4ac5098277e8a4a142}{get\+WormX}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca współrzędną X pozycji worma na ekranie. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_worm_aa1a5e5334f8d3e339f15b36a9af31f27}{get\+WormY}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca współrzędną Y pozycji worma na ekranie. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_a1cdb0c544127417ba4b95fd8e5d3f9fc}{stop\+Move}} ()
 \item 
-void \mbox{\hyperlink{class_worm_ae2d842c005b7bc4b20ae8333ebc9c19c}{move\+Up}} ()
-\item 
-void \mbox{\hyperlink{class_worm_a08f64ed1ed9149084d8d64296253c4be}{move\+Down}} ()
-\item 
 void \mbox{\hyperlink{class_worm_a93d02457a10bbbfc1d2028168419ecb8}{move\+Left}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Porusza worma w lewo. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_a6d4b33910c18b0e266e310d9b5512d75}{move\+Right}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Porusza worma w prawo. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_ae4cd763e0edd18cecab42b39142cea14}{jump}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sprawia, że worm skacze. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_aa57fe22ce4031e5332d16d709e7274c8}{damage}} (float dmg)
-\item 
+\begin{DoxyCompactList}\small\item\em Zadaje obrażenia podane w parametrze wormowi. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_worm_a606868b7856598eef50b8ebcd2374927}{is\+Alive}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza czy worm jeszcze żyje. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_worm_a61589ff1104deb3cbf1cb6978e7f95f4}{check\+Collision}} (sf\+::\+Vector2f point)
-\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza kolizje worma z danym punktem. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_worm_a5a9fb6f1859a7b5cf6c447ea3ae0c1e5}{get\+OffsetY}} (sf\+::\+Vector2f point)
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca offset w płaszczyźnie Y względem punktu. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_worm_a72cf5070503bcba6423773de3367cdfd}{get\+Scale}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca skale worma. \end{DoxyCompactList}\item 
 sf\+::\+Sprite \mbox{\hyperlink{class_worm_a9b314b9a4bb91830aac7f616ef071c07}{get\+Sprite}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca obiekt rysowanego worma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_a9f2a337a176e5186c7227880337c98c3}{set\+Weapon}} (\mbox{\hyperlink{class_weapon}{Weapon}} $\ast$weapon)
-\item 
+\begin{DoxyCompactList}\small\item\em Ustawia wormowi daną broń na tą do której podamy wskaźnik. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_weapon}{Weapon}} $\ast$ \mbox{\hyperlink{class_worm_a42f56e4d14502d65c500fb20bd31a561}{get\+Weapon}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca wskaźnik na obiekt aktualnie trzymanej broni przez worma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_adbede9b2b03f764f71629a299aec5299}{delete\+Weapon}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Usuwa broń którą trzyma worm. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_af851e558c46b33b245b96a43bb2e5c56}{set\+Col\+Map}} (sf\+::\+Image $\ast$image)
-\item 
+\begin{DoxyCompactList}\small\item\em Ustawia kolizje mapy. \end{DoxyCompactList}\item 
 sf\+::\+Text \mbox{\hyperlink{class_worm_afed2a8beb878659d49977440293ef884}{get\+Debug\+Txt}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca tekst dla debbuge\textquotesingle{}a. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_worm_a3a90a91ddbe99e67f48e54a57d12b5c7}{is\+Looking\+On\+Left}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza czy worm patrzy w lewo. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_worm_a15fc66d733ecfe886495910f591d1a34}{has\+Weapon}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza czy worm ma broń \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_a8eb6b3e55c2e6cb7c87b1593f34dac52}{set\+Team}} (\mbox{\hyperlink{_worm_8h_ae79581ee1998185d7cb41ab84352b97e}{team}} t)
-\item 
+\begin{DoxyCompactList}\small\item\em Ustawia team dla danego worma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_a84fbbdac67be083a5492bf38cf83544b}{look\+Left}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sprawia, że worm patrzy w lewo. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_a4dbc714c26c5b09a94bd53f10172b4c1}{look\+Right}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sprawia, że worm patrzy w prawo. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_ac5daf6e0926f483415886c5ae297714a}{set\+Choosen}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Ustawia worma jako wybranego aktualnie do sterowania. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_worm_ab316cd13ecdfe9696e28687bfce47a4c}{set\+Normal}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Ustawia worma jako normalnego (nie sterujemy nim) \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atrybuty publiczne}
 \begin{DoxyCompactItemize}
 \item 
 sf\+::\+Vector2f \mbox{\hyperlink{class_worm_a6e519d20cdeca0c88847c0b7284ca302}{collision\+Points}} \mbox{[}8\mbox{]}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Tablica wektorów punktów kolizji worma. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Metody chronione}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_worm_adc9fd6dc3b770d4feada327666f31ee3}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegółowy}
+Klasa worma (gracza) 
 
-
-Definicja w linii 9 pliku Worm.\+h.
+Definicja w linii 20 pliku Worm.\+h.
 
 
 
@@ -107,6 +108,10 @@ Definicja w linii 9 pliku Worm.\+h.
 
 
 
+Konstruktor domyślny. 
+
+
+
 Definicja w linii 8 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_ade7672966c551bb91663ed03e06f297f}\label{class_worm_ade7672966c551bb91663ed03e06f297f}} 
@@ -114,6 +119,10 @@ Definicja w linii 8 pliku Worm.\+cpp.
 \index{````~Worm@{$\sim$\+Worm}!Worm@{Worm}}
 \subsubsection{\texorpdfstring{$\sim$\+Worm()}{~Worm()}}
 {\footnotesize\ttfamily Worm\+::$\sim$\+Worm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destruktor. 
 
 
 
@@ -130,6 +139,13 @@ Definicja w linii 65 pliku Worm.\+cpp.
 
 
 
+Zwraca dolna pozycje obiektu worma. 
+
+\begin{DoxyReturn}{Zwraca}
+dolna pozycje obiektu worma 
+\end{DoxyReturn}
+
+
 Definicja w linii 239 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a61589ff1104deb3cbf1cb6978e7f95f4}\label{class_worm_a61589ff1104deb3cbf1cb6978e7f95f4}} 
@@ -138,6 +154,18 @@ Definicja w linii 239 pliku Worm.\+cpp.
 \subsubsection{\texorpdfstring{check\+Collision()}{checkCollision()}}
 {\footnotesize\ttfamily bool Worm\+::check\+Collision (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{point }\end{DoxyParamCaption})}
 
+
+
+Sprawdza kolizje worma z danym punktem. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em point} & -\/ punkt do sprawdznia kolizji \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true -\/ jeśli kolizja nastąpi lub false -\/ jeśli nie nastąpi 
+\end{DoxyReturn}
 
 
 Definicja w linii 197 pliku Worm.\+cpp.
@@ -150,13 +178,26 @@ Definicja w linii 197 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 365 pliku Worm.\+cpp.
+Zadaje obrażenia podane w parametrze wormowi. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em dmg} & -\/ obrażenia dla worma \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 351 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_adbede9b2b03f764f71629a299aec5299}\label{class_worm_adbede9b2b03f764f71629a299aec5299}} 
 \index{Worm@{Worm}!delete\+Weapon@{delete\+Weapon}}
 \index{delete\+Weapon@{delete\+Weapon}!Worm@{Worm}}
 \subsubsection{\texorpdfstring{delete\+Weapon()}{deleteWeapon()}}
 {\footnotesize\ttfamily void Worm\+::delete\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Usuwa broń którą trzyma worm. 
 
 
 
@@ -170,6 +211,17 @@ Definicja w linii 191 pliku Worm.\+cpp.
 
 
 
+Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & \\
+\hline
+{\em states} & \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 211 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_afed2a8beb878659d49977440293ef884}\label{class_worm_afed2a8beb878659d49977440293ef884}} 
@@ -180,7 +232,14 @@ Definicja w linii 211 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 375 pliku Worm.\+cpp.
+Zwraca tekst dla debbuge\textquotesingle{}a. 
+
+\begin{DoxyReturn}{Zwraca}
+tekst dla debbuge\textquotesingle{}a 
+\end{DoxyReturn}
+
+
+Definicja w linii 361 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a5a9fb6f1859a7b5cf6c447ea3ae0c1e5}\label{class_worm_a5a9fb6f1859a7b5cf6c447ea3ae0c1e5}} 
 \index{Worm@{Worm}!get\+OffsetY@{get\+OffsetY}}
@@ -188,6 +247,18 @@ Definicja w linii 375 pliku Worm.\+cpp.
 \subsubsection{\texorpdfstring{get\+Offset\+Y()}{getOffsetY()}}
 {\footnotesize\ttfamily int Worm\+::get\+OffsetY (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{point }\end{DoxyParamCaption})}
 
+
+
+Zwraca offset w płaszczyźnie Y względem punktu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+offset w płaszczyźnie Y 
+\end{DoxyReturn}
 
 
 Definicja w linii 153 pliku Worm.\+cpp.
@@ -200,6 +271,13 @@ Definicja w linii 153 pliku Worm.\+cpp.
 
 
 
+Zwraca skale worma. 
+
+\begin{DoxyReturn}{Zwraca}
+skale worma 
+\end{DoxyReturn}
+
+
 Definicja w linii 168 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a9b314b9a4bb91830aac7f616ef071c07}\label{class_worm_a9b314b9a4bb91830aac7f616ef071c07}} 
@@ -208,6 +286,13 @@ Definicja w linii 168 pliku Worm.\+cpp.
 \subsubsection{\texorpdfstring{get\+Sprite()}{getSprite()}}
 {\footnotesize\ttfamily sf\+::\+Sprite Worm\+::get\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Zwraca obiekt rysowanego worma. 
+
+\begin{DoxyReturn}{Zwraca}
+
+\end{DoxyReturn}
 
 
 Definicja w linii 173 pliku Worm.\+cpp.
@@ -220,6 +305,13 @@ Definicja w linii 173 pliku Worm.\+cpp.
 
 
 
+Zwraca wskaźnik na obiekt aktualnie trzymanej broni przez worma. 
+
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na obiekt broni lub nullptr gdy worm nie trzyma żadnej broni 
+\end{DoxyReturn}
+
+
 Definicja w linii 186 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a9787181c41ca3a4ac5098277e8a4a142}\label{class_worm_a9787181c41ca3a4ac5098277e8a4a142}} 
@@ -228,6 +320,13 @@ Definicja w linii 186 pliku Worm.\+cpp.
 \subsubsection{\texorpdfstring{get\+Worm\+X()}{getWormX()}}
 {\footnotesize\ttfamily float Worm\+::get\+WormX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Zwraca współrzędną X pozycji worma na ekranie. 
+
+\begin{DoxyReturn}{Zwraca}
+współrzędną X pozycji worma na ekranie 
+\end{DoxyReturn}
 
 
 Definicja w linii 244 pliku Worm.\+cpp.
@@ -240,6 +339,13 @@ Definicja w linii 244 pliku Worm.\+cpp.
 
 
 
+Zwraca współrzędną Y pozycji worma na ekranie. 
+
+\begin{DoxyReturn}{Zwraca}
+współrzędną Y pozycji worma na ekranie 
+\end{DoxyReturn}
+
+
 Definicja w linii 249 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a15fc66d733ecfe886495910f591d1a34}\label{class_worm_a15fc66d733ecfe886495910f591d1a34}} 
@@ -250,7 +356,14 @@ Definicja w linii 249 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 395 pliku Worm.\+cpp.
+Sprawdza czy worm ma broń 
+
+\begin{DoxyReturn}{Zwraca}
+true -\/ jeśli worm ma broń lub false -\/ jeśli jej nie ma 
+\end{DoxyReturn}
+
+
+Definicja w linii 381 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a606868b7856598eef50b8ebcd2374927}\label{class_worm_a606868b7856598eef50b8ebcd2374927}} 
 \index{Worm@{Worm}!is\+Alive@{is\+Alive}}
@@ -260,7 +373,14 @@ Definicja w linii 395 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 370 pliku Worm.\+cpp.
+Sprawdza czy worm jeszcze żyje. 
+
+\begin{DoxyReturn}{Zwraca}
+true -\/ jeśli worm żyje lub false -\/ jeśli nie żyje 
+\end{DoxyReturn}
+
+
+Definicja w linii 356 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a3a90a91ddbe99e67f48e54a57d12b5c7}\label{class_worm_a3a90a91ddbe99e67f48e54a57d12b5c7}} 
 \index{Worm@{Worm}!is\+Looking\+On\+Left@{is\+Looking\+On\+Left}}
@@ -270,7 +390,14 @@ Definicja w linii 370 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 390 pliku Worm.\+cpp.
+Sprawdza czy worm patrzy w lewo. 
+
+\begin{DoxyReturn}{Zwraca}
+true -\/ jeśli parzy w lewo lub false -\/ jeśli parzy w prawo 
+\end{DoxyReturn}
+
+
+Definicja w linii 376 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_ae4cd763e0edd18cecab42b39142cea14}\label{class_worm_ae4cd763e0edd18cecab42b39142cea14}} 
 \index{Worm@{Worm}!jump@{jump}}
@@ -280,7 +407,11 @@ Definicja w linii 390 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 354 pliku Worm.\+cpp.
+Sprawia, że worm skacze. 
+
+
+
+Definicja w linii 340 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_ab517b492de0e583254c288cc583cbeb1}\label{class_worm_ab517b492de0e583254c288cc583cbeb1}} 
 \index{Worm@{Worm}!left@{left}}
@@ -288,6 +419,13 @@ Definicja w linii 354 pliku Worm.\+cpp.
 \subsubsection{\texorpdfstring{left()}{left()}}
 {\footnotesize\ttfamily float Worm\+::left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Zwraca lewą pozycje obiektu worma. 
+
+\begin{DoxyReturn}{Zwraca}
+lewą pozycje obiektu worma 
+\end{DoxyReturn}
 
 
 Definicja w linii 227 pliku Worm.\+cpp.
@@ -300,7 +438,11 @@ Definicja w linii 227 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 280 pliku Worm.\+cpp.
+Sprawia, że worm patrzy w lewo. 
+
+
+
+Definicja w linii 266 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a4dbc714c26c5b09a94bd53f10172b4c1}\label{class_worm_a4dbc714c26c5b09a94bd53f10172b4c1}} 
 \index{Worm@{Worm}!look\+Right@{look\+Right}}
@@ -310,17 +452,11 @@ Definicja w linii 280 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 293 pliku Worm.\+cpp.
-
-\mbox{\Hypertarget{class_worm_a08f64ed1ed9149084d8d64296253c4be}\label{class_worm_a08f64ed1ed9149084d8d64296253c4be}} 
-\index{Worm@{Worm}!move\+Down@{move\+Down}}
-\index{move\+Down@{move\+Down}!Worm@{Worm}}
-\subsubsection{\texorpdfstring{move\+Down()}{moveDown()}}
-{\footnotesize\ttfamily void Worm\+::move\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+Sprawia, że worm patrzy w prawo. 
 
 
 
-Definicja w linii 272 pliku Worm.\+cpp.
+Definicja w linii 279 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a93d02457a10bbbfc1d2028168419ecb8}\label{class_worm_a93d02457a10bbbfc1d2028168419ecb8}} 
 \index{Worm@{Worm}!move\+Left@{move\+Left}}
@@ -330,7 +466,11 @@ Definicja w linii 272 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 318 pliku Worm.\+cpp.
+Porusza worma w lewo. 
+
+
+
+Definicja w linii 304 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a6d4b33910c18b0e266e310d9b5512d75}\label{class_worm_a6d4b33910c18b0e266e310d9b5512d75}} 
 \index{Worm@{Worm}!move\+Right@{move\+Right}}
@@ -340,17 +480,11 @@ Definicja w linii 318 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 336 pliku Worm.\+cpp.
-
-\mbox{\Hypertarget{class_worm_ae2d842c005b7bc4b20ae8333ebc9c19c}\label{class_worm_ae2d842c005b7bc4b20ae8333ebc9c19c}} 
-\index{Worm@{Worm}!move\+Up@{move\+Up}}
-\index{move\+Up@{move\+Up}!Worm@{Worm}}
-\subsubsection{\texorpdfstring{move\+Up()}{moveUp()}}
-{\footnotesize\ttfamily void Worm\+::move\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+Porusza worma w prawo. 
 
 
 
-Definicja w linii 265 pliku Worm.\+cpp.
+Definicja w linii 322 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a52905b36980b4aa37fe1b004df9edc0e}\label{class_worm_a52905b36980b4aa37fe1b004df9edc0e}} 
 \index{Worm@{Worm}!right@{right}}
@@ -358,6 +492,13 @@ Definicja w linii 265 pliku Worm.\+cpp.
 \subsubsection{\texorpdfstring{right()}{right()}}
 {\footnotesize\ttfamily float Worm\+::right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Zwraca prawą pozycje obiektu worma. 
+
+\begin{DoxyReturn}{Zwraca}
+prawą pozycje obiektu worma 
+\end{DoxyReturn}
 
 
 Definicja w linii 231 pliku Worm.\+cpp.
@@ -370,7 +511,11 @@ Definicja w linii 231 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 307 pliku Worm.\+cpp.
+Ustawia worma jako wybranego aktualnie do sterowania. 
+
+
+
+Definicja w linii 293 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_af851e558c46b33b245b96a43bb2e5c56}\label{class_worm_af851e558c46b33b245b96a43bb2e5c56}} 
 \index{Worm@{Worm}!set\+Col\+Map@{set\+Col\+Map}}
@@ -378,6 +523,15 @@ Definicja w linii 307 pliku Worm.\+cpp.
 \subsubsection{\texorpdfstring{set\+Col\+Map()}{setColMap()}}
 {\footnotesize\ttfamily void Worm\+::set\+Col\+Map (\begin{DoxyParamCaption}\item[{sf\+::\+Image $\ast$}]{image }\end{DoxyParamCaption})}
 
+
+
+Ustawia kolizje mapy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em image} & -\/ obraz mapy \\
+\hline
+\end{DoxyParams}
 
 
 Definicja w linii 149 pliku Worm.\+cpp.
@@ -390,7 +544,11 @@ Definicja w linii 149 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 313 pliku Worm.\+cpp.
+Ustawia worma jako normalnego (nie sterujemy nim) 
+
+
+
+Definicja w linii 299 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a8eb6b3e55c2e6cb7c87b1593f34dac52}\label{class_worm_a8eb6b3e55c2e6cb7c87b1593f34dac52}} 
 \index{Worm@{Worm}!set\+Team@{set\+Team}}
@@ -400,7 +558,16 @@ Definicja w linii 313 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 400 pliku Worm.\+cpp.
+Ustawia team dla danego worma. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em t} & -\/ team dla worma \\
+\hline
+\end{DoxyParams}
+
+
+Definicja w linii 386 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_a9f2a337a176e5186c7227880337c98c3}\label{class_worm_a9f2a337a176e5186c7227880337c98c3}} 
 \index{Worm@{Worm}!set\+Weapon@{set\+Weapon}}
@@ -408,6 +575,15 @@ Definicja w linii 400 pliku Worm.\+cpp.
 \subsubsection{\texorpdfstring{set\+Weapon()}{setWeapon()}}
 {\footnotesize\ttfamily void Worm\+::set\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_weapon}{Weapon}} $\ast$}]{weapon }\end{DoxyParamCaption})}
 
+
+
+Ustawia wormowi daną broń na tą do której podamy wskaźnik. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em weapon} & -\/ wskaźnik na broń dla worma \\
+\hline
+\end{DoxyParams}
 
 
 Definicja w linii 178 pliku Worm.\+cpp.
@@ -418,7 +594,7 @@ Definicja w linii 178 pliku Worm.\+cpp.
 \subsubsection{\texorpdfstring{stop\+Move()}{stopMove()}}
 {\footnotesize\ttfamily void Worm\+::stop\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-
+Zatrzymuje worma 
 
 Definicja w linii 254 pliku Worm.\+cpp.
 
@@ -430,6 +606,13 @@ Definicja w linii 254 pliku Worm.\+cpp.
 
 
 
+Zwraca górną pozycje obiektu worma. 
+
+\begin{DoxyReturn}{Zwraca}
+górną pozycje obiektu worma 
+\end{DoxyReturn}
+
+
 Definicja w linii 235 pliku Worm.\+cpp.
 
 \mbox{\Hypertarget{class_worm_adcb6219ae98887e491327c4ef02cf4b9}\label{class_worm_adcb6219ae98887e491327c4ef02cf4b9}} 
@@ -437,6 +620,10 @@ Definicja w linii 235 pliku Worm.\+cpp.
 \index{update@{update}!Worm@{Worm}}
 \subsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily void Worm\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje obiekt worma co klatke. 
 
 
 
@@ -453,7 +640,11 @@ Definicja w linii 70 pliku Worm.\+cpp.
 
 
 
-Definicja w linii 33 pliku Worm.\+h.
+Tablica wektorów punktów kolizji worma. 
+
+
+
+Definicja w linii 136 pliku Worm.\+h.
 
 
 

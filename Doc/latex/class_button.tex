@@ -14,34 +14,34 @@ Diagram dziedziczenia dla Button\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_button_aeb4926acd6beafa022e3152b7ecbb992}{Button}} (float position\+\_\+x, float position\+\_\+y, const char $\ast$label, int id)
-\item 
+\begin{DoxyCompactList}\small\item\em konstruktor przycisku \end{DoxyCompactList}\item 
 sf\+::\+Vector2f \mbox{\hyperlink{class_button_a0860c867e652f08390c05929d6837c13}{get\+Size}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca rozmiar buttona. \end{DoxyCompactList}\item 
 sf\+::\+Vector2f \mbox{\hyperlink{class_button_aa5acd27eed9dc39a80051436b30ebd41}{get\+Position}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca wektor pozycji buttona. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_button_a1a5ca19ed8efe0ea27625217dcab9f2c}{hover}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Podswietla przycisk. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_button_a2fc33ec22217562b28ac6f02bda26c6e}{click}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Obs³uguje wciœniêcie przycisku. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_button_a31dfd83213a96fce828037745fc7e18f}{clear}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Czyœci przycisk. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_button_a70c28ee3bec38814f77e6606e2da19ef}{is\+Hovered}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza czy myszka jest na przycisku. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_button_acd766bf2e64e1aa93ad4c8a16b343347}{is\+Clicked}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sprawdza czy przycisk zosta³ kliniety. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_button_a1a41668f07d7c7b03f05ab6602aa83e7}{set\+Color\+Default}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Ustawia kolor domyœlny przycisku. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_button_a0f71bfa269ec47509592cb2e4bed9a90}{set\+Color\+Hovered}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Ustawia kolor podœwietlenia przycisku. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_button_acbc078483f6c6a6c75b7ff00cf07dd05}{set\+Color\+Clicked}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Ustawia kolor klikniêtego przycisku. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_button_a0b024eb643308f2cfa8d13cd93c6b1ca}{get\+Id}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Zwraca ID przycisku. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Metody chronione}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_button_a94b2be0ad227968afccae8bc297ed99a}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegÃ³Å‚owy}
@@ -60,6 +60,21 @@ Definicja w linii 3 pliku Button.\+h.
 
 
 
+konstruktor przycisku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em position\+\_\+x} & -\/ pozycja X przycisku na ekranie \\
+\hline
+{\em position\+\_\+y} & -\/ pozycja Y przycisku na ekranie \\
+\hline
+{\em label} & -\/ tekst na przycisku \\
+\hline
+{\em id} & -\/ id przycisku \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 4 pliku Button.\+cpp.
 
 
@@ -73,6 +88,10 @@ Definicja w linii 4 pliku Button.\+cpp.
 
 
 
+Czyœci przycisk. 
+
+
+
 Definicja w linii 60 pliku Button.\+cpp.
 
 \mbox{\Hypertarget{class_button_a2fc33ec22217562b28ac6f02bda26c6e}\label{class_button_a2fc33ec22217562b28ac6f02bda26c6e}} 
@@ -80,6 +99,10 @@ Definicja w linii 60 pliku Button.\+cpp.
 \index{click@{click}!Button@{Button}}
 \subsubsection{\texorpdfstring{click()}{click()}}
 {\footnotesize\ttfamily void Button\+::click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obs³uguje wciœniêcie przycisku. 
 
 
 
@@ -93,6 +116,17 @@ Definicja w linii 54 pliku Button.\+cpp.
 
 
 
+Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & \\
+\hline
+{\em states} & \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 31 pliku Button.\+cpp.
 
 \mbox{\Hypertarget{class_button_a0b024eb643308f2cfa8d13cd93c6b1ca}\label{class_button_a0b024eb643308f2cfa8d13cd93c6b1ca}} 
@@ -101,6 +135,13 @@ Definicja w linii 31 pliku Button.\+cpp.
 \subsubsection{\texorpdfstring{get\+Id()}{getId()}}
 {\footnotesize\ttfamily int Button\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Zwraca ID przycisku. 
+
+\begin{DoxyReturn}{Zwraca}
+ID przycisku 
+\end{DoxyReturn}
 
 
 Definicja w linii 92 pliku Button.\+cpp.
@@ -113,6 +154,13 @@ Definicja w linii 92 pliku Button.\+cpp.
 
 
 
+Zwraca wektor pozycji buttona. 
+
+\begin{DoxyReturn}{Zwraca}
+wektor pozycji buttona 
+\end{DoxyReturn}
+
+
 Definicja w linii 43 pliku Button.\+cpp.
 
 \mbox{\Hypertarget{class_button_a0860c867e652f08390c05929d6837c13}\label{class_button_a0860c867e652f08390c05929d6837c13}} 
@@ -123,6 +171,13 @@ Definicja w linii 43 pliku Button.\+cpp.
 
 
 
+Zwraca rozmiar buttona. 
+
+\begin{DoxyReturn}{Zwraca}
+wektor rozmiaru buttona 
+\end{DoxyReturn}
+
+
 Definicja w linii 38 pliku Button.\+cpp.
 
 \mbox{\Hypertarget{class_button_a1a5ca19ed8efe0ea27625217dcab9f2c}\label{class_button_a1a5ca19ed8efe0ea27625217dcab9f2c}} 
@@ -130,6 +185,10 @@ Definicja w linii 38 pliku Button.\+cpp.
 \index{hover@{hover}!Button@{Button}}
 \subsubsection{\texorpdfstring{hover()}{hover()}}
 {\footnotesize\ttfamily void Button\+::hover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Podswietla przycisk. 
 
 
 
@@ -143,6 +202,13 @@ Definicja w linii 48 pliku Button.\+cpp.
 
 
 
+Sprawdza czy przycisk zosta³ kliniety. 
+
+\begin{DoxyReturn}{Zwraca}
+czy przycisk zosta³ kliniety 
+\end{DoxyReturn}
+
+
 Definicja w linii 72 pliku Button.\+cpp.
 
 \mbox{\Hypertarget{class_button_a70c28ee3bec38814f77e6606e2da19ef}\label{class_button_a70c28ee3bec38814f77e6606e2da19ef}} 
@@ -153,6 +219,13 @@ Definicja w linii 72 pliku Button.\+cpp.
 
 
 
+Sprawdza czy myszka jest na przycisku. 
+
+\begin{DoxyReturn}{Zwraca}
+czy myszka jest na przycisku 
+\end{DoxyReturn}
+
+
 Definicja w linii 67 pliku Button.\+cpp.
 
 \mbox{\Hypertarget{class_button_acbc078483f6c6a6c75b7ff00cf07dd05}\label{class_button_acbc078483f6c6a6c75b7ff00cf07dd05}} 
@@ -160,6 +233,10 @@ Definicja w linii 67 pliku Button.\+cpp.
 \index{set\+Color\+Clicked@{set\+Color\+Clicked}!Button@{Button}}
 \subsubsection{\texorpdfstring{set\+Color\+Clicked()}{setColorClicked()}}
 {\footnotesize\ttfamily void Button\+::set\+Color\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ustawia kolor klikniêtego przycisku. 
 
 
 
@@ -173,6 +250,10 @@ Definicja w linii 87 pliku Button.\+cpp.
 
 
 
+Ustawia kolor domyœlny przycisku. 
+
+
+
 Definicja w linii 77 pliku Button.\+cpp.
 
 \mbox{\Hypertarget{class_button_a0f71bfa269ec47509592cb2e4bed9a90}\label{class_button_a0f71bfa269ec47509592cb2e4bed9a90}} 
@@ -180,6 +261,10 @@ Definicja w linii 77 pliku Button.\+cpp.
 \index{set\+Color\+Hovered@{set\+Color\+Hovered}!Button@{Button}}
 \subsubsection{\texorpdfstring{set\+Color\+Hovered()}{setColorHovered()}}
 {\footnotesize\ttfamily void Button\+::set\+Color\+Hovered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ustawia kolor podœwietlenia przycisku. 
 
 
 

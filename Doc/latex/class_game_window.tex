@@ -8,61 +8,61 @@
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_game_window_aeb8fe4d63cdd9e9d3e6fdcb35d15a37c}{Game\+Window}} ()=delete
-\item 
+\begin{DoxyCompactList}\small\item\em konstruktor usunięty \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_game_window_a55b071c0390e45c064a160c1e6baaa08}{$\sim$\+Game\+Window}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_game_window_a22da49d930c2fd26888b223049a9da18}{Game\+Window}} (unsigned int width, unsigned int height, std\+::string name)
-\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzący okno główne. \end{DoxyCompactList}\item 
 sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_game_window_aa5ef8ededf54c333a5b19344b95220de}{Get\+Instance}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca wskaźnik na instacje okna głównego. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_window_af2b8df98b008a25d8c64f67cd6f23f59}{Change\+Frame\+Limit}} (unsigned int limit=60) const
-\item 
+\begin{DoxyCompactList}\small\item\em Zmienia limit klatek. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_window_a7dcdd3731da278a522c59a72ecee77b3}{Main\+Loop}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Przetwarza główną pętle okna co klatke. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_window_a043804fa483c8ea2f348b6fb1dac4e4a}{Update\+Worms}} (int i)
-\item 
+\begin{DoxyCompactList}\small\item\em Aktualizuje odpowiedniego worma z wektora 1 drużyny. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_window_aa6659ccbd2a5d27141eb3f00fdc72ea6}{Update\+WormsB}} (int i)
-\item 
+\begin{DoxyCompactList}\small\item\em Aktualizuje odpowiedniego worma z wektora 2 drużyny. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_worm}{Worm}} $\ast$$\ast$ \mbox{\hyperlink{class_game_window_a172c7184152f5c49a5089205ae3528f5}{Get\+Current\+Worm}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca podwójny wskaźnik na aktualnego worma. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{class_worm}{Worm}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_game_window_a7535403f5d3ab3ffe22c711665102052}{Get\+Worms\+Array}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zweraca wskaźnik na wektor 1 team\textquotesingle{}u. \end{DoxyCompactList}\item 
 std\+::vector$<$ \mbox{\hyperlink{class_worm}{Worm}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{class_game_window_ab9695e10e5a991a9df920911402b9272}{Get\+Worms\+ArrayB}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zweraca wskaźnik na wektor 2 team\textquotesingle{}u. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_game_window_acfef11596afd262e0e4e77051ed24cde}{Get\+Worm\+Count}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca wielkość 1 drużyny. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_game_window_a6c6d7e7da6cfc12d33c6da6f84596b15}{Get\+Worm\+CountB}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca wielkość 2 drużyny. \end{DoxyCompactList}\item 
 int $\ast$ \mbox{\hyperlink{class_game_window_a67485df550fda5b1cc0aa6e7644f72e8}{Get\+Current\+Team}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca wskaźnik na ID aktualnego team\textquotesingle{}u. \end{DoxyCompactList}\item 
 int $\ast$ \mbox{\hyperlink{class_game_window_a6dbc377a22fff8ab01f30b10337dc5ae}{Get\+Current\+Worm\+ID}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca wskaźnik na ID aktualnego worma. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_window_a856649fd2f3954b6ae3c6cf9da6b17a6}{Set\+Background\+Color}} (sf\+::\+Color color)
-\item 
+\begin{DoxyCompactList}\small\item\em Ustawia kolor tła. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_game_sound}{Game\+Sound}} $\ast$ \mbox{\hyperlink{class_game_window_aa3280056f0018da1eee85ccb1e5fd2ac}{Get\+Game\+Sound}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca wskaźnik na obiekt dźwięków gry. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_window_a735db6bd1918401c3b36502d14c8fd7b}{Switch\+To\+Red\+Team}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zmienia aktualny team na Czerwony (zmiana tury) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_window_aa7c5976b188b842fc2ce45190b55bdfa}{Switch\+To\+Blue\+Team}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zmienia aktualny team na Niebieski (zmiana tury) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_window_a24b9dd0b93ad629da3b2e15661fdea0c}{Set\+Choose\+States}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Ustawia stan aktualnego worma na wybrany a wszystkich innych na normalny. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Statyczne metody publiczne}
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_game_window}{Game\+Window}} $\ast$ \mbox{\hyperlink{class_game_window_a9c480a3795bfd6d22a9dc8a3bae47b1b}{Get\+Game\+Window\+Instance}} (unsigned int width=1280, unsigned int height=1024, std\+::string name=\char`\"{}Worms 2\+D\char`\"{})
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Zwraca wskaźnik na instacje okna głównego lub tworzy je jeśli nie istniało. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atrybuty publiczne}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_terrain}{Terrain}} \mbox{\hyperlink{class_game_window_ab5d02e9738d1f7f3fea4cd146172cf11}{terrain}}
-\item 
+\begin{DoxyCompactList}\small\item\em Obiekt terenu. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_menu}{Menu}} \mbox{\hyperlink{class_game_window_a3c63dc36f53ecb9b1d055923293daffd}{menu}}
-\item 
+\begin{DoxyCompactList}\small\item\em Obiekt \mbox{\hyperlink{class_menu}{Menu}}. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_game_window_aafe2b1768f704b81e4fe94115287b9f7}{game\+\_\+state}}
-\item 
+\begin{DoxyCompactList}\small\item\em Aktualny stan gry. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_game_window_a5ce0d59c491a490bc1d98afcac741016}{game\+\_\+started}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Informacja czy gra została wystartowana. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegółowy}
@@ -79,11 +79,19 @@ Definicja w linii 14 pliku Game\+Window.\+h.
 \subsubsection{\texorpdfstring{Game\+Window()}{GameWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Game\+Window\+::\+Game\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+
+
+konstruktor usunięty 
+
 \mbox{\Hypertarget{class_game_window_a55b071c0390e45c064a160c1e6baaa08}\label{class_game_window_a55b071c0390e45c064a160c1e6baaa08}} 
 \index{Game\+Window@{Game\+Window}!````~Game\+Window@{$\sim$\+Game\+Window}}
 \index{````~Game\+Window@{$\sim$\+Game\+Window}!Game\+Window@{Game\+Window}}
 \subsubsection{\texorpdfstring{$\sim$\+Game\+Window()}{~GameWindow()}}
 {\footnotesize\ttfamily Game\+Window\+::$\sim$\+Game\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor. 
 
 
 
@@ -95,6 +103,19 @@ Definicja w linii 26 pliku Game\+Window.\+cpp.
 \subsubsection{\texorpdfstring{Game\+Window()}{GameWindow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Game\+Window\+::\+Game\+Window (\begin{DoxyParamCaption}\item[{unsigned int}]{width,  }\item[{unsigned int}]{height,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
 
+
+
+Konstruktor tworzący okno główne. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em width} & -\/ szerokość okna \\
+\hline
+{\em height} & -\/ wysokość okna \\
+\hline
+{\em name} & -\/ nazwa okna \\
+\hline
+\end{DoxyParams}
 
 
 Definicja w linii 4 pliku Game\+Window.\+cpp.
@@ -110,6 +131,15 @@ Definicja w linii 4 pliku Game\+Window.\+cpp.
 
 
 
+Zmienia limit klatek. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em limit} & -\/ limit klatek \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 37 pliku Game\+Window.\+cpp.
 
 \mbox{\Hypertarget{class_game_window_a67485df550fda5b1cc0aa6e7644f72e8}\label{class_game_window_a67485df550fda5b1cc0aa6e7644f72e8}} 
@@ -118,6 +148,13 @@ Definicja w linii 37 pliku Game\+Window.\+cpp.
 \subsubsection{\texorpdfstring{Get\+Current\+Team()}{GetCurrentTeam()}}
 {\footnotesize\ttfamily int $\ast$ Game\+Window\+::\+Get\+Current\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Zwraca wskaźnik na ID aktualnego team\textquotesingle{}u. 
+
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na ID aktualnego team\textquotesingle{}u 
+\end{DoxyReturn}
 
 
 Definicja w linii 293 pliku Game\+Window.\+cpp.
@@ -130,6 +167,13 @@ Definicja w linii 293 pliku Game\+Window.\+cpp.
 
 
 
+Zwraca podwójny wskaźnik na aktualnego worma. 
+
+\begin{DoxyReturn}{Zwraca}
+podwójny wskaźnik na aktualnego worma 
+\end{DoxyReturn}
+
+
 Definicja w linii 268 pliku Game\+Window.\+cpp.
 
 \mbox{\Hypertarget{class_game_window_a6dbc377a22fff8ab01f30b10337dc5ae}\label{class_game_window_a6dbc377a22fff8ab01f30b10337dc5ae}} 
@@ -138,6 +182,13 @@ Definicja w linii 268 pliku Game\+Window.\+cpp.
 \subsubsection{\texorpdfstring{Get\+Current\+Worm\+I\+D()}{GetCurrentWormID()}}
 {\footnotesize\ttfamily int $\ast$ Game\+Window\+::\+Get\+Current\+Worm\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Zwraca wskaźnik na ID aktualnego worma. 
+
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na ID aktualnego worma 
+\end{DoxyReturn}
 
 
 Definicja w linii 298 pliku Game\+Window.\+cpp.
@@ -150,6 +201,13 @@ Definicja w linii 298 pliku Game\+Window.\+cpp.
 
 
 
+Zwraca wskaźnik na obiekt dźwięków gry. 
+
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na obiekt dźwięków gry 
+\end{DoxyReturn}
+
+
 Definicja w linii 308 pliku Game\+Window.\+cpp.
 
 \mbox{\Hypertarget{class_game_window_a9c480a3795bfd6d22a9dc8a3bae47b1b}\label{class_game_window_a9c480a3795bfd6d22a9dc8a3bae47b1b}} 
@@ -158,6 +216,13 @@ Definicja w linii 308 pliku Game\+Window.\+cpp.
 \subsubsection{\texorpdfstring{Get\+Game\+Window\+Instance()}{GetGameWindowInstance()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_game_window}{Game\+Window}} $\ast$ Game\+Window\+::\+Get\+Game\+Window\+Instance (\begin{DoxyParamCaption}\item[{unsigned int}]{width = {\ttfamily 1280},  }\item[{unsigned int}]{height = {\ttfamily 1024},  }\item[{std\+::string}]{name = {\ttfamily \char`\"{}Worms~2D\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Zwraca wskaźnik na instacje okna głównego lub tworzy je jeśli nie istniało. 
+
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na instacje okna głównego 
+\end{DoxyReturn}
 
 
 Definicja w linii 373 pliku Game\+Window.\+cpp.
@@ -170,6 +235,13 @@ Definicja w linii 373 pliku Game\+Window.\+cpp.
 
 
 
+Zwraca wskaźnik na instacje okna głównego. 
+
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na instacje okna głównego 
+\end{DoxyReturn}
+
+
 Definicja w linii 32 pliku Game\+Window.\+cpp.
 
 \mbox{\Hypertarget{class_game_window_acfef11596afd262e0e4e77051ed24cde}\label{class_game_window_acfef11596afd262e0e4e77051ed24cde}} 
@@ -178,6 +250,13 @@ Definicja w linii 32 pliku Game\+Window.\+cpp.
 \subsubsection{\texorpdfstring{Get\+Worm\+Count()}{GetWormCount()}}
 {\footnotesize\ttfamily int Game\+Window\+::\+Get\+Worm\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Zwraca wielkość 1 drużyny. 
+
+\begin{DoxyReturn}{Zwraca}
+wielkość 1 drużyny 
+\end{DoxyReturn}
 
 
 Definicja w linii 283 pliku Game\+Window.\+cpp.
@@ -190,6 +269,13 @@ Definicja w linii 283 pliku Game\+Window.\+cpp.
 
 
 
+Zwraca wielkość 2 drużyny. 
+
+\begin{DoxyReturn}{Zwraca}
+wielkość 2 drużyny 
+\end{DoxyReturn}
+
+
 Definicja w linii 288 pliku Game\+Window.\+cpp.
 
 \mbox{\Hypertarget{class_game_window_a7535403f5d3ab3ffe22c711665102052}\label{class_game_window_a7535403f5d3ab3ffe22c711665102052}} 
@@ -198,6 +284,13 @@ Definicja w linii 288 pliku Game\+Window.\+cpp.
 \subsubsection{\texorpdfstring{Get\+Worms\+Array()}{GetWormsArray()}}
 {\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_worm}{Worm}} $\ast$ $>$ $\ast$ Game\+Window\+::\+Get\+Worms\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Zweraca wskaźnik na wektor 1 team\textquotesingle{}u. 
+
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na wektor 1 team\textquotesingle{}u 
+\end{DoxyReturn}
 
 
 Definicja w linii 273 pliku Game\+Window.\+cpp.
@@ -210,6 +303,13 @@ Definicja w linii 273 pliku Game\+Window.\+cpp.
 
 
 
+Zweraca wskaźnik na wektor 2 team\textquotesingle{}u. 
+
+\begin{DoxyReturn}{Zwraca}
+wskaźnik na wektor 2 team\textquotesingle{}u 
+\end{DoxyReturn}
+
+
 Definicja w linii 278 pliku Game\+Window.\+cpp.
 
 \mbox{\Hypertarget{class_game_window_a7dcdd3731da278a522c59a72ecee77b3}\label{class_game_window_a7dcdd3731da278a522c59a72ecee77b3}} 
@@ -217,6 +317,10 @@ Definicja w linii 278 pliku Game\+Window.\+cpp.
 \index{Main\+Loop@{Main\+Loop}!Game\+Window@{Game\+Window}}
 \subsubsection{\texorpdfstring{Main\+Loop()}{MainLoop()}}
 {\footnotesize\ttfamily void Game\+Window\+::\+Main\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przetwarza główną pętle okna co klatke. 
 
 
 
@@ -230,6 +334,15 @@ Definicja w linii 79 pliku Game\+Window.\+cpp.
 
 
 
+Ustawia kolor tła. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em color} & -\/ kolor tła \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 303 pliku Game\+Window.\+cpp.
 
 \mbox{\Hypertarget{class_game_window_a24b9dd0b93ad629da3b2e15661fdea0c}\label{class_game_window_a24b9dd0b93ad629da3b2e15661fdea0c}} 
@@ -237,6 +350,10 @@ Definicja w linii 303 pliku Game\+Window.\+cpp.
 \index{Set\+Choose\+States@{Set\+Choose\+States}!Game\+Window@{Game\+Window}}
 \subsubsection{\texorpdfstring{Set\+Choose\+States()}{SetChooseStates()}}
 {\footnotesize\ttfamily void Game\+Window\+::\+Set\+Choose\+States (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ustawia stan aktualnego worma na wybrany a wszystkich innych na normalny. 
 
 
 
@@ -250,6 +367,10 @@ Definicja w linii 340 pliku Game\+Window.\+cpp.
 
 
 
+Zmienia aktualny team na Niebieski (zmiana tury) 
+
+
+
 Definicja w linii 332 pliku Game\+Window.\+cpp.
 
 \mbox{\Hypertarget{class_game_window_a735db6bd1918401c3b36502d14c8fd7b}\label{class_game_window_a735db6bd1918401c3b36502d14c8fd7b}} 
@@ -257,6 +378,10 @@ Definicja w linii 332 pliku Game\+Window.\+cpp.
 \index{Switch\+To\+Red\+Team@{Switch\+To\+Red\+Team}!Game\+Window@{Game\+Window}}
 \subsubsection{\texorpdfstring{Switch\+To\+Red\+Team()}{SwitchToRedTeam()}}
 {\footnotesize\ttfamily void Game\+Window\+::\+Switch\+To\+Red\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zmienia aktualny team na Czerwony (zmiana tury) 
 
 
 
@@ -270,6 +395,15 @@ Definicja w linii 324 pliku Game\+Window.\+cpp.
 
 
 
+Aktualizuje odpowiedniego worma z wektora 1 drużyny. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em i} & -\/ numer worma w wektorze \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 258 pliku Game\+Window.\+cpp.
 
 \mbox{\Hypertarget{class_game_window_aa6659ccbd2a5d27141eb3f00fdc72ea6}\label{class_game_window_aa6659ccbd2a5d27141eb3f00fdc72ea6}} 
@@ -278,6 +412,15 @@ Definicja w linii 258 pliku Game\+Window.\+cpp.
 \subsubsection{\texorpdfstring{Update\+Worms\+B()}{UpdateWormsB()}}
 {\footnotesize\ttfamily void Game\+Window\+::\+Update\+WormsB (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
 
+
+
+Aktualizuje odpowiedniego worma z wektora 2 drużyny. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em i} & -\/ numer worma w wektorze \\
+\hline
+\end{DoxyParams}
 
 
 Definicja w linii 263 pliku Game\+Window.\+cpp.
@@ -293,7 +436,11 @@ Definicja w linii 263 pliku Game\+Window.\+cpp.
 
 
 
-Definicja w linii 38 pliku Game\+Window.\+h.
+Informacja czy gra została wystartowana. 
+
+
+
+Definicja w linii 143 pliku Game\+Window.\+h.
 
 \mbox{\Hypertarget{class_game_window_aafe2b1768f704b81e4fe94115287b9f7}\label{class_game_window_aafe2b1768f704b81e4fe94115287b9f7}} 
 \index{Game\+Window@{Game\+Window}!game\+\_\+state@{game\+\_\+state}}
@@ -303,7 +450,11 @@ Definicja w linii 38 pliku Game\+Window.\+h.
 
 
 
-Definicja w linii 37 pliku Game\+Window.\+h.
+Aktualny stan gry. 
+
+
+
+Definicja w linii 138 pliku Game\+Window.\+h.
 
 \mbox{\Hypertarget{class_game_window_a3c63dc36f53ecb9b1d055923293daffd}\label{class_game_window_a3c63dc36f53ecb9b1d055923293daffd}} 
 \index{Game\+Window@{Game\+Window}!menu@{menu}}
@@ -313,7 +464,11 @@ Definicja w linii 37 pliku Game\+Window.\+h.
 
 
 
-Definicja w linii 36 pliku Game\+Window.\+h.
+Obiekt \mbox{\hyperlink{class_menu}{Menu}}. 
+
+
+
+Definicja w linii 133 pliku Game\+Window.\+h.
 
 \mbox{\Hypertarget{class_game_window_ab5d02e9738d1f7f3fea4cd146172cf11}\label{class_game_window_ab5d02e9738d1f7f3fea4cd146172cf11}} 
 \index{Game\+Window@{Game\+Window}!terrain@{terrain}}
@@ -323,7 +478,11 @@ Definicja w linii 36 pliku Game\+Window.\+h.
 
 
 
-Definicja w linii 35 pliku Game\+Window.\+h.
+Obiekt terenu. 
+
+
+
+Definicja w linii 128 pliku Game\+Window.\+h.
 
 
 

@@ -109,20 +109,25 @@ Diagram dziedziczenia dla Terrain</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a7160a06ab07a86ed97d23374405e8ef6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#a7160a06ab07a86ed97d23374405e8ef6">Terrain</a> ()</td></tr>
+<tr class="memdesc:a7160a06ab07a86ed97d23374405e8ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <a href="#a7160a06ab07a86ed97d23374405e8ef6">Więcej...</a><br /></td></tr>
 <tr class="separator:a7160a06ab07a86ed97d23374405e8ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a552c55d3ce93ae1c8988432acdf7aea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#a552c55d3ce93ae1c8988432acdf7aea1">erase</a> (const sf::Drawable &amp;eraser)</td></tr>
+<tr class="memdesc:a552c55d3ce93ae1c8988432acdf7aea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa element z mapy.  <a href="#a552c55d3ce93ae1c8988432acdf7aea1">Więcej...</a><br /></td></tr>
 <tr class="separator:a552c55d3ce93ae1c8988432acdf7aea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009d97df85f0704ad9ea3c61fcd11080"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#a009d97df85f0704ad9ea3c61fcd11080">reset</a> ()</td></tr>
+<tr class="memdesc:a009d97df85f0704ad9ea3c61fcd11080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resetuje mape.  <a href="#a009d97df85f0704ad9ea3c61fcd11080">Więcej...</a><br /></td></tr>
 <tr class="separator:a009d97df85f0704ad9ea3c61fcd11080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atrybuty publiczne</h2></td></tr>
 <tr class="memitem:afda7533fb267038f082301a417691483"><td class="memItemLeft" align="right" valign="top">sf::Image&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#afda7533fb267038f082301a417691483">map</a></td></tr>
+<tr class="memdesc:afda7533fb267038f082301a417691483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obiekt mapy.  <a href="#afda7533fb267038f082301a417691483">Więcej...</a><br /></td></tr>
 <tr class="separator:afda7533fb267038f082301a417691483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Metody chronione</h2></td></tr>
 <tr class="memitem:a78fb38a85917a89fa9deb9eec9599b49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_terrain.html#a78fb38a85917a89fa9deb9eec9599b49">draw</a> (sf::RenderTarget &amp;target, sf::RenderStates states) const override</td></tr>
+<tr class="memdesc:a78fb38a85917a89fa9deb9eec9599b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rysuje obiekt na ekranie (dzidziczona z SFML)  <a href="#a78fb38a85917a89fa9deb9eec9599b49">Więcej...</a><br /></td></tr>
 <tr class="separator:a78fb38a85917a89fa9deb9eec9599b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
@@ -143,6 +148,8 @@ Metody chronione</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Konstruktor. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="_terrain_8cpp_source.html#l00003">3</a> pliku <a class="el" href="_terrain_8cpp_source.html">Terrain.cpp</a>.</p>
 
@@ -183,6 +190,15 @@ Metody chronione</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Rysuje obiekt na ekranie (dzidziczona z SFML) </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td></td></tr>
+    <tr><td class="paramname">states</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definicja w linii <a class="el" href="_terrain_8cpp_source.html#l00031">31</a> pliku <a class="el" href="_terrain_8cpp_source.html">Terrain.cpp</a>.</p>
 
 </div>
@@ -203,6 +219,14 @@ Metody chronione</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Usuwa element z mapy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eraser</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definicja w linii <a class="el" href="_terrain_8cpp_source.html#l00018">18</a> pliku <a class="el" href="_terrain_8cpp_source.html">Terrain.cpp</a>.</p>
 
 </div>
@@ -222,6 +246,8 @@ Metody chronione</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Resetuje mape. </p>
+
 <p class="definition">Definicja w linii <a class="el" href="_terrain_8cpp_source.html#l00037">37</a> pliku <a class="el" href="_terrain_8cpp_source.html">Terrain.cpp</a>.</p>
 
 </div>
@@ -239,7 +265,9 @@ Metody chronione</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="_terrain_8h_source.html#l00009">9</a> pliku <a class="el" href="_terrain_8h_source.html">Terrain.h</a>.</p>
+<p>Obiekt mapy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="_terrain_8h_source.html#l00026">26</a> pliku <a class="el" href="_terrain_8h_source.html">Terrain.h</a>.</p>
 
 </div>
 </div>

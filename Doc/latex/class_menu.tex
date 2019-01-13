@@ -14,20 +14,20 @@ Diagram dziedziczenia dla Menu\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_menu_ad466dd83355124a6ed958430450bfe94}{Menu}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor menu. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_button}{Button}} $\ast$ \mbox{\hyperlink{class_menu_add20f283775e3cdb3ad8e8f8f02af83e}{get\+Button}} (float x, float y)
-\item 
+\begin{DoxyCompactList}\small\item\em Zwraca wskaŸnik na przycisk o podanych wspó³rzêdnych. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_a6ebff4998eb64bad2871a658ab7ed3c0}{clear\+Clicked\+Button}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Czyœci klikniêty przycisk. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_a3630ce145aab68961ec535762d928558}{clear}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Czyœci menu. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_menu_a55609527292757ffa53fdfc6c2a23a38}{change\+Menu}} (int choice)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Zmienia menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Metody chronione}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_menu_a0a6873f5c605195a1f242c3f678df55e}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegÃ³Å‚owy}
@@ -46,6 +46,10 @@ Definicja w linii 7 pliku Menu.\+h.
 
 
 
+Konstruktor menu. 
+
+
+
 Definicja w linii 6 pliku Menu.\+cpp.
 
 
@@ -59,6 +63,15 @@ Definicja w linii 6 pliku Menu.\+cpp.
 
 
 
+Zmienia menu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em choice} & -\/ wybór \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 86 pliku Menu.\+cpp.
 
 \mbox{\Hypertarget{class_menu_a3630ce145aab68961ec535762d928558}\label{class_menu_a3630ce145aab68961ec535762d928558}} 
@@ -66,6 +79,10 @@ Definicja w linii 86 pliku Menu.\+cpp.
 \index{clear@{clear}!Menu@{Menu}}
 \subsubsection{\texorpdfstring{clear()}{clear()}}
 {\footnotesize\ttfamily void Menu\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Czyœci menu. 
 
 
 
@@ -79,6 +96,10 @@ Definicja w linii 78 pliku Menu.\+cpp.
 
 
 
+Czyœci klikniêty przycisk. 
+
+
+
 Definicja w linii 68 pliku Menu.\+cpp.
 
 \mbox{\Hypertarget{class_menu_a0a6873f5c605195a1f242c3f678df55e}\label{class_menu_a0a6873f5c605195a1f242c3f678df55e}} 
@@ -89,6 +110,17 @@ Definicja w linii 68 pliku Menu.\+cpp.
 
 
 
+Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & \\
+\hline
+{\em states} & \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 30 pliku Menu.\+cpp.
 
 \mbox{\Hypertarget{class_menu_add20f283775e3cdb3ad8e8f8f02af83e}\label{class_menu_add20f283775e3cdb3ad8e8f8f02af83e}} 
@@ -97,6 +129,20 @@ Definicja w linii 30 pliku Menu.\+cpp.
 \subsubsection{\texorpdfstring{get\+Button()}{getButton()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_button}{Button}} $\ast$ Menu\+::get\+Button (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
 
+
+
+Zwraca wskaŸnik na przycisk o podanych wspó³rzêdnych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em x} & -\/ Wspó³rzêdna X przycisku \\
+\hline
+{\em y} & -\/ Wspó³rzêdna Y przycisku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wskaŸnik na przycisk 
+\end{DoxyReturn}
 
 
 Definicja w linii 47 pliku Menu.\+cpp.

@@ -14,21 +14,21 @@ Diagram dziedziczenia dla Terrain\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_terrain_a7160a06ab07a86ed97d23374405e8ef6}{Terrain}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_terrain_a552c55d3ce93ae1c8988432acdf7aea1}{erase}} (const sf\+::\+Drawable \&eraser)
-\item 
+\begin{DoxyCompactList}\small\item\em Usuwa element z mapy. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_terrain_a009d97df85f0704ad9ea3c61fcd11080}{reset}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Resetuje mape. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Atrybuty publiczne}
 \begin{DoxyCompactItemize}
 \item 
 sf\+::\+Image \mbox{\hyperlink{class_terrain_afda7533fb267038f082301a417691483}{map}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Obiekt mapy. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Metody chronione}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_terrain_a78fb38a85917a89fa9deb9eec9599b49}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegółowy}
@@ -47,6 +47,10 @@ Definicja w linii 3 pliku Terrain.\+h.
 
 
 
+Konstruktor. 
+
+
+
 Definicja w linii 3 pliku Terrain.\+cpp.
 
 
@@ -60,6 +64,17 @@ Definicja w linii 3 pliku Terrain.\+cpp.
 
 
 
+Rysuje obiekt na ekranie (dzidziczona z S\+F\+ML) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em target} & \\
+\hline
+{\em states} & \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 31 pliku Terrain.\+cpp.
 
 \mbox{\Hypertarget{class_terrain_a552c55d3ce93ae1c8988432acdf7aea1}\label{class_terrain_a552c55d3ce93ae1c8988432acdf7aea1}} 
@@ -70,6 +85,15 @@ Definicja w linii 31 pliku Terrain.\+cpp.
 
 
 
+Usuwa element z mapy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em eraser} & \\
+\hline
+\end{DoxyParams}
+
+
 Definicja w linii 18 pliku Terrain.\+cpp.
 
 \mbox{\Hypertarget{class_terrain_a009d97df85f0704ad9ea3c61fcd11080}\label{class_terrain_a009d97df85f0704ad9ea3c61fcd11080}} 
@@ -77,6 +101,10 @@ Definicja w linii 18 pliku Terrain.\+cpp.
 \index{reset@{reset}!Terrain@{Terrain}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void Terrain\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resetuje mape. 
 
 
 
@@ -93,7 +121,11 @@ Definicja w linii 37 pliku Terrain.\+cpp.
 
 
 
-Definicja w linii 9 pliku Terrain.\+h.
+Obiekt mapy. 
+
+
+
+Definicja w linii 26 pliku Terrain.\+h.
 
 
 
