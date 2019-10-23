@@ -73,6 +73,7 @@ void Bullet::update()
 	this->sprite.setRotation(rotation);
 	this->posX = this->sprite.getPosition().x;
 	this->posY = this->sprite.getPosition().y;
+	this->velocity.y += 0.1;
 }
 
 float Bullet::getScale() const
