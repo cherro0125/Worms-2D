@@ -323,11 +323,15 @@ void GameWindow::SwitchTeam(team t)
 {
 	current_team = t;
 	current_worm->stopMove();
-	current_worm_id = (current_worm_id + 1) % worm_count;
-	if (t == team::RED)
+	
+	if (t == team::RED) {
+		current_worm_id = (current_worm_id + 1) % worm_count;
 		current_worm = (worms->at(current_worm_id));
-	else
+	}
+	else {
+		current_worm_id = (current_worm_id + 1) % worm_count_b;
 		current_worm = (worms_b->at(current_worm_id));
+	}
 }
 
 void GameWindow::SwitchToRedTeam()
